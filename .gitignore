@@ -1,0 +1,10 @@
+Initial commit — Complete Pharmacy Management System
+- Login/Register with role-based access (Admin/Dược sĩ/Y tá)
+- Patient Records CRUD + Search
+- Medicine Inventory + Stock tracking
+- Prescription Create/Approve/Reject + Auto Stock Update
+- Staff Management (Admin only)
+- History Log + Export CSV to Excel
+- Green themed dashboard — all pages consistent
+- MongoDB Atlas cloud database
+
