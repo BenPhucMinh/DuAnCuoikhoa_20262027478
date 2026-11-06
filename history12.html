@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lịch sử & Xuất Dữ Liệu - Hệ thống Quản lý Nhà Thuốc</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body {
+      background: linear-gradient(135deg, #86efac 0%, #4ade80 100%);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .header {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 { color: #166534; font-size: 1.5rem; }
+    .btn {
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.2s;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: #22c55e; color: white; }
+    .btn-secondary { background: #e5e7eb; color: #374151; }
+    .btn-export { background: #3b82f6; color: white; }
+    .btn-cancel { background: #ef4444; color: white; }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .card h2 { color: #166534; margin-bottom: 1rem; font-size: 1.2rem; }
+    .export-bar {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .item-row {
+      padding: 0.8rem;
+      border-bottom: 1px solid #eee;
+    }
+    .item-row:last-child { border-bottom: none; }
+    .item-row:hover { background: #f0fdf4; }
+    .date { color: #666; font-size: 0.9rem; }
+    .status-pending { color: #f59e0b; font-weight: bold; }
+    .status-approved { color: #22c55e; font-weight: bold; }
+    .status-rejected { color: #ef4444; font-weight: bold; }
+    .loading { text-align: center; padding: 2rem; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📊 Lịch sử & Xuất Dữ Liệu</h1>
+      <button class="btn btn-secondary" onclick="window.location.href='dashboard11.html'">← Bảng điều khiển</button>
+    </div>
+
+    <!-- Export Buttons -->
+    <div class="card">
+      <h2>📥 Xuất Dữ Liệu ra File Excel (CSV)</h2>
+      <div class="export-bar">
+        <button class="btn btn-export" onclick="exportPatients()">📋 Tải Danh Sách Bệnh Nhân</button>
+        <button class="btn btn-export" onclick="exportPrescriptions()">📝 Tải Danh Sách Đơn Thuốc</button>
+        <button class="btn btn-cancel" onclick="cancelHistory()">✕ Hủy / Làm mới</button>
+      </div>
+      <p style="color:#666; font-size:0.9rem;">File .csv mở được trực tiếp trong Excel hoặc Google Sheets ✅</p>
+    </div>
+
+    <!-- Prescription History -->
+    <div class="card">
+      <h2>📋 Lịch Sử Đơn Thuốc</h2>
+      <div id="prescHistory" class="loading">Đang tải...</div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="card">
+      <h2>👤 Hoạt Động Hệ Thống</h2>
+      <div id="activityLog" class="loading">Đang tải...</div>
+    </div>
+  </div>
+
+  <script>
+    const API_URL = 'http://localhost:5000/api';
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    if (!user) {
+      alert('⚠️ Vui lòng đăng nhập!');
+      window.location.href = 'projectmod1.html';
+    }
+
+    // Load all history data
+    async function loadHistory() {
+      try {
+        const res = await fetch(`${API_URL}/history/all`);
+        const data = await res.json();
+        
+        renderPrescriptions(data.prescriptions);
+        renderActivity(data);
+      } catch (err) {
+        console.error('Load error:', err);
+        document.getElementById('prescHistory').innerHTML = 
+          '<p style="color:red;">Lỗi tải dữ liệu</p>';
+      }
+    }
+
+    function renderPrescriptions(list) {
+      const el = document.getElementById('prescHistory');
+      if (!list.length) {
+        el.innerHTML = '<p style="color:#666;">Chưa có đơn thuốc nào</p>';
+        return;
+      }
+
+      el.innerHTML = list.map(p => {
+        const date = new Date(p.createdAt).toLocaleString('vi-VN');
+        const statusClass = p.status === 'approved' ? 'status-approved' : 
+                            p.status === 'rejected' ? 'status-rejected' : 'status-pending';
+        const statusText = p.status === 'approved' ? '✅ Đã duyệt' : 
+                           p.status === 'rejected' ? '❌ Đã từ chối' : '⏳ Chờ duyệt';
+        
+        return `
+          <div class="item-row">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div>
+                <strong>${p.patient?.fullName || 'Không xác định'}</strong>
+                <span class="date"> — ${date}</span>
+              </div>
+              <span class="${statusClass}">${statusText}</span>
+            </div>
+            <div style="margin-top:0.3rem; color:#555;">
+              💊 ${p.medicines.map(m => `${m.medicine?.name || 'Thuốc'} × ${m.quantity}`).join(', ')}
+              | Tạo bởi: ${p.createdBy?.fullName || '---'}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function renderActivity(data) {
+      const el = document.getElementById('activityLog');
+      const items = [];
+
+      data.patients.slice(0, 5).forEach(p => {
+        items.push({
+          date: p.createdAt,
+          text: `👤 Thêm bệnh nhân: ${p.fullName}`
+        });
+      });
+
+      data.medicines.slice(0, 5).forEach(m => {
+        items.push({
+          date: m.createdAt,
+          text: `💊 Thêm thuốc: ${m.name} — Tồn kho: ${m.stock}`
+        });
+      });
+
+      items.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      el.innerHTML = items.length ? items.slice(0, 15).map(item => `
+        <div class="item-row">
+          <span class="date">${new Date(item.date).toLocaleString('vi-VN')}</span>
+          — ${item.text}
+        </div>
+      `).join('') : '<p style="color:#666;">Chưa có hoạt động nào</p>';
+    }
+
+    // Export functions
+    function exportPatients() {
+      window.open(`${API_URL}/export/patients/csv`, '_blank');
+    }
+    function exportPrescriptions() {
+      window.open(`${API_URL}/export/prescriptions/csv`, '_blank');
+    }
+
+    // Cancel / Reset — clear lists and reload
+    function cancelHistory() {
+      document.getElementById('prescHistory').innerHTML = '<p style="color:#666; text-align:center; padding:1rem;">Đã hủy. Nhấn tải lại để xem lại lịch sử.</p>';
+      document.getElementById('activityLog').innerHTML = '<p style="color:#666; text-align:center; padding:1rem;">Đã hủy. Nhấn tải lại để xem lại hoạt động.</p>';
+    }
+
+    // Start
+    loadHistory();
+  </script>
+</body>
+</html>

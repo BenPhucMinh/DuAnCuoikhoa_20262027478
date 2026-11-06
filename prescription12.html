@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý Đơn Thuốc - Hệ thống Quản lý Nhà Thuốc</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: linear-gradient(135deg, #86efac 0%, #4ade80 100%); min-height: 100vh; padding: 2rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .header { background: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    h1 { color: #166534; font-size: 1.5rem; }
+    .btn { padding: 0.7rem 1.2rem; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; transition: 0.2s; }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: #22c55e; color: white; }
+    .btn-secondary { background: #e5e7eb; color: #374151; }
+    .btn-approve { background: #22c55e; color: white; }
+    .btn-reject { background: #ef4444; color: white; }
+    .card { background: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+    .form-group { margin-bottom: 1rem; }
+    label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: #374151; }
+    select, input, textarea { width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; }
+    select:focus, input:focus, textarea:focus { outline: none; border-color: #22c55e; box-shadow: 0 0 0 3px rgba(34,197,94,0.2); }
+    .med-row { display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem; padding: 0.5rem; background: #f0fdf4; border-radius: 6px; }
+    .med-row select { flex: 2; }
+    .med-row input { flex: 1; }
+    .med-row button { flex-shrink: 0; background: #ef4444; color: white; border: none; padding: 0.5rem; border-radius: 4px; cursor: pointer; }
+    .presc-item { padding: 1rem; border-bottom: 1px solid #eee; }
+    .presc-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem; }
+    .status-pending { color: #f59e0b; font-weight: bold; }
+    .status-approved { color: #22c55e; font-weight: bold; }
+    .status-rejected { color: #ef4444; font-weight: bold; }
+    .presc-actions { margin-top: 0.8rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .message { margin-top: 1rem; padding: 0.7rem; border-radius: 6px; display: none; }
+    .success { background: #d4edda; color: #155724; display: block; }
+    .error { background: #f8d7da; color: #721c24; display: block; }
+    .hidden { display: none !important; }
+    .med-list { margin: 0.5rem 0; padding-left: 1rem; }
+    .med-list li { margin: 0.25rem 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📋 Quản lý Đơn Thuốc</h1>
+      <div>
+        <button class="btn btn-secondary" onclick="window.location.href='dashboard11.html'">← Bảng điều khiển</button>
+        <button class="btn btn-primary" onclick="showForm()">+ Tạo Đơn Thuốc</button>
+      </div>
+    </div>
+
+    <!-- Form Tạo Đơn Thuốc -->
+    <div class="card" id="formCard" style="display:none;">
+      <h3 style="margin-bottom: 1rem; color: #166534;">Tạo Đơn Thuốc Mới</h3>
+      <form id="prescForm">
+        <div class="form-group">
+          <label>Chọn Bệnh Nhân *</label>
+          <select id="patientSelect" required>
+            <option value="">-- Đang tải danh sách bệnh nhân --</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Thuốc & Số lượng *</label>
+          <div id="medsContainer"></div>
+          <button type="button" class="btn btn-secondary" onclick="addMedRow()" style="margin-top:0.5rem;">+ Thêm Thuốc</button>
+        </div>
+
+        <div class="form-group">
+          <label>Ghi chú / Hướng dẫn dùng thuốc</label>
+          <textarea id="prescNotes" rows="3" placeholder="Ví dụ: Uống sau ăn, 2 lần mỗi ngày..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Gửi Chờ Duyệt</button>
+        <button type="button" class="btn btn-secondary" onclick="hideForm()">Hủy</button>
+        <div id="formMsg" class="message"></div>
+      </form>
+    </div>
+
+    <!-- Danh Sách Đơn Thuốc -->
+    <div class="card">
+      <h3 style="margin-bottom: 1rem;">Danh Sách Đơn Thuốc</h3>
+      <div id="prescList">
+        <p style="color:#666; text-align:center; padding:1rem;">Đang tải...</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const API_URL = 'http://localhost:5000/api';
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    if (!user) {
+      alert('⚠️ Vui lòng đăng nhập!');
+      window.location.href = 'projectmod1.html';
+    }
+
+    let allPatients = [];
+    let allMedicines = [];
+
+    // Load all data on page start
+    async function loadAllData() {
+      try {
+        // Load patients
+        const patRes = await fetch(`${API_URL}/patients/search?limit=100`);
+        if (patRes.ok) {
+          const patData = await patRes.json();
+          allPatients = patData.patients || [];
+        }
+
+        // Load medicines
+        const medRes = await fetch(`${API_URL}/medicines/search?limit=100`);
+        if (medRes.ok) {
+          const medData = await medRes.json();
+          allMedicines = medData.medicines || [];
+        }
+
+        fillPatientOptions();
+        loadPrescriptions();
+      } catch (err) {
+        console.error('Load error:', err);
+        loadPrescriptions();
+      }
+    }
+
+    function fillPatientOptions() {
+      const select = document.getElementById('patientSelect');
+      select.innerHTML = `<option value="">-- Chọn bệnh nhân --</option>`;
+      allPatients.forEach(p => {
+        select.innerHTML += `<option value="${p._id}">${p.fullName} — ${p.phone || 'Không SĐT'}</option>`;
+      });
+    }
+
+    function showForm() {
+      document.getElementById('formCard').style.display = 'block';
+      document.getElementById('prescForm').reset();
+      document.getElementById('medsContainer').innerHTML = '';
+      document.getElementById('formMsg').className = 'message';
+      addMedRow();
+    }
+
+    function hideForm() {
+      document.getElementById('formCard').style.display = 'none';
+      document.getElementById('prescForm').reset();
+      document.getElementById('medsContainer').innerHTML = '';
+      document.getElementById('formMsg').className = 'message';
+    }
+
+    function addMedRow() {
+      const container = document.getElementById('medsContainer');
+      const row = document.createElement('div');
+      row.className = 'med-row';
+      row.innerHTML = `
+        <select class="med-select" required>
+          <option value="">-- Chọn thuốc --</option>
+          ${allMedicines.map(m => `<option value="${m._id}">${m.name} — Còn ${m.stock} ${m.unit}</option>`).join('')}
+        </select>
+        <input type="number" class="med-qty" min="1" value="1" placeholder="Số lượng">
+        <button type="button" onclick="this.parentElement.remove()">✕</button>
+      `;
+      container.appendChild(row);
+    }
+
+    // Submit new prescription
+    document.getElementById('prescForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const msgEl = document.getElementById('formMsg');
+      
+      const patientId = document.getElementById('patientSelect').value;
+      const rows = document.querySelectorAll('#medsContainer .med-row');
+      const medicines = [];
+      
+      rows.forEach(row => {
+        const medId = row.querySelector('.med-select').value;
+        const qty = parseInt(row.querySelector('.med-qty').value);
+        if (medId && qty > 0) {
+          medicines.push({ medicine: medId, quantity: qty });
+        }
+      });
+
+      if (!patientId) {
+        msgEl.className = 'message error';
+        msgEl.textContent = '❌ Vui lòng chọn bệnh nhân!';
+        return;
+      }
+      if (medicines.length === 0) {
+        msgEl.className = 'message error';
+        msgEl.textContent = '❌ Vui lòng chọn ít nhất 1 thuốc!';
+        return;
+      }
+
+      try {
+        const res = await fetch(`${API_URL}/prescriptions`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            patientId,
+            medicines,
+            notes: document.getElementById('prescNotes').value,
+            createdBy: user.id
+          })
+        });
+
+        const data = await res.json();
+        msgEl.className = `message ${res.ok ? 'success' : 'error'}`;
+        msgEl.textContent = data.message;
+
+        if (res.ok) {
+          setTimeout(() => { hideForm(); loadPrescriptions(); }, 1500);
+        }
+      } catch (err) {
+        msgEl.className = 'message error';
+        msgEl.textContent = '❌ Lỗi kết nối server';
+      }
+    });
+
+    // Load & display prescriptions
+    async function loadPrescriptions() {
+      try {
+        const res = await fetch(`${API_URL}/prescriptions`);
+        if (!res.ok) throw new Error('Failed to load');
+        const prescriptions = await res.json();
+        const listEl = document.getElementById('prescList');
+        
+        if (!prescriptions.length) {
+          listEl.innerHTML = '<p style="color:#666; text-align:center; padding:1rem;">Chưa có đơn thuốc nào</p>';
+          return;
+        }
+
+        listEl.innerHTML = prescriptions.map(p => {
+          const statusClass = p.status === 'approved' ? 'status-approved' : 
+                              p.status === 'rejected' ? 'status-rejected' : 'status-pending';
+          const statusText = p.status === 'approved' ? '✅ Đã duyệt' : 
+                             p.status === 'rejected' ? '❌ Đã từ chối' : '⏳ Chờ duyệt';
+          
+          const canApprove = p.status === 'pending' && 
+            (user.role === 'admin' || user.role === 'pharmacist');
+
+          return `
+            <div class="presc-item">
+              <div class="presc-header">
+                <div>
+                  <strong>Bệnh nhân:</strong> ${p.patient?.fullName || 'Không xác định'} 
+                  | <strong>Tạo bởi:</strong> ${p.createdBy?.fullName || '---'}
+                  ${p.approvedBy ? ` | <strong>Duyệt bởi:</strong> ${p.approvedBy.fullName}` : ''}
+                </div>
+                <div style="display:flex; align-items:center; gap:0.5rem;">
+                  <span class="${statusClass}">${statusText}</span>
+                  <button
+                    onclick="deletePresc('${p._id}')"
+                    style="background:#fee2e2; color:#dc2626; border:none; border-radius:6px; padding:0.3rem 0.7rem; cursor:pointer; font-size:0.85rem;"
+                    title="Xóa đơn thuốc này"
+                  >🗑 Xóa</button>
+                </div>
+              </div>
+              ${p.notes ? `<p style="margin:0.5rem 0; color:#666;"><strong>Ghi chú:</strong> ${p.notes}</p>` : ''}
+              <ul class="med-list">
+                ${p.medicines.map(m => {
+                  const medName = m.medicine?.name || 'Thuốc không tồn tại';
+                  return `<li>💊 ${medName} — ${m.quantity} đơn vị</li>`;
+                }).join('')}
+              </ul>
+              ${canApprove ? `
+                <div class="presc-actions">
+                  <button class="btn btn-approve" onclick="approvePresc('${p._id}')">✅ Duyệt</button>
+                  <button class="btn btn-reject" onclick="rejectPresc('${p._id}')">❌ Từ chối</button>
+                </div>
+              ` : ''}
+            </div>
+          `;
+        }).join('');
+      } catch (err) {
+        console.error('Load error:', err);
+        document.getElementById('prescList').innerHTML = 
+          '<p style="color:red; text-align:center;">Lỗi tải danh sách đơn thuốc</p>';
+      }
+    }
+
+    // Approve prescription → auto update stock
+    window.approvePresc = async function(id) {
+      if (!confirm('✅ Xác nhận duyệt đơn thuốc? Tồn kho sẽ được tự động cập nhật!')) return;
+      
+      try {
+        const res = await fetch(`${API_URL}/prescriptions/${id}/approve`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ approvedBy: user.id })
+        });
+        const data = await res.json();
+        alert(data.message);
+        loadPrescriptions();
+      } catch (err) {
+        alert('❌ Lỗi kết nối server');
+      }
+    };
+
+    // Reject prescription
+    window.rejectPresc = async function(id) {
+      if (!confirm('❌ Xác nhận từ chối đơn thuốc?')) return;
+      
+      try {
+        const res = await fetch(`${API_URL}/prescriptions/${id}/reject`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' }
+        });
+        const data = await res.json();
+        alert(data.message);
+        loadPrescriptions();
+      } catch (err) {
+        alert('❌ Lỗi kết nối server');
+      }
+    };
+
+    // Delete prescription
+    window.deletePresc = async function(id) {
+      if (!confirm('🗑 Bạn có chắc muốn xóa đơn thuốc này không?\nHành động này không thể hoàn tác!')) return;
+      try {
+        const res = await fetch(`${API_URL}/prescriptions/${id}`, { method: 'DELETE' });
+        let data;
+        try { data = await res.json(); } catch { data = { message: `❌ Server lỗi (${res.status})` }; }
+        alert(data.message);
+        if (res.ok) loadPrescriptions();
+      } catch (err) {
+        alert('❌ Không thể kết nối server. Hãy chắc server đang chạy trên cổng 5000.');
+      }
+    };
+
+    // Start everything
+    loadAllData();
+  </script>
+</body>
+</html>

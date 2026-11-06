@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy System — Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Top Bar -->
+    <header class="dashboard-header">
+      <h1>
+        <span class="icon">🏥</span>
+        Pharmacy System — Dashboard
+      </h1>
+      <div class="user-info">
+        <span id="userName">Loading...</span>
+        <span id="userRole" class="role-badge"></span>
+        <button id="logoutBtn" class="btn-logout">Sign Out</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="dashboard-content">
+      <div class="welcome-card">
+        <h2>Welcome back! ✅</h2>
+        <p>You are securely logged in. Select a section below:</p>
+      </div>
+
+      <!-- Quick Access Cards -->
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>📋 Patient Records</h3>
+          <p>View & manage patient information</p>
+          <button class="card-btn" onclick="window.location.href='patients12.html'">Open →</button>
+        </div>
+
+        <div class="card">
+          <h3>💊 Medicine Inventory</h3>
+          <p>Stock levels & drug information</p>
+          <button class="card-btn" onclick="window.location.href='medicines12.html'">Open →</button>
+        </div>
+
+        <div class="card">
+          <h3>📝 Prescriptions</h3>
+          <p>Create & approve medication orders</p>
+          <button class="card-btn" onclick="window.location.href='prescription12.html'">Open →</button>
+        </div>
+
+    <div class="card">
+      <h3>📊 Lịch sử & Xuất Dữ Liệu</h3>
+      <p>Xem toàn bộ hoạt động & tải file báo cáo</p>
+      <button class="card-btn" onclick="window.location.href='history12.html'">Mở →</button>
+    </div>
+
+
+    <div class="card">
+      <h3>👤 Staff Accounts</h3>
+      <p>Manage system users & permissions</p>
+      <button class="card-btn" id="adminOnly" onclick="window.location.href='staff12.html'">Open →</button>
+    </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="dashboard11.js"></script>
+</body>
+<script>
+// Load user info
+const user = JSON.parse(localStorage.getItem('user'));
+
+if (!user) {
+  alert('⚠️ Vui lòng đăng nhập!');
+  window.location.href = 'projectmod1.html';
+} else {
+  // Show name & role
+  document.getElementById('userName').textContent = user.fullName;
+  document.getElementById('userRole').textContent = user.role;
+}
+
+// SIGN OUT — Clear data & go to login page
+document.getElementById('logoutBtn').addEventListener('click', () => {
+  localStorage.clear(); // Remove ALL saved login data
+  window.location.href = 'projectmod1.html'; 
+});
+</script>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý Bệnh Nhân - Hệ thống Quản lý Nhà Thuốc</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: linear-gradient(135deg, #86efac 0%, #4ade80 100%); min-height: 100vh; padding: 2rem; }
+    .container { max-width: 1000px; margin: 0 auto; }
+    .header { background: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    h1 { color: #166534; font-size: 1.5rem; }
+    .btn { padding: 0.7rem 1.2rem; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; transition: 0.2s; }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: #22c55e; color: white; }
+    .btn-secondary { background: #e5e7eb; color: #374151; }
+    .card { background: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+    .form-group { margin-bottom: 1rem; }
+    label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: #374151; }
+    input, textarea { width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; }
+    input:focus, textarea:focus { outline: none; border-color: #22c55e; box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2); }
+    .search-bar { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; }
+    .search-bar input { flex: 1; }
+    .patient-item { padding: 1rem; border-bottom: 1px solid #eee; cursor: pointer; border-radius: 6px; transition: 0.2s; }
+    .patient-item:hover { background: #f0fdf4; }
+    .pagination { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1.5rem; }
+    .pagination button { padding: 0.5rem 1rem; border: none; border-radius: 6px; cursor: pointer; background: #e5e7eb; }
+    .pagination button.active { background: #22c55e; color: white; }
+    .message { margin-top: 1rem; padding: 0.7rem; border-radius: 6px; display: none; }
+    .success { background: #d4edda; color: #155724; display: block; }
+    .error { background: #f8d7da; color: #721c24; display: block; }
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🏥 Quản lý Bệnh Nhân</h1>
+      <div>
+        <button class="btn btn-secondary" onclick="window.location.href='dashboard11.html'">← Bảng điều khiển</button>
+        <button class="btn btn-primary" onclick="showForm()">+ Thêm BN</button>
+      </div>
+    </div>
+
+    <!-- Form Thêm Bệnh Nhân -->
+    <div class="card" id="formCard" style="display:none;">
+      <h3 style="margin-bottom: 1rem; color: #166534;">Thêm Hồ Sơ Bệnh Nhân Mới</h3>
+      <form id="patientForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Họ và Tên *</label>
+            <input type="text" id="fullName" required placeholder="Nguyễn Văn A">
+          </div>
+          <div class="form-group">
+            <label>Tuổi *</label>
+            <input type="number" id="age" required min="1" max="120" placeholder="30">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Số Điện Thoại *</label>
+          <input type="tel" id="phone" required placeholder="0912345678">
+        </div>
+        <div class="form-group">
+          <label>Dị ứng</label>
+          <textarea id="allergies" rows="2" placeholder="Không có"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Bệnh nền / Tiền sử</label>
+          <textarea id="medicalHistory" rows="2" placeholder="Không có"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Lưu Hồ Sơ</button>
+        <button type="button" class="btn btn-secondary" onclick="hideForm()">Hủy</button>
+        <div id="formMsg" class="message"></div>
+      </form>
+    </div>
+
+    <!-- Tìm Kiếm & Danh Sách -->
+    <div class="card">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Tìm theo tên, SĐT...">
+        <button class="btn btn-primary" onclick="searchPatients()">Tìm</button>
+      </div>
+      
+      <div id="patientList"></div>
+      <div id="pagination" class="pagination"></div>
+    </div>
+  </div>
+
+  <script>
+    const API_URL = 'http://localhost:5000/api';
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    // Check login
+    if (!user) {
+      alert('⚠️ Vui lòng đăng nhập!');
+      window.location.href = 'projectmod1.html';
+    }
+
+    // Show / Hide Form
+    function showForm() {
+      document.getElementById('formCard').style.display = 'block';
+    }
+    function hideForm() {
+      document.getElementById('formCard').style.display = 'none';
+      document.getElementById('patientForm').reset();
+      document.getElementById('formMsg').className = 'message';
+    }
+
+    // Submit Form — Create Patient
+    document.getElementById('patientForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const msgEl = document.getElementById('formMsg');
+      
+      try {
+        const res = await fetch(`${API_URL}/patients`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            fullName: document.getElementById('fullName').value,
+            age: Number(document.getElementById('age').value),
+            phone: document.getElementById('phone').value,
+            allergies: document.getElementById('allergies').value || 'Không có',
+            medicalHistory: document.getElementById('medicalHistory').value || 'Không có',
+            createdBy: user.id
+          })
+        });
+
+        const data = await res.json();
+        msgEl.className = `message ${res.ok ? 'success' : 'error'}`;
+        msgEl.textContent = data.message;
+
+        if (res.ok) {
+          setTimeout(() => {
+            hideForm();
+            searchPatients(); // Refresh list
+          }, 1500);
+        }
+      } catch (err) {
+        msgEl.className = 'message error';
+        msgEl.textContent = '❌ Lỗi kết nối server';
+      }
+    });
+
+    // Search & Display Patients
+    async function searchPatients(page = 1) {
+      const q = document.getElementById('searchInput').value;
+      try {
+        const res = await fetch(`${API_URL}/patients/search?q=${encodeURIComponent(q)}&page=${page}&limit=5`);
+        const data = await res.json();
+        
+        const listEl = document.getElementById('patientList');
+        if (data.patients.length === 0) {
+          listEl.innerHTML = '<p style="text-align:center; color:#666; padding:1rem;">Không tìm thấy hồ sơ nào</p>';
+        } else {
+          listEl.innerHTML = data.patients.map(p => `
+            <div class="patient-item">
+              <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                <div>
+                  <div><strong>${p.fullName}</strong> — ${p.age} tuổi</div>
+                  <div style="color:#666; font-size:0.9rem; margin-top: 0.3rem;">
+                    📞 ${p.phone} | Tạo bởi: ${p.createdBy?.fullName || 'N/A'}
+                  </div>
+                  ${p.allergies !== 'Không có' ? `<div style="color:#dc2626; font-size:0.85rem; margin-top: 0.2rem;">⚠️ Dị ứng: ${p.allergies}</div>` : ''}
+                </div>
+                <button
+                  onclick="deletePatient('${p._id}', '${p.fullName.replace(/'/g, "\\'")}')"
+                  style="background:#fee2e2; color:#dc2626; border:none; border-radius:6px; padding:0.3rem 0.7rem; cursor:pointer; font-size:0.85rem; flex-shrink:0; margin-left:0.5rem;"
+                  title="Xóa hồ sơ này"
+                >🗑 Xóa</button>
+              </div>
+            </div>
+          `).join('');
+        }
+
+        // Pagination
+        const pageEl = document.getElementById('pagination');
+        pageEl.innerHTML = '';
+        for (let i = 1; i <= data.totalPages; i++) {
+          const btn = document.createElement('button');
+          btn.textContent = i;
+          btn.className = i === data.currentPage ? 'active' : '';
+          btn.onclick = () => searchPatients(i);
+          pageEl.appendChild(btn);
+        }
+      } catch (err) {
+        console.error('Search error:', err);
+      }
+    }
+
+    // Delete a patient
+    async function deletePatient(id, name) {
+      if (!confirm(`🗑 Bạn có chắc muốn xóa hồ sơ "${name}" không?\nHành động này không thể hoàn tác!`)) return;
+      try {
+        const res = await fetch(`${API_URL}/patients/${id}`, { method: 'DELETE' });
+        let data;
+        try { data = await res.json(); } catch { data = { message: `❌ Server lỗi (${res.status})` }; }
+        alert(data.message);
+        if (res.ok) searchPatients();
+      } catch (err) {
+        alert('❌ Không thể kết nối server. Hãy chắc server đang chạy trên cổng 5000.');
+      }
+    }
+
+    // Load on page open
+    searchPatients();
+  </script>
+</body>
+</html>

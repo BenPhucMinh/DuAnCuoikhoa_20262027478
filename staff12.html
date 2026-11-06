@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý Tài Khoản Nhân Viên - Hệ thống Quản lý Nhà Thuốc</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body {
+      background: linear-gradient(135deg, #86efac 0%, #4ade80 100%);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 1000px; margin: 0 auto; }
+    .header {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 { color: #166534; font-size: 1.5rem; }
+    .btn {
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.2s;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-secondary { background: #e5e7eb; color: #374151; }
+    .btn-save { background: #22c55e; color: white; }
+    .btn-delete { background: #ef4444; color: white; }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .staff-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .staff-row:last-child { border-bottom: none; }
+    .staff-info { flex: 1; min-width: 200px; }
+    .staff-name { font-weight: bold; color: #166534; font-size: 1rem; }
+    .staff-email { color: #666; font-size: 0.9rem; }
+    .role-select {
+      padding: 0.5rem 1rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    .role-badge {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: bold;
+    }
+    .role-admin { background: #3b82f6; color: white; }
+    .role-pharmacist { background: #22c55e; color: white; }
+    .role-nurse { background: #f59e0b; color: white; }
+    .message { margin-top: 1rem; padding: 0.7rem; border-radius: 6px; display: none; }
+    .success { background: #d4edda; color: #155724; display: block; }
+    .error { background: #f8d7da; color: #721c24; display: block; }
+    .loading { text-align: center; padding: 2rem; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>👤 Quản lý Tài Khoản Nhân Viên</h1>
+      <button class="btn btn-secondary" onclick="window.location.href='dashboard11.html'">← Bảng điều khiển</button>
+    </div>
+
+    <div class="card">
+      <p style="margin-bottom: 1rem; color:#666;">Chỉ Quản trị viên mới có quyền xem & chỉnh sửa vai trò</p>
+      <div id="messageBox" class="message"></div>
+      <div id="staffList" class="loading">Đang tải danh sách...</div>
+    </div>
+  </div>
+
+  <script>
+    const API_URL = 'http://localhost:5000/api';
+    const currentUser = JSON.parse(localStorage.getItem('user'));
+
+    if (!currentUser) {
+      alert('⚠️ Vui lòng đăng nhập!');
+      window.location.href = 'projectmod1.html';
+    }
+
+    // Only admin can access this page
+    if (currentUser.role !== 'admin') {
+      alert('⚠️ Chỉ Quản trị viên mới có quyền truy cập trang này!');
+      window.location.href = 'dashboard11.html';
+    }
+
+    // Load all staff
+    async function loadStaff() {
+      try {
+        const res = await fetch(`${API_URL}/staff`);
+        const staff = await res.json();
+        renderStaffList(staff);
+      } catch (err) {
+        console.error('Load error:', err);
+        document.getElementById('staffList').innerHTML = 
+          '<p style="color:red; text-align:center;">Lỗi tải danh sách nhân viên</p>';
+      }
+    }
+
+    function renderStaffList(list) {
+      const el = document.getElementById('staffList');
+      
+      if (!list.length) {
+        el.innerHTML = '<p style="color:#666; text-align:center;">Chưa có tài khoản nào</p>';
+        return;
+      }
+
+      el.innerHTML = list.map(s => {
+        const roleClass = s.role === 'admin' ? 'role-admin' : 
+                          s.role === 'pharmacist' ? 'role-pharmacist' : 'role-nurse';
+        const roleText = s.role === 'admin' ? 'Quản trị viên' : 
+                         s.role === 'pharmacist' ? 'Dược sĩ' : 'Y tá';
+        const isCurrentUser = s._id === currentUser.id;
+
+        return `
+          <div class="staff-row">
+            <div class="staff-info">
+              <div class="staff-name">${s.fullName}</div>
+              <div class="staff-email">${s.email}</div>
+            </div>
+            <span class="role-badge ${roleClass}">${roleText}</span>
+            ${isCurrentUser ? 
+              '<em style="color:#999; font-size:0.85rem;">Bạn (không đổi)</em>' : 
+              `<select class="role-select" onchange="changeRole('${s._id}', this.value)">
+                <option value="admin" ${s.role==='admin'?'selected':''}>Quản trị viên</option>
+                <option value="pharmacist" ${s.role==='pharmacist'?'selected':''}>Dược sĩ</option>
+                <option value="nurse" ${s.role==='nurse'?'selected':''}>Y tá</option>
+              </select>
+              <button class="btn btn-delete" onclick="deleteStaff('${s._id}')">Xóa</button>`
+            }
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Change role
+    async function changeRole(staffId, newRole) {
+      try {
+        const res = await fetch(`${API_URL}/staff/${staffId}/role`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ role: newRole })
+        });
+        const data = await res.json();
+        showMessage(data.message, res.ok ? 'success' : 'error');
+        setTimeout(loadStaff, 800);
+      } catch (err) {
+        showMessage('❌ Lỗi kết nối server', 'error');
+      }
+    }
+
+    // Delete staff
+    async function deleteStaff(staffId) {
+      if (!confirm('⚠️ Xác nhận xóa tài khoản này? Hành động không thể hoàn tác!')) return;
+      
+      try {
+        const res = await fetch(`${API_URL}/staff/${staffId}`, {
+          method: 'DELETE'
+        });
+        const data = await res.json();
+        showMessage(data.message, res.ok ? 'success' : 'error');
+        setTimeout(loadStaff, 800);
+      } catch (err) {
+        showMessage('❌ Lỗi kết nối server', 'error');
+      }
+    }
+
+    function showMessage(text, type) {
+      const box = document.getElementById('messageBox');
+      box.className = `message ${type}`;
+      box.textContent = text;
+      setTimeout(() => { box.className = 'message'; }, 4000);
+    }
+
+    // Start
+    loadStaff();
+  </script>
+</body>
+</html>

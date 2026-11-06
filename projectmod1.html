@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy System — Login</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body { background: linear-gradient(135deg, #86efac 0%, #4ade80 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .container { background: white; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); padding: 2rem; width: 100%; max-width: 420px; }
+    h1 { text-align: center; color: #333; margin-bottom: 1.5rem; }
+    .tab { display: flex; margin-bottom: 1.5rem; }
+    .tab button { flex: 1; padding: 0.75rem; border: none; background: #eee; cursor: pointer; font-size: 1rem; }
+    .tab button.active { background: #22c55e; color: white; }
+    .form { display: none; }
+    .form.active { display: block; }
+    input, select { width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; }
+    button[type="submit"] { width: 100%; padding: 0.9rem; background: #22c55e; color: white; border: none; border-radius: 6px; font-size: 1rem; cursor: pointer; }
+    button[type="submit"]:hover { background: #16a34a; }
+    .message { margin-top: 1rem; text-align: center; padding: 0.5rem; border-radius: 4px; display: none; }
+    .success { background: #d4edda; color: #155724; display: block !important; }
+    .error { background: #f8d7da; color: #721c24; display: block !important; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><span style="font-size: 38px; vertical-align: middle; margin-right: 6px;">🏥</span> Pharmacy System</h1>
+    
+    <div class="tab">
+      <button class="active" onclick="showTab('login')">Login</button>
+      <button onclick="showTab('register')">Register</button>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <form id="loginForm" class="form active">
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button type="submit">Sign In</button>
+      <div id="loginMsg" class="message"></div>
+    </form>
+
+    <!-- REGISTER FORM -->
+    <form id="registerForm" class="form">
+      <input type="text" id="regName" placeholder="Full Name" required>
+      <input type="email" id="regEmail" placeholder="Email" required>
+      <input type="password" id="regPassword" placeholder="Password" required>
+      <input type="tel" id="regPhone" placeholder="Phone Number">
+      <select id="regRole">
+        <option value="nurse">Nurse</option>
+        <option value="pharmacist">Pharmacist</option>
+        <option value="admin">Admin</option>
+      </select>
+      <button type="submit">Create Account</button>
+      <div id="regMsg" class="message"></div>
+    </form>
+  </div>
+
+  <script src="projectki1.js"></script>
+</body>
+</html>
