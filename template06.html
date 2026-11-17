@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản Lý Kho Dược Phẩm</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; }
+    .sidebar-link { transition: all 0.2s ease; }
+    .sidebar-link:hover { background-color: #047857; }
+    .sidebar-link.active { background-color: #065f46; font-weight: 600; }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex">
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="w-64 bg-emerald-800 text-white flex flex-col">
+    <!-- Logo / Project Name -->
+    <div class="p-4 border-b border-emerald-700">
+      <h1 class="text-xl font-bold flex items-center gap-2">
+        💊 Kho Dược Phẩm
+      </h1>
+      <p class="text-sm text-emerald-300 mt-1">Hệ thống quản lý</p>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="flex-1 py-6 px-2">
+      <ul class="space-y-1">
+        <li>
+          <a href="index13.html" class="sidebar-link active flex items-center gap-3 px-4 py-3 rounded-lg">
+            🏠 Trang Chủ
+          </a>
+        </li>
+        <li>
+          <a href="medicines11.html" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-emerald-100">
+            💊 Danh Sách Thuốc
+          </a>
+        </li>
+        <li>
+          <a href="manufacturers13.html" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-emerald-100">
+            🏭 Nhà Sản Xuất
+          </a>
+        </li>
+        <li>
+          <a href="suppliers13.html" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-emerald-100">
+            📦 Nhà Cung Cấp
+          </a>
+        </li>
+        <li>
+          <a href="atc.html" class="sidebar-link flex items-center gap-3 px-4 py-3 rounded-lg text-emerald-100">
+            📋 Nhóm ATC
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Footer -->
+    <div class="p-4 border-t border-emerald-700 text-sm text-emerald-300">
+      <p>© 2026 — Đồ Án Cuối Khóa</p>
+    </div>
+  </aside>
+
+  <!-- ===== MAIN CONTENT AREA ===== -->
+  <main class="flex-1 flex flex-col min-h-screen">
+    <!-- Top Bar (Page Title + Optional Button) -->
+    <header class="bg-white shadow-sm px-8 py-4 flex items-center justify-between">
+      <h2 class="text-2xl font-bold text-gray-800">Trang Chủ</h2>
+      <!-- Optional button here -->
+    </header>
+
+    <!-- Page Content -->
+    <div class="flex-1 p-8">
+      <!-- YOUR CONTENT GOES HERE -->
+      <div class="bg-white rounded-lg shadow-sm p-8 text-center">
+        <h3 class="text-3xl font-bold text-gray-800 mb-4">Chào Mừng!</h3>
+        <p class="text-gray-600 text-lg">Nội dung trang chính — thay bằng nội dung từng trang</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

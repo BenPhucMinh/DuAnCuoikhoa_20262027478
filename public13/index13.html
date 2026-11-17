@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản Lý Kho Dược Phẩm - Trang Chủ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="style09.css">
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+  <nav class="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+        <h1 class="text-2xl font-bold flex items-center gap-2">
+          <span>💊</span> Quản Lý Kho Dược Phẩm
+        </h1>
+        <div class="flex flex-wrap items-center gap-4 text-sm font-medium">
+          <a href="index13.html" class="font-bold underline text-white">Trang Chủ</a>
+          <a href="medicines11.html" class="hover:text-blue-200 transition">Danh Sách Thuốc</a>
+          <a href="manufacturers13.html" class="hover:text-blue-200 transition">Nhà Sản Xuất</a>
+          <a href="suppliers13.html" class="hover:text-blue-200 transition">Nhà Cung Cấp</a>
+          <a href="atc13.html" class="hover:text-blue-200 transition">Nhóm ATC</a>
+          <a href="/dashboard11.html" class="bg-blue-700 hover:bg-blue-800 px-3 py-1.5 rounded-lg transition text-xs uppercase font-bold tracking-wider">Hệ Thống Kê Đơn 🏥</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-4 py-8 flex-1">
+    <div class="bg-white rounded-2xl shadow-md p-8 text-center border border-gray-100 max-w-5xl mx-auto">
+      <h2 class="text-3xl font-extrabold text-gray-800 mb-3">Chào Mừng!</h2>
+      <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
+        Hệ thống quản lý dữ liệu dược phẩm — Đơn giản, rõ ràng, dễ sử dụng <span class="text-green-500">✅</span>
+      </p>
+      
+      <!-- Interactive Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+        <a href="medicines11.html" class="stat-card bg-blue-50/70 p-6 rounded-2xl border border-blue-100 hover:shadow-lg transition-all transform hover:-translate-y-1 block text-left group">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-bold text-blue-700 group-hover:text-blue-900">Thuốc</h3>
+            <span class="text-2xl">💊</span>
+          </div>
+          <p class="text-4xl font-extrabold text-blue-900" id="count-medicines">
+            <span class="text-base font-normal text-blue-400">Đang tải...</span>
+          </p>
+          <span class="text-xs font-semibold text-blue-600 mt-3 inline-block group-hover:underline">Xem danh sách →</span>
+        </a>
+
+        <a href="manufacturers13.html" class="stat-card bg-green-50/70 p-6 rounded-2xl border border-green-100 hover:shadow-lg transition-all transform hover:-translate-y-1 block text-left group">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-bold text-green-700 group-hover:text-green-900">NSX</h3>
+            <span class="text-2xl">🏭</span>
+          </div>
+          <p class="text-4xl font-extrabold text-green-900" id="count-manufacturers">
+            <span class="text-base font-normal text-green-400">Đang tải...</span>
+          </p>
+          <span class="text-xs font-semibold text-green-600 mt-3 inline-block group-hover:underline">Xem nhà sản xuất →</span>
+        </a>
+
+        <a href="suppliers13.html" class="stat-card bg-amber-50/70 p-6 rounded-2xl border border-amber-100 hover:shadow-lg transition-all transform hover:-translate-y-1 block text-left group">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-bold text-amber-700 group-hover:text-amber-900">NCC</h3>
+            <span class="text-2xl">🏪</span>
+          </div>
+          <p class="text-4xl font-extrabold text-amber-900" id="count-suppliers">
+            <span class="text-base font-normal text-amber-400">Đang tải...</span>
+          </p>
+          <span class="text-xs font-semibold text-amber-600 mt-3 inline-block group-hover:underline">Xem nhà cung cấp →</span>
+        </a>
+
+        <a href="atc13.html" class="stat-card bg-purple-50/70 p-6 rounded-2xl border border-purple-100 hover:shadow-lg transition-all transform hover:-translate-y-1 block text-left group">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="text-lg font-bold text-purple-700 group-hover:text-purple-900">Nhóm ATC</h3>
+            <span class="text-2xl">🧬</span>
+          </div>
+          <p class="text-4xl font-extrabold text-purple-900" id="count-atc">
+            <span class="text-base font-normal text-purple-400">Đang tải...</span>
+          </p>
+          <span class="text-xs font-semibold text-purple-600 mt-3 inline-block group-hover:underline">Xem nhóm ATC →</span>
+        </a>
+      </div>
+
+      <div class="mt-10 flex flex-wrap gap-4 justify-center">
+        <button onclick="checkConnection()" 
+          class="bg-blue-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-blue-700 transition shadow-md hover:shadow-lg cursor-pointer">
+          Kiểm Tra Kết Nối
+        </button>
+        <a href="/dashboard11.html" 
+          class="bg-green-600 text-white font-bold px-6 py-3 rounded-xl hover:bg-green-700 transition shadow-md hover:shadow-lg">
+          Quản Lý Nhà Thuốc (Phase 1) →
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-white border-t border-gray-200 text-center py-4 mt-auto">
+    <p class="text-gray-500 text-sm">© 2026 Đồ Án Cuối Khóa — Quản Lý Dược Phẩm</p>
+  </footer>
+
+  <script>
+    async function loadCounts() {
+      try {
+        console.log('🔄 Đang tải dữ liệu...');
+        
+        const [medRes, nsxRes, nccRes, atcRes] = await Promise.all([
+          fetch('/api/medicines-db'),
+          fetch('/api/manufacturers'),
+          fetch('/api/suppliers'),
+          fetch('/api/atc')
+        ]);
+
+        if (!medRes.ok || !nsxRes.ok || !nccRes.ok || !atcRes.ok) {
+          throw new Error('Một hoặc nhiều API không phản hồi');
+        }
+
+        const med = await medRes.json();
+        const nsx = await nsxRes.json();
+        const ncc = await nccRes.json();
+        const atc = await atcRes.json();
+
+        document.getElementById('count-medicines').textContent = Array.isArray(med) ? med.length : '0';
+        document.getElementById('count-manufacturers').textContent = Array.isArray(nsx) ? nsx.length : '0';
+        document.getElementById('count-suppliers').textContent = Array.isArray(ncc) ? ncc.length : '0';
+        document.getElementById('count-atc').textContent = Array.isArray(atc) ? atc.length : '0';
+
+        console.log('✅ Tất cả dữ liệu đã tải thành công!');
+        
+      } catch (err) {
+        console.error('❌ Lỗi tải dữ liệu:', err);
+        
+        document.getElementById('count-medicines').innerHTML = '<span class="text-red-500 text-xl font-bold">Lỗi</span>';
+        document.getElementById('count-manufacturers').innerHTML = '<span class="text-red-500 text-xl font-bold">Lỗi</span>';
+        document.getElementById('count-suppliers').innerHTML = '<span class="text-red-500 text-xl font-bold">Lỗi</span>';
+        document.getElementById('count-atc').innerHTML = '<span class="text-red-500 text-xl font-bold">Lỗi</span>';
+      }
+    }
+
+    async function checkConnection() {
+      try {
+        const res = await fetch('/api/');
+        if (res.ok) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Kết nối thành công!',
+            text: 'Server và cơ sở dữ liệu đang hoạt động tốt.',
+            confirmButtonColor: '#2563eb'
+          });
+          loadCounts();
+        } else {
+          throw new Error('Server trả lời với lỗi ' + res.status);
+        }
+      } catch (err) {
+        Swal.fire({
+          icon: 'error',
+          title: 'Lỗi kết nối',
+          text: 'Không thể kết nối đến server. Hãy đảm bảo server đang chạy!',
+          confirmButtonColor: '#dc2626'
+        });
+      }
+    }
+    
+    loadCounts();
+  </script>
+</body>
+</html>

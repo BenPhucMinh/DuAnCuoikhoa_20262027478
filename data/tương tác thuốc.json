@@ -1,0 +1,1551 @@
+[
+  {
+    "__EMPTY": "STT",
+    "__EMPTY_1": "Thuốc 1",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Thuốc 2",
+    "__EMPTY_2": "Hậu quả ",
+    "__EMPTY_3": "Mức độ - Hướng xử trí",
+    "__EMPTY_4": "NGUỒN",
+    "__EMPTY_5": "Nguyên gốc đáng chú ý",
+    "__EMPTY_6": "STT"
+  },
+  {
+    "__EMPTY_1": "Thuốc chống đông máu đường uống"
+  },
+  {
+    "__EMPTY": 1,
+    "__EMPTY_1": "Dabigatran",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Amiodaron ",
+    "__EMPTY_2": "Tăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: để dự phòng thuyên tắc huyết khối tĩnh mạch, giảm liều dabigatran xuống 150mg/ngày; không cần chỉnh liều dabigatran khi dự phòng đột quỵ Theo dõi các dấu hiệu xuất huyết, thiếu máu; ngừng dabigatran ngay khi xuất hiện xuất huyết nghiêm trọng. Tương tác vẫn có thể xảy ra trong vài tuần sau khi ngừng amiodaron.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_6": 1
+  },
+  {
+    "__EMPTY": 2,
+    "__EMPTY_1": "Dabigatran",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ciclosporin",
+    "__EMPTY_2": "Tăng phơi nhiễm dabigatran và\ntăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_6": 2
+  },
+  {
+    "__EMPTY": 3,
+    "__EMPTY_1": "Dabigatran",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Itraconazol",
+    "__EMPTY_2": "Tăng phơi nhiễm dabigatran và\ntăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_6": 3
+  },
+  {
+    "__EMPTY": 4,
+    "__EMPTY_1": "Dabigatran",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Acenocoumarol\n",
+    "__EMPTY_2": "Tăng phơi nhiễm dabigatran và tăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc chống đông máu (acenocoumarol, heparin, enoxaparin, nadaroparin,\nrivaroxaban)",
+    "__EMPTY_6": 4
+  },
+  {
+    "__EMPTY": 5,
+    "__EMPTY_1": "Dabigatran",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Heparin",
+    "__EMPTY_2": "Tăng phơi nhiễm dabigatran và tăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc chống đông máu (acenocoumarol, heparin, enoxaparin, nadaroparin,\nrivaroxaban)",
+    "__EMPTY_6": 5
+  },
+  {
+    "__EMPTY": 6,
+    "__EMPTY_1": "Dabigatran",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Enoxaparin",
+    "__EMPTY_2": "Tăng phơi nhiễm dabigatran và tăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc chống đông máu (acenocoumarol, heparin, enoxaparin, nadaroparin,\nrivaroxaban)",
+    "__EMPTY_6": 6
+  },
+  {
+    "__EMPTY": 7,
+    "__EMPTY_1": "Dabigatran",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Nadaroparin",
+    "__EMPTY_2": "Tăng phơi nhiễm dabigatran và tăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc chống đông máu (acenocoumarol, heparin, enoxaparin, nadaroparin,\nrivaroxaban)",
+    "__EMPTY_6": 7
+  },
+  {
+    "__EMPTY": 8,
+    "__EMPTY_1": "Dabigatran",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Fraxiparin",
+    "__EMPTY_2": "Tăng phơi nhiễm dabigatran và tăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc chống đông máu (acenocoumarol, heparin, enoxaparin, nadaroparin,\nrivaroxaban)",
+    "__EMPTY_6": 8
+  },
+  {
+    "__EMPTY": 9,
+    "__EMPTY_1": "Dabigatran",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Rivaroxaban",
+    "__EMPTY_2": "Tăng phơi nhiễm dabigatran và tăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc chống đông máu (acenocoumarol, heparin, enoxaparin, nadaroparin,\nrivaroxaban)",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 10,
+    "__EMPTY_1": "Dabigatran",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Rifampicin",
+    "__EMPTY_2": "Giảm tác dụng chống đông.",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp, theo dõi nguy cơ huyết khối.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc cảm ứng P-gp (rifampicin, phenytoin,\ncarbamazepin)",
+    "__EMPTY_6": 10
+  },
+  {
+    "__EMPTY": 11,
+    "__EMPTY_1": "Dabigatran",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Phenytoin",
+    "__EMPTY_2": "Giảm tác dụng chống đông.",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp, theo dõi nguy cơ huyết khối.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc cảm ứng P-gp (rifampicin, phenytoin,\ncarbamazepin)",
+    "__EMPTY_6": 11
+  },
+  {
+    "__EMPTY": 12,
+    "__EMPTY_1": "Dabigatran",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "\nCarbamazepin",
+    "__EMPTY_2": "Giảm tác dụng chống đông.",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp, theo dõi nguy cơ huyết khối.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc cảm ứng P-gp (rifampicin, phenytoin,\ncarbamazepin)",
+    "__EMPTY_6": 12
+  },
+  {
+    "__EMPTY": 13,
+    "__EMPTY_1": "Rivaroxaban",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Itraconazol",
+    "__EMPTY_2": "Tăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phải dùng thuốc chống nấm: cân nhắc dùng fluconazol (tương tác không có ý nghĩa lâm sàng). Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_6": 13
+  },
+  {
+    "__EMPTY": 14,
+    "__EMPTY_1": "Rivaroxaban",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Phenytoin",
+    "__EMPTY_2": "Giảm hiệu quả của rivaroxaban.",
+    "__EMPTY_3": "Nên tránh phối hợp. Theo dõi các dấu hiệu giảm hiệu quả điều trị của rivaroxaban.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc cảm ứng CYP3A4 mạnh (phenytoin, carbamazepin, phenobarbital, rifampicin)",
+    "__EMPTY_6": 14
+  },
+  {
+    "__EMPTY": 15,
+    "__EMPTY_1": "Rivaroxaban",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Carbamazepin",
+    "__EMPTY_2": "Giảm hiệu quả của rivaroxaban.",
+    "__EMPTY_3": "Nên tránh phối hợp. Theo dõi các dấu hiệu giảm hiệu quả điều trị của rivaroxaban.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc cảm ứng CYP3A4 mạnh (phenytoin, carbamazepin, phenobarbital, rifampicin)",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 16,
+    "__EMPTY_1": "Rivaroxaban",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Phenobarbital",
+    "__EMPTY_2": "Giảm hiệu quả của rivaroxaban.",
+    "__EMPTY_3": "Nên tránh phối hợp. Theo dõi các dấu hiệu giảm hiệu quả điều trị của rivaroxaban.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc cảm ứng CYP3A4 mạnh (phenytoin, carbamazepin, phenobarbital, rifampicin)",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 17,
+    "__EMPTY_1": "Rivaroxaban",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Rifampicin",
+    "__EMPTY_2": "Giảm hiệu quả của rivaroxaban.",
+    "__EMPTY_3": "Nên tránh phối hợp. Theo dõi các dấu hiệu giảm hiệu quả điều trị của rivaroxaban.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc cảm ứng CYP3A4 mạnh (phenytoin, carbamazepin, phenobarbital, rifampicin)",
+    "__EMPTY_6": 17
+  },
+  {
+    "__EMPTY": 18,
+    "__EMPTY_1": "Thuốc chống kết tập tiểu cầu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc"
+  },
+  {
+    "__EMPTY": 19,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Heparin",
+    "__EMPTY_2": "Tăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: dự phòng nguy cơ xuất huyết bằng PPI. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Heparin và heparin TLPT thấp (enoxaparin, nadroparin)",
+    "__EMPTY_6": 8
+  },
+  {
+    "__EMPTY": 20,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Enoxaparin",
+    "__EMPTY_2": "Tăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: dự phòng nguy cơ xuất huyết bằng PPI. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Heparin và heparin TLPT thấp (enoxaparin, nadroparin)",
+    "__EMPTY_6": 8
+  },
+  {
+    "__EMPTY": 21,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Nadroparin",
+    "__EMPTY_2": "Tăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: dự phòng nguy cơ xuất huyết bằng PPI. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Heparin và heparin TLPT thấp (enoxaparin, nadroparin)",
+    "__EMPTY_6": 8
+  },
+  {
+    "__EMPTY": 22,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Celecoxib",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 23,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Dexibuprofen",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 24,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Diclofenac",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 25,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Etodolac",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 26,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Etoricoxib",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 27,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Flurbiprofen natri",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 28,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ibuprofen",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 29,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ketoprofen",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 30,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ketorolac",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 31,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Meloxicam",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 32,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Naproxen",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 33,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Piroxicam",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 34,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Tenoxicam",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 35,
+    "__EMPTY_1": "Aspirin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Nefopam hydroclorid",
+    "__EMPTY_2": "Aspirin liều cao - NSAIDs: Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_3": "Aspirin liều thấp - NSAIDs: dự phòng bằng PPI khi phối hợp. Aspirin liều cao - NSAIDs: tránh phối hợp. Theo dõi nguy cơ xuất huyết.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 9
+  },
+  {
+    "__EMPTY": 36,
+    "__EMPTY_1": "Clopidogrel",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Fluconazol",
+    "__EMPTY_2": "Giảm hiệu quả của clopidogrel.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp. Nếu phải dùng\nthuốc chống nấm: cân nhắc dùng itraconazol (tương tác không có ý nghĩa lâm sàng).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_6": 10
+  },
+  {
+    "__EMPTY": 37,
+    "__EMPTY_1": "Clopidogrel",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Omeprazol",
+    "__EMPTY_2": "Giảm hiệu quả của clopidogrel.",
+    "__EMPTY_3": "Nên tránh phối hợp. Thay bằng pantoprazol, hoặc đối kháng thụ thể H2 (ranitidin). Theo dõi các dấu\nhiệu giảm hiệu quả điều trị của clopidogrel.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_6": 11
+  },
+  {
+    "__EMPTY": 38,
+    "__EMPTY_1": "Clopidogrel",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Esomeprazol",
+    "__EMPTY_2": "Giảm hiệu quả của clopidogrel.",
+    "__EMPTY_3": "Nên tránh phối hợp. Thay bằng pantoprazol, hoặc đối kháng thụ thể H2 (ranitidin). Theo dõi các dấu\nhiệu giảm hiệu quả điều trị của clopidogrel.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_6": 11
+  },
+  {
+    "__EMPTY": 39,
+    "__EMPTY_1": "Ticagrelor",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Phenytoin",
+    "__EMPTY_2": "Giảm hiệu quả của ticagrelor.",
+    "__EMPTY_3": "Nên tránh phối hợp. Theo dõi các dấu hiệu giảm hiệu quả điều trị của ticagrelor.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc cảm ứng CYP3A4 mạnh (phenytoin, carbamazepin,\nphenobarbital, rifampicin)",
+    "__EMPTY_6": 12
+  },
+  {
+    "__EMPTY": 40,
+    "__EMPTY_1": "Ticagrelor",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Carbamazepin",
+    "__EMPTY_2": "Giảm hiệu quả của ticagrelor.",
+    "__EMPTY_3": "Nên tránh phối hợp. Theo dõi các dấu hiệu giảm hiệu quả điều trị của ticagrelor.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc cảm ứng CYP3A4 mạnh (phenytoin, carbamazepin,\nphenobarbital, rifampicin)",
+    "__EMPTY_6": 12
+  },
+  {
+    "__EMPTY": 41,
+    "__EMPTY_1": "Ticagrelor",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Phenobarbital",
+    "__EMPTY_2": "Giảm hiệu quả của ticagrelor.",
+    "__EMPTY_3": "Nên tránh phối hợp. Theo dõi các dấu hiệu giảm hiệu quả điều trị của ticagrelor.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc cảm ứng CYP3A4 mạnh (phenytoin, carbamazepin,\nphenobarbital, rifampicin)",
+    "__EMPTY_6": 12
+  },
+  {
+    "__EMPTY": 42,
+    "__EMPTY_1": "Ticagrelor",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Rifampicin",
+    "__EMPTY_2": "Giảm hiệu quả của ticagrelor.",
+    "__EMPTY_3": "Nên tránh phối hợp. Theo dõi các dấu hiệu giảm hiệu quả điều trị của ticagrelor.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc cảm ứng CYP3A4 mạnh (phenytoin, carbamazepin,\nphenobarbital, rifampicin)",
+    "__EMPTY_6": 12
+  },
+  {
+    "__EMPTY": 43,
+    "__EMPTY_1": "Ticagrelor",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Clarithromycin",
+    "__EMPTY_2": "Tăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp. Nếu phối hợp, cân nhắc dùng các azol khác (fluconazol, miconazol), macrolid khác (azithromycin, erythromycin)\n(tương tác không có ý nghĩa lâm sàng).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc ức chế CYP3A4 mạnh (clarithromycin, itraconazol)",
+    "__EMPTY_6": 13
+  },
+  {
+    "__EMPTY": 44,
+    "__EMPTY_1": "Ticagrelor",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Itraconazol",
+    "__EMPTY_2": "Tăng nguy cơ xuất huyết.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp. Nếu phối hợp, cân nhắc dùng các azol khác (fluconazol, miconazol), macrolid khác (azithromycin, erythromycin)\n(tương tác không có ý nghĩa lâm sàng).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc ức chế CYP3A4 mạnh (clarithromycin, itraconazol)",
+    "__EMPTY_6": 13
+  },
+  {
+    "__EMPTY": 45,
+    "__EMPTY_1": "Thuốc lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc"
+  },
+  {
+    "__EMPTY": 46,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Kali, chế phẩm chứa kali",
+    "__EMPTY_2": "Tăng kali máu.",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận\ncủa bệnh nhân.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Kali, chế phẩm chứa kali",
+    "__EMPTY_6": 14
+  },
+  {
+    "__EMPTY": 47,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Captopril",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 48,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Enalapril",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 49,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Lacidipin",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 50,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Lercanidipin hydroclorid",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 51,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Lisinopril",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 52,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Perindopril",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 53,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Perindopril + amlodipin",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 54,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Perindopril + indapamid",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 55,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Quinapril",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 56,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ramipril",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 57,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Atorvastatin + Amlodipin + perindopril",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 58,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Candesartan",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 59,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Lacidipin",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 60,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Lercanidipin hydroclorid",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 61,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Losartan",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 62,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Telmisartan",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 63,
+    "__EMPTY_1": "Spironolacton",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Valsartan",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giám sát chặt chẽ nồng độ kali huyết thanh và chức năng thận của bệnh nhân. Sử dụng liều spironolacton thấp nhất có hiệu quả (25 mg/ngày).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ức chế men chuyển và chẹn thụ thể AT II",
+    "__EMPTY_6": 15
+  },
+  {
+    "__EMPTY": 64,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Celecoxib",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 65,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Dexibuprofen",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 66,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Diclofenac",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 67,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Etodolac",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 68,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Etoricoxib",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 69,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Flurbiprofen natri",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 70,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ibuprofen",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 71,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ketoprofen",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 72,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ketorolac",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 73,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Meloxicam",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 74,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Naproxen",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 75,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Piroxicam",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 76,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Tenoxicam",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 77,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Nefopam hydroclorid",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 78,
+    "__EMPTY_1": "Furosemid",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Aceclofenac",
+    "__EMPTY_2": "Giảm hiệu quả thuốc lợi tiểu và tăng độc với thận",
+    "__EMPTY_3": "Nên tránh phối hợp. Khi sử dụng đồng thời hai thuốc trên cần theo dõi chức năng thận và đảm bảo hiệu quả lợi tiểu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "NSAIDs – Các thuốc chống viêm không steroid",
+    "__EMPTY_6": 16
+  },
+  {
+    "__EMPTY": 79,
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc"
+  },
+  {
+    "__EMPTY": 80,
+    "__EMPTY_1": "Thuốc điều trị rối loạn lipid máu",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc"
+  },
+  {
+    "__EMPTY": 81,
+    "__EMPTY_1": "Simvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Amiodaron ",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: liều simvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp. Thận trọng với atorvastatin, fluvastatin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc"
+  },
+  {
+    "__EMPTY": 82,
+    "__EMPTY_1": "Simvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ciclosporin",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Ciclosporin - simvastatin, rosuvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Ciclosporin - atorvastatin, fluvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 10 mg/ngày, liều fluvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ciclosporin - simvastatin, rosuvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Ciclosporin - atorvastatin, fluvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 10 mg/ngày, liều fluvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp.",
+    "__EMPTY_6": 18
+  },
+  {
+    "__EMPTY": 83,
+    "__EMPTY_1": "Rosuvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ciclosporin",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Ciclosporin - simvastatin, rosuvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Ciclosporin - atorvastatin, fluvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 10 mg/ngày, liều fluvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ciclosporin - simvastatin, rosuvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Ciclosporin - atorvastatin, fluvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 10 mg/ngày, liều fluvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp.",
+    "__EMPTY_6": 18
+  },
+  {
+    "__EMPTY": 84,
+    "__EMPTY_1": "Atorvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ciclosporin",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Ciclosporin - simvastatin, rosuvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Ciclosporin - atorvastatin, fluvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 10 mg/ngày, liều fluvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ciclosporin - simvastatin, rosuvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Ciclosporin - atorvastatin, fluvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 10 mg/ngày, liều fluvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp.",
+    "__EMPTY_6": 18
+  },
+  {
+    "__EMPTY": 85,
+    "__EMPTY_1": " Fluvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ciclosporin",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Ciclosporin - simvastatin, rosuvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Ciclosporin - atorvastatin, fluvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 10 mg/ngày, liều fluvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ciclosporin - simvastatin, rosuvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Ciclosporin - atorvastatin, fluvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 10 mg/ngày, liều fluvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp.",
+    "__EMPTY_6": 18
+  },
+  {
+    "__EMPTY": 86,
+    "__EMPTY_1": "Simvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Gemfibrozil",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Gemfibrozil - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp.\nfluvastatin và gemfibrozil. Thận trọng khi phối hợp fenofibrat và simvastatin, atorvastatin, rosuvastatin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Gemfibrozil - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Gemfibrozil - rosuvastatin, atorvastatin: nên tránh phối hợp. Theo dõi nguy cơ bệnh cơ hoặc\ntiêu cơ vân cấp. Thận trọng khi phối hợp\nfluvastatin và gemfibrozil. Thận trọng khi phối hợp fenofibrat và simvastatin, atorvastatin, rosuvastatin.",
+    "__EMPTY_6": 19
+  },
+  {
+    "__EMPTY": 87,
+    "__EMPTY_1": "Simvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Fenofibrat",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Thận trọng khi phối hợp fenofibrat và simvastatin, atorvastatin, rosuvastatin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Gemfibrozil - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Gemfibrozil - rosuvastatin, atorvastatin: nên tránh phối hợp. Theo dõi nguy cơ bệnh cơ hoặc\ntiêu cơ vân cấp. Thận trọng khi phối hợp\nfluvastatin và gemfibrozil. Thận trọng khi phối hợp fenofibrat và simvastatin, atorvastatin, rosuvastatin.",
+    "__EMPTY_6": 19
+  },
+  {
+    "__EMPTY": 88,
+    "__EMPTY_1": "Atorvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Fenofibrat",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Thận trọng khi phối hợp fenofibrat và simvastatin, atorvastatin, rosuvastatin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Gemfibrozil - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Gemfibrozil - rosuvastatin, atorvastatin: nên tránh phối hợp. Theo dõi nguy cơ bệnh cơ hoặc\ntiêu cơ vân cấp. Thận trọng khi phối hợp\nfluvastatin và gemfibrozil. Thận trọng khi phối hợp fenofibrat và simvastatin, atorvastatin, rosuvastatin.",
+    "__EMPTY_6": 19
+  },
+  {
+    "__EMPTY": 89,
+    "__EMPTY_1": "Rosuvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Fenofibrat",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Thận trọng khi phối hợp fenofibrat và simvastatin, atorvastatin, rosuvastatin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Gemfibrozil - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Gemfibrozil - rosuvastatin, atorvastatin: nên tránh phối hợp. Theo dõi nguy cơ bệnh cơ hoặc\ntiêu cơ vân cấp. Thận trọng khi phối hợp\nfluvastatin và gemfibrozil. Thận trọng khi phối hợp fenofibrat và simvastatin, atorvastatin, rosuvastatin.",
+    "__EMPTY_6": 19
+  },
+  {
+    "__EMPTY": 90,
+    "__EMPTY_1": "Atorvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Gemfibrozil",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Gemfibrozil - Atorvastatin: nên tránh phối hợp. Theo dõi nguy cơ bệnh cơ hoặc\ntiêu cơ vân cấp. \n ",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Gemfibrozil - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Gemfibrozil - rosuvastatin, atorvastatin: nên tránh phối hợp. Theo dõi nguy cơ bệnh cơ hoặc\ntiêu cơ vân cấp. Thận trọng khi phối hợp\nfluvastatin và gemfibrozil. Thận trọng khi phối hợp fenofibrat và simvastatin, atorvastatin, rosuvastatin.",
+    "__EMPTY_6": 19
+  },
+  {
+    "__EMPTY": 91,
+    "__EMPTY_1": "Rosuvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Gemfibrozil",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Gemfibrozil - Rosuvastatinnên tránh phối hợp. Theo dõi nguy cơ bệnh cơ hoặc\ntiêu cơ vân cấp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Gemfibrozil - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Gemfibrozil - rosuvastatin, atorvastatin: nên tránh phối hợp. Theo dõi nguy cơ bệnh cơ hoặc\ntiêu cơ vân cấp. Thận trọng khi phối hợp\nfluvastatin và gemfibrozil. Thận trọng khi phối hợp fenofibrat và simvastatin, atorvastatin, rosuvastatin.",
+    "__EMPTY_6": 19
+  },
+  {
+    "__EMPTY": 92,
+    "__EMPTY_1": "Fluvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Gemfibrozil",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Thận trọng khi phối hợp fluvastatin và gemfibrozil. ",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Gemfibrozil - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Gemfibrozil - rosuvastatin, atorvastatin: nên tránh phối hợp. Theo dõi nguy cơ bệnh cơ hoặc\ntiêu cơ vân cấp. Thận trọng khi phối hợp\nfluvastatin và gemfibrozil. Thận trọng khi phối hợp fenofibrat và simvastatin, atorvastatin, rosuvastatin.",
+    "__EMPTY_6": 19
+  },
+  {
+    "__EMPTY": 93,
+    "__EMPTY_1": "Atorvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Itraconazol",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Itraconazol - atorvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin. Thận trọng với\nfluconazol.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Itraconazol - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Itraconazol - atorvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin. Thận trọng với\nfluconazol.",
+    "__EMPTY_6": 20
+  },
+  {
+    "__EMPTY": 94,
+    "__EMPTY_1": "Simvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Itraconazol",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Itraconazol - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin. Thận trọng với fluconazol.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Itraconazol - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Itraconazol - atorvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin. Thận trọng với\nfluconazol.",
+    "__EMPTY_6": 20
+  },
+  {
+    "__EMPTY": 95,
+    "__EMPTY_1": "Atorvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Fluconazol.",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Thận trọng khi phối hợp fluconazol- atorvastatin, simvastatin",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Itraconazol - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Itraconazol - atorvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin. Thận trọng với\nfluconazol.",
+    "__EMPTY_6": 20
+  },
+  {
+    "__EMPTY": 96,
+    "__EMPTY_1": "Simvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Fluconazol.",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Thận trọng  khi phối hợp với fluconazol- atorvastatin, simvastatin",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Itraconazol - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Itraconazol - atorvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin. Thận trọng với\nfluconazol.",
+    "__EMPTY_6": 20
+  },
+  {
+    "__EMPTY": 97,
+    "__EMPTY_1": "Atorvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Erythromycin",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Erythromycin, clarithromycin - atorvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin hoặc thay erythromycin, clarithromycin bằng azithromycin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Erythromycin, clarithromycin - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Erythromycin, clarithromycin - atorvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin hoặc thay erythromycin,\nclarithromycin bằng azithromycin.",
+    "__EMPTY_6": 21
+  },
+  {
+    "__EMPTY": 98,
+    "__EMPTY_1": "Atorvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Clarithromycin",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Erythromycin, clarithromycin - atorvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin hoặc thay erythromycin, clarithromycin bằng azithromycin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Erythromycin, clarithromycin - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Erythromycin, clarithromycin - atorvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin hoặc thay erythromycin,\nclarithromycin bằng azithromycin.",
+    "__EMPTY_6": 21
+  },
+  {
+    "__EMPTY": 99,
+    "__EMPTY_1": "Simvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Erythromycin",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Erythromycin, clarithromycin - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin hoặc thay erythromycin, clarithromycin bằng azithromycin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Erythromycin, clarithromycin - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Erythromycin, clarithromycin - atorvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin hoặc thay erythromycin,\nclarithromycin bằng azithromycin.",
+    "__EMPTY_6": 21
+  },
+  {
+    "__EMPTY": 100,
+    "__EMPTY_1": "Simvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Clarithromycin",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Erythromycin, clarithromycin - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin hoặc thay erythromycin, clarithromycin bằng azithromycin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Erythromycin, clarithromycin - simvastatin: CHỐNG CHỈ ĐỊNH phối hợp. Erythromycin, clarithromycin - atorvastatin: nên tránh phối hợp. Nếu phối hợp: liều atorvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bệnh cơ hoặc tiêu cơ vân cấp. Thay atorvastatin, simvastatin bằng fluvastatin, rosuvastatin hoặc thay erythromycin,\nclarithromycin bằng azithromycin.",
+    "__EMPTY_6": 21
+  },
+  {
+    "__EMPTY": 101,
+    "__EMPTY_1": "Simvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Diltiazem",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: Simvastatin - diltiazem: liều simvastatin không vượt quá 10 mg/ngày. Simvastatin - amlodipin: liều simvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bênh cơ hoặc tiêu cơ vân cấp. Thận trọng với atorvastatin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Nên tránh phối hợp. Nếu phối hợp: Simvastatin - diltiazem: liều simvastatin không vượt quá 10 mg/ngày. Simvastatin - amlodipin: liều simvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bênh cơ hoặc tiêu cơ vân cấp. Thận trọng với atorvastatin.",
+    "__EMPTY_6": 22
+  },
+  {
+    "__EMPTY": 102,
+    "__EMPTY_1": "Simvastatin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Amlodipin",
+    "__EMPTY_2": "Tăng nguy cơ bệnh cơ hoặc tiêu cơ vân cấp (đau cơ, mỏi cơ, yếu cơ).",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: Simvastatin - diltiazem: liều simvastatin không vượt quá 10 mg/ngày. Simvastatin - amlodipin: liều simvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bênh cơ hoặc tiêu cơ vân cấp. Thận trọng với atorvastatin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Nên tránh phối hợp. Nếu phối hợp: Simvastatin - diltiazem: liều simvastatin không vượt quá 10 mg/ngày. Simvastatin - amlodipin: liều simvastatin không vượt quá 20 mg/ngày. Theo dõi nguy cơ bênh cơ hoặc tiêu cơ vân cấp. Thận trọng với atorvastatin.",
+    "__EMPTY_6": 22
+  },
+  {
+    "__EMPTY": 103,
+    "__EMPTY_1": "Thuốc điều trị suy tim",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc"
+  },
+  {
+    "__EMPTY": 104,
+    "__EMPTY_1": "Digoxin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Amiodaron",
+    "__EMPTY_2": "Tăng nguy cơ độc tính của digoxin (buồn nôn, nôn, loạn\nnhịp tim).",
+    "__EMPTY_3": "Nên tránh phối hợp. Nếu phối hợp: giảm liều khởi đầu của digoxin xuống còn 1/2 - 2/3 liều thông\nthường. Theo dõi nguy cơ độc tính của digoxin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Nên tránh phối hợp. Nếu phối hợp: giảm liều khởi đầu của digoxin xuống còn 1/2 - 2/3 liều thông\nthường. Theo dõi nguy cơ độc tính của digoxin.",
+    "__EMPTY_6": 23
+  },
+  {
+    "__EMPTY": 105,
+    "__EMPTY_1": "Digoxin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Clarithromycin",
+    "__EMPTY_2": "Tăng nguy cơ độc tính của digoxin (buồn nôn, nôn, loạn nhịp tim).",
+    "__EMPTY_3": "Nên tránh phối hợp. Thay clarithromycin bằng azithromycin. Nếu phối hợp: nên giảm liều digoxin. Theo dõi nguy cơ độc tính của digoxin.\nThận trọng với erythromycin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Nên tránh phối hợp. Thay clarithromycin bằng azithromycin. Nếu phối hợp: nên giảm liều digoxin. Theo dõi nguy cơ độc tính của digoxin.\nThận trọng với erythromycin.",
+    "__EMPTY_6": 24
+  },
+  {
+    "__EMPTY": 106,
+    "__EMPTY_1": "Thuốc điều trị THA",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc"
+  },
+  {
+    "__EMPTY": 107,
+    "__EMPTY_1": "Diltiazem",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Carbamazepin",
+    "__EMPTY_2": "Tăng nguy cơ độc tính của carbamazepin (chóng mặt, nhìn đôi, mất điều hòa vận động, rối loạn tâm thần), giảm hiệu quả của các thuốc chẹn kênh canxi.",
+    "__EMPTY_3": "Carbamazepin - nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Carbamazepin - diltiazem: nên tránh phối hợp. Nếu phối hợp: giảm  liều carbamazepin xuống còn 1/2 liều thông thường và hiệu chỉnh liều theo đáp ứng lâm sàng. Carbamezepin - nifedipin, felodipin: nên tránh phối hợp. Nếu phối hợp: nên tăng liều nifedipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng. Theo dõi nguy cơ độc tính của carbamazepin và các dấu hiệu giảm hiệu quả điều trị của các thuốc chẹn kênh canxi.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Carbamazepin - nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Carbamazepin - diltiazem: nên tránh phối hợp. Nếu phối hợp: giảm  liều carbamazepin xuống còn 1/2 liều thông thường và hiệu chỉnh liều theo đáp ứng lâm sàng. Carbamezepin - nifedipin, felodipin: nên tránh phối hợp. Nếu phối hợp: nên tăng liều nifedipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng. Theo dõi nguy cơ độc tính của carbamazepin và các dấu hiệu giảm hiệu quả điều trị của các thuốc chẹn kênh canxi.",
+    "__EMPTY_6": 25
+  },
+  {
+    "__EMPTY": 108,
+    "__EMPTY_1": "Nimodipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Carbamazepin",
+    "__EMPTY_2": "Tăng nguy cơ độc tính của carbamazepin (chóng mặt, nhìn đôi, mất điều hòa vận động, rối loạn tâm thần), giảm hiệu quả của các thuốc chẹn kênh canxi.",
+    "__EMPTY_3": "Carbamazepin - nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Carbamazepin - diltiazem: nên tránh phối hợp. Nếu phối hợp: giảm  liều carbamazepin xuống còn 1/2 liều thông thường và hiệu chỉnh liều theo đáp ứng lâm sàng. Carbamezepin - nifedipin, felodipin: nên tránh phối hợp. Nếu phối hợp: nên tăng liều nifedipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng. Theo dõi nguy cơ độc tính của carbamazepin và các dấu hiệu giảm hiệu quả điều trị của các thuốc chẹn kênh canxi.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Carbamazepin - nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Carbamazepin - diltiazem: nên tránh phối hợp. Nếu phối hợp: giảm  liều carbamazepin xuống còn 1/2 liều thông thường và hiệu chỉnh liều theo đáp ứng lâm sàng. Carbamezepin - nifedipin, felodipin: nên tránh phối hợp. Nếu phối hợp: nên tăng liều nifedipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng. Theo dõi nguy cơ độc tính của carbamazepin và các dấu hiệu giảm hiệu quả điều trị của các thuốc chẹn kênh canxi.",
+    "__EMPTY_6": 25
+  },
+  {
+    "__EMPTY": 109,
+    "__EMPTY_1": "Nifedipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Carbamazepin",
+    "__EMPTY_2": "Tăng nguy cơ độc tính của carbamazepin (chóng mặt, nhìn đôi, mất điều hòa vận động, rối loạn tâm thần), giảm hiệu quả của các thuốc chẹn kênh canxi.",
+    "__EMPTY_3": "Carbamazepin - nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Carbamazepin - diltiazem: nên tránh phối hợp. Nếu phối hợp: giảm  liều carbamazepin xuống còn 1/2 liều thông thường và hiệu chỉnh liều theo đáp ứng lâm sàng. Carbamezepin - nifedipin, felodipin: nên tránh phối hợp. Nếu phối hợp: nên tăng liều nifedipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng. Theo dõi nguy cơ độc tính của carbamazepin và các dấu hiệu giảm hiệu quả điều trị của các thuốc chẹn kênh canxi.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Carbamazepin - nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Carbamazepin - diltiazem: nên tránh phối hợp. Nếu phối hợp: giảm  liều carbamazepin xuống còn 1/2 liều thông thường và hiệu chỉnh liều theo đáp ứng lâm sàng. Carbamezepin - nifedipin, felodipin: nên tránh phối hợp. Nếu phối hợp: nên tăng liều nifedipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng. Theo dõi nguy cơ độc tính của carbamazepin và các dấu hiệu giảm hiệu quả điều trị của các thuốc chẹn kênh canxi.",
+    "__EMPTY_6": 25
+  },
+  {
+    "__EMPTY": 110,
+    "__EMPTY_1": "Felodipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Carbamazepin",
+    "__EMPTY_2": "Tăng nguy cơ độc tính của carbamazepin (chóng mặt, nhìn đôi, mất điều hòa vận động, rối loạn tâm thần), giảm hiệu quả của các thuốc chẹn kênh canxi.",
+    "__EMPTY_3": "Carbamazepin - nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Carbamazepin - diltiazem: nên tránh phối hợp. Nếu phối hợp: giảm  liều carbamazepin xuống còn 1/2 liều thông thường và hiệu chỉnh liều theo đáp ứng lâm sàng. Carbamezepin - nifedipin, felodipin: nên tránh phối hợp. Nếu phối hợp: nên tăng liều nifedipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng. Theo dõi nguy cơ độc tính của carbamazepin và các dấu hiệu giảm hiệu quả điều trị của các thuốc chẹn kênh canxi.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Carbamazepin - nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Carbamazepin - diltiazem: nên tránh phối hợp. Nếu phối hợp: giảm  liều carbamazepin xuống còn 1/2 liều thông thường và hiệu chỉnh liều theo đáp ứng lâm sàng. Carbamezepin - nifedipin, felodipin: nên tránh phối hợp. Nếu phối hợp: nên tăng liều nifedipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng. Theo dõi nguy cơ độc tính của carbamazepin và các dấu hiệu giảm hiệu quả điều trị của các thuốc chẹn kênh canxi.",
+    "__EMPTY_6": 25
+  },
+  {
+    "__EMPTY": 111,
+    "__EMPTY_1": "Nimodipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Phenobarbital",
+    "__EMPTY_2": "Giảm hiệu quả của các thuốc chẹn kênh canxi.",
+    "__EMPTY_3": "Phenobarbital - nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin, lercanidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Phenobarbital - nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Phenobarbital - nifedipin, felodipin: nên tăng liều nifedipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin,\nlercanidipin).",
+    "__EMPTY_6": 26
+  },
+  {
+    "__EMPTY": 112,
+    "__EMPTY_1": "Nifedipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Phenobarbital",
+    "__EMPTY_2": "Giảm hiệu quả của các thuốc chẹn kênh canxi.",
+    "__EMPTY_3": "Phenobarbital - nifedipin: nên tăng liều nifedipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin,\nlercanidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Phenobarbital - nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Phenobarbital - nifedipin, felodipin: nên tăng liều nifedipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin,\nlercanidipin).",
+    "__EMPTY_6": 26
+  },
+  {
+    "__EMPTY": 113,
+    "__EMPTY_1": "Felodipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Phenobarbital",
+    "__EMPTY_2": "Giảm hiệu quả của các thuốc chẹn kênh canxi.",
+    "__EMPTY_3": "Phenobarbital - Felodipin: nên tăng liều nifedipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin,\nlercanidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Phenobarbital - nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Phenobarbital - nifedipin, felodipin: nên tăng liều nifedipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin,\nlercanidipin).",
+    "__EMPTY_6": 26
+  },
+  {
+    "__EMPTY": 114,
+    "__EMPTY_1": "Diltiazem",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Rifampicin",
+    "__EMPTY_2": "Giảm hiệu quả của các thuốc chẹn kênh canxi.",
+    "__EMPTY_3": "Rifampicin - diltiazem, lercanidipin, felodipin: nên tăng liều diltiazem, lercanidipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng.. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Rifampicin - nifedipin, nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Rifampicin - diltiazem, lercanidipin, felodipin: nên tăng liều diltiazem, lercanidipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng.. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 27
+  },
+  {
+    "__EMPTY": 115,
+    "__EMPTY_1": "Nimodipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Rifampicin",
+    "__EMPTY_2": "Giảm hiệu quả của các thuốc chẹn kênh canxi.",
+    "__EMPTY_3": "Rifampicin - nifedipin, nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Rifampicin - nifedipin, nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Rifampicin - diltiazem, lercanidipin, felodipin: nên tăng liều diltiazem, lercanidipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng.. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 27
+  },
+  {
+    "__EMPTY": 116,
+    "__EMPTY_1": "Nifedipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Rifampicin",
+    "__EMPTY_2": "Giảm hiệu quả của các thuốc chẹn kênh canxi.",
+    "__EMPTY_3": "Rifampicin - nifedipin, nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Rifampicin - nifedipin, nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Rifampicin - diltiazem, lercanidipin, felodipin: nên tăng liều diltiazem, lercanidipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng.. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 27
+  },
+  {
+    "__EMPTY": 117,
+    "__EMPTY_1": "Felodipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Rifampicin",
+    "__EMPTY_2": "Giảm hiệu quả của các thuốc chẹn kênh canxi.",
+    "__EMPTY_3": "Rifampicin - diltiazem, lercanidipin, felodipin: nên tăng liều diltiazem, lercanidipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng.. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Rifampicin - nifedipin, nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Rifampicin - diltiazem, lercanidipin, felodipin: nên tăng liều diltiazem, lercanidipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng.. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 27
+  },
+  {
+    "__EMPTY": 118,
+    "__EMPTY_1": "Lercanidipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Rifampicin",
+    "__EMPTY_2": "Giảm hiệu quả của các thuốc chẹn kênh canxi.",
+    "__EMPTY_3": "Rifampicin - diltiazem, lercanidipin, felodipin: nên tăng liều diltiazem, lercanidipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng.. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Rifampicin - nifedipin, nimodipin: CHỐNG CHỈ ĐỊNH phối hợp. Rifampicin - diltiazem, lercanidipin, felodipin: nên tăng liều diltiazem, lercanidipin, felodipin và hiệu chỉnh liều theo đáp ứng lâm sàng.. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 27
+  },
+  {
+    "__EMPTY": 119,
+    "__EMPTY_1": "Nifedipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Itraconazol",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Nifedipin - itraconazol: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin) và fluconazol.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lercanidipin - itraconazol: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin) và fluconazol.",
+    "__EMPTY_6": 28
+  },
+  {
+    "__EMPTY": 120,
+    "__EMPTY_1": "Lercanidipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Itraconazol",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Lercanidipin - itraconazol: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin) và fluconazol.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lercanidipin - itraconazol: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin) và fluconazol.",
+    "__EMPTY_6": 28
+  },
+  {
+    "__EMPTY": 121,
+    "__EMPTY_1": "Nimodipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Itraconazol",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Lercanidipin - itraconazol: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin) và fluconazol.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lercanidipin - itraconazol: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin) và fluconazol.",
+    "__EMPTY_6": 28
+  },
+  {
+    "__EMPTY": 122,
+    "__EMPTY_1": "Felodipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Itraconazol",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Felodipin - itraconazol: Nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin) và fluconazol.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lercanidipin - itraconazol: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, diltiazem, lacidipin) và fluconazol.",
+    "__EMPTY_6": 28
+  },
+  {
+    "__EMPTY": 123,
+    "__EMPTY_1": "Nimodipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Erythromycin",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Nimodipin – erythromycin, clarithromycin: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lecarnidipin – erythromycin, clarithromycin: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 29
+  },
+  {
+    "__EMPTY": 124,
+    "__EMPTY_1": "Nifedipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Erythromycin",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Nifedipin – erythromycin, clarithromycin: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lecarnidipin – erythromycin, clarithromycin: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 29
+  },
+  {
+    "__EMPTY": 125,
+    "__EMPTY_1": "Lercanidipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Erythromycin",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Lecarnidipin – erythromycin, clarithromycin: CHỐNG CHỈ ĐỊNH phối hợp. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lecarnidipin – erythromycin, clarithromycin: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 29
+  },
+  {
+    "__EMPTY": 126,
+    "__EMPTY_1": "Felodipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Erythromycin",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Felodipin – erythromycin, clarithromycin: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lecarnidipin – erythromycin, clarithromycin: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 29
+  },
+  {
+    "__EMPTY": 127,
+    "__EMPTY_1": "Diltiazem",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Erythromycin",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Diltiazem – erythromycin, clarithromycin: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lecarnidipin – erythromycin, clarithromycin: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 29
+  },
+  {
+    "__EMPTY": 128,
+    "__EMPTY_1": "Nimodipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Clarithromycin",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Nimodipin – erythromycin, clarithromycin: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lecarnidipin – erythromycin, clarithromycin: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 29
+  },
+  {
+    "__EMPTY": 129,
+    "__EMPTY_1": "Nifedipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Clarithromycin",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Nifedipin – erythromycin, clarithromycin: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lecarnidipin – erythromycin, clarithromycin: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 29
+  },
+  {
+    "__EMPTY": 130,
+    "__EMPTY_1": "Lercanidipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Clarithromycin",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Lecarnidipin – erythromycin, clarithromycin: CHỐNG CHỈ ĐỊNH phối hợp. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lecarnidipin – erythromycin, clarithromycin: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 29
+  },
+  {
+    "__EMPTY": 131,
+    "__EMPTY_1": "Felodipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Clarithromycin",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Felodipin – erythromycin, clarithromycin: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lecarnidipin – erythromycin, clarithromycin: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 29
+  },
+  {
+    "__EMPTY": 132,
+    "__EMPTY_1": "Diltiazem",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Clarithromycin",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "Diltiazem – erythromycin, clarithromycin: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Lecarnidipin – erythromycin, clarithromycin: CHỐNG CHỈ ĐỊNH phối hợp. Các cặp tương tác còn lại: nên tránh phối hợp. Nếu phối hợp: nên giảm liều các thuốc chẹn kênh canxi và hiệu chỉnh liều theo đáp ứng lâm sàng. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, lacidipin).",
+    "__EMPTY_6": 29
+  },
+  {
+    "__EMPTY": 133,
+    "__EMPTY_1": "Lercanidipin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ciclosporin",
+    "__EMPTY_2": "Tăng nguy cơ độc tính của ciclosporin (suy thận, tắc mật, dị cảm), tăng nguy cơ tăng sản lợi.",
+    "__EMPTY_3": "Ciclosporin - lercanidipin: nên tránh phối hợp. Nếu phối hợp: dùng cách nhau 3 giờ. Ciclosporin -\n Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin,\nfelodipin, lacidipin, nifedipin, nimodipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ciclosporin - lercanidipin: nên tránh phối hợp. Nếu phối hợp: dùng cách nhau 3 giờ. Ciclosporin -\ndiltiazem: nên tránh phối hợp. Nếu phối hợp: giảm 1/2 liều ciclosporin và hiệu chỉnh liều theo đáp ứng lâm sàng. Theo dõi nguy cơ độc tính của ciclosporin và nguy cơ tăng sản lợi. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin,\nfelodipin, lacidipin, nifedipin, nimodipin).",
+    "__EMPTY_6": 30
+  },
+  {
+    "__EMPTY": 134,
+    "__EMPTY_1": "Diltiazem",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Ciclosporin",
+    "__EMPTY_2": "Tăng nguy cơ độc tính của ciclosporin (suy thận, tắc mật, dị cảm), tăng nguy cơ tăng sản lợi.",
+    "__EMPTY_3": "Ciclosporin - diltiazem: nên tránh phối hợp. Nếu phối hợp: giảm 1/2 liều ciclosporin và hiệu chỉnh liều theo đáp ứng lâm sàng. Theo dõi nguy cơ độc tính của ciclosporin và nguy cơ tăng sản lợi. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin, felodipin, lacidipin, nifedipin, nimodipin).",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Ciclosporin - lercanidipin: nên tránh phối hợp. Nếu phối hợp: dùng cách nhau 3 giờ. Ciclosporin -\ndiltiazem: nên tránh phối hợp. Nếu phối hợp: giảm 1/2 liều ciclosporin và hiệu chỉnh liều theo đáp ứng lâm sàng. Theo dõi nguy cơ độc tính của ciclosporin và nguy cơ tăng sản lợi. Thận trọng với các thuốc chẹn kênh canxi khác (amlodipin,\nfelodipin, lacidipin, nifedipin, nimodipin).",
+    "__EMPTY_6": 30
+  },
+  {
+    "__EMPTY": 135,
+    "__EMPTY_1": "Khác",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc"
+  },
+  {
+    "__EMPTY": 136,
+    "__EMPTY_1": "Isosorbid (dinitrat hoặc mononitrat)",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Sildenafil",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp. Không dùng đồng\nthời hai thuốc trong vòng 24 giờ.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Nitrat (isosorbid,\nnitroglycerin, nicorandil)",
+    "__EMPTY_6": 31
+  },
+  {
+    "__EMPTY": 137,
+    "__EMPTY_1": "Isosorbid (dinitrat hoặc mononitrat)",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Vardenafil",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp. Không dùng đồng\nthời hai thuốc trong vòng 24 giờ.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Nitrat (isosorbid, nitroglycerin, nicorandil) tương tác với Sildenafil, vardenafil",
+    "__EMPTY_6": 31
+  },
+  {
+    "__EMPTY": 138,
+    "__EMPTY_1": "Glyceryl trinitrat (Nitroglycerin)",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Sildenafil",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp. Không dùng đồng\nthời hai thuốc trong vòng 24 giờ.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Nitrat (isosorbid, nitroglycerin, nicorandil) tương tác với Sildenafil, vardenafil",
+    "__EMPTY_6": 31
+  },
+  {
+    "__EMPTY": 139,
+    "__EMPTY_1": "Glyceryl trinitrat (Nitroglycerin)",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Vardenafil",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp. Không dùng đồng\nthời hai thuốc trong vòng 24 giờ.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Nitrat (isosorbid, nitroglycerin, nicorandil) tương tác với Sildenafil, vardenafil",
+    "__EMPTY_6": 31
+  },
+  {
+    "__EMPTY": 140,
+    "__EMPTY_1": "Nicorandil",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Sildenafil",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp. Không dùng đồng\nthời hai thuốc trong vòng 24 giờ.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Nitrat (isosorbid, nitroglycerin, nicorandil) tương tác với Sildenafil, vardenafil",
+    "__EMPTY_6": 31
+  },
+  {
+    "__EMPTY": 141,
+    "__EMPTY_1": "Nicorandil",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Vardenafil",
+    "__EMPTY_2": "Tăng tác dụng hạ huyết áp.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp. Không dùng đồng\nthời hai thuốc trong vòng 24 giờ.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Nitrat (isosorbid, nitroglycerin, nicorandil) tương tác với Sildenafil, vardenafil",
+    "__EMPTY_6": 31
+  },
+  {
+    "__EMPTY": 142,
+    "__EMPTY_1": "Diltiazem",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Domperidon",
+    "__EMPTY_2": "Tăng nguy cơ kéo dài khoảng\nQT",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_6": 32
+  },
+  {
+    "__EMPTY": 143,
+    "__EMPTY_1": "Diltiazem",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Colchicin",
+    "__EMPTY_2": "Tăng nguy cơ độc tính của colchicin (tiêu chảy, nôn, đau bụng, sốt, xuất huyết, giảm toàn thể huyết cầu, các dấu hiệu độc tính trên cơ như đau cơ, mỏi cơ hoặc yếu cơ, nước tiểu sẫm màu, dị cảm, trường hợp nặng có thể gây suy đa tạng và tử vong).",
+    "__EMPTY_3": "Ở bệnh nhân suy gan hoặc suy thận: CHỐNG CHỈ ĐỊNH phối hợp. Ở bệnh nhân chức năng gan, thận bình thường: nên tránh phối hợp. Nếu phối hợp: giảm liều colchicin xuống còn 1/2 liều thông thường. Dùng liều tiếp theo của colchicin sau 3 ngày. Theo dõi nguy cơ độc tính của colchicin.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_6": 33
+  },
+  {
+    "__EMPTY": 144,
+    "__EMPTY_1": "Ivabradin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Itraconazol",
+    "__EMPTY_2": "Tăng nguy cơ chậm nhịp tim.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc ức chế CYP3A4 (itraconazol,clarithromycin,\nerythromycin, diltiazem)",
+    "__EMPTY_6": 34
+  },
+  {
+    "__EMPTY": 145,
+    "__EMPTY_1": "Ivabradin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Clarithromycin",
+    "__EMPTY_2": "Tăng nguy cơ chậm nhịp tim.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc ức chế CYP3A4 (itraconazol,clarithromycin,\nerythromycin, diltiazem)",
+    "__EMPTY_6": 34
+  },
+  {
+    "__EMPTY": 146,
+    "__EMPTY_1": "Ivabradin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Erythromycin",
+    "__EMPTY_2": "Tăng nguy cơ chậm nhịp tim.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc ức chế CYP3A4 (itraconazol,clarithromycin,\nerythromycin, diltiazem)",
+    "__EMPTY_6": 34
+  },
+  {
+    "__EMPTY": 147,
+    "__EMPTY_1": "Ivabradin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Diltiazem",
+    "__EMPTY_2": "Tăng nguy cơ chậm nhịp tim.",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc ức chế CYP3A4 (itraconazol,clarithromycin,\nerythromycin, diltiazem)",
+    "__EMPTY_6": 34
+  },
+  {
+    "__EMPTY": 148,
+    "__EMPTY_1": "Amiodaron",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Amisulprid",
+    "__EMPTY_2": "Tăng nguy cơ kéo dài khoảng QT",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "amisulprid, amitriptylin, citalopram, cloroquin, clorpromazin, escitalopram, haloperidol, hydroxycloroquin, hydroxyzin, levomepromazin,\nmoxifloxacin.",
+    "__EMPTY_6": 35
+  },
+  {
+    "__EMPTY": 149,
+    "__EMPTY_1": "Amiodaron",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Amitriptylin",
+    "__EMPTY_2": "Tăng nguy cơ kéo dài khoảng QT",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "amisulprid, amitriptylin, citalopram, cloroquin, clorpromazin, escitalopram, haloperidol, hydroxycloroquin, hydroxyzin, levomepromazin,\nmoxifloxacin.",
+    "__EMPTY_6": 35
+  },
+  {
+    "__EMPTY": 150,
+    "__EMPTY_1": "Amiodaron",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Citalopram",
+    "__EMPTY_2": "Tăng nguy cơ kéo dài khoảng QT",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "amisulprid, amitriptylin, citalopram, cloroquin, clorpromazin, escitalopram, haloperidol, hydroxycloroquin, hydroxyzin, levomepromazin,\nmoxifloxacin.",
+    "__EMPTY_6": 35
+  },
+  {
+    "__EMPTY": 151,
+    "__EMPTY_1": "Amiodaron",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Cloroquin",
+    "__EMPTY_2": "Tăng nguy cơ kéo dài khoảng QT",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "amisulprid, amitriptylin, citalopram, cloroquin, clorpromazin, escitalopram, haloperidol, hydroxycloroquin, hydroxyzin, levomepromazin,\nmoxifloxacin.",
+    "__EMPTY_6": 35
+  },
+  {
+    "__EMPTY": 152,
+    "__EMPTY_1": "Amiodaron",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Clorpromazin",
+    "__EMPTY_2": "Tăng nguy cơ kéo dài khoảng QT",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "amisulprid, amitriptylin, citalopram, cloroquin, clorpromazin, escitalopram, haloperidol, hydroxycloroquin, hydroxyzin, levomepromazin,\nmoxifloxacin.",
+    "__EMPTY_6": 35
+  },
+  {
+    "__EMPTY": 153,
+    "__EMPTY_1": "Amiodaron",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Escitalopram",
+    "__EMPTY_2": "Tăng nguy cơ kéo dài khoảng QT",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "amisulprid, amitriptylin, citalopram, cloroquin, clorpromazin, escitalopram, haloperidol, hydroxycloroquin, hydroxyzin, levomepromazin,\nmoxifloxacin.",
+    "__EMPTY_6": 35
+  },
+  {
+    "__EMPTY": 154,
+    "__EMPTY_1": "Amiodaron",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Haloperidol",
+    "__EMPTY_2": "Tăng nguy cơ kéo dài khoảng QT",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "amisulprid, amitriptylin, citalopram, cloroquin, clorpromazin, escitalopram, haloperidol, hydroxycloroquin, hydroxyzin, levomepromazin,\nmoxifloxacin.",
+    "__EMPTY_6": 35
+  },
+  {
+    "__EMPTY": 155,
+    "__EMPTY_1": "Amiodaron",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Hydroxycloroquin",
+    "__EMPTY_2": "Tăng nguy cơ kéo dài khoảng QT",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "amisulprid, amitriptylin, citalopram, cloroquin, clorpromazin, escitalopram, haloperidol, hydroxycloroquin, hydroxyzin, levomepromazin,\nmoxifloxacin.",
+    "__EMPTY_6": 35
+  },
+  {
+    "__EMPTY": 156,
+    "__EMPTY_1": "Amiodaron",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Hydroxyzin",
+    "__EMPTY_2": "Tăng nguy cơ kéo dài khoảng QT",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "amisulprid, amitriptylin, citalopram, cloroquin, clorpromazin, escitalopram, haloperidol, hydroxycloroquin, hydroxyzin, levomepromazin,\nmoxifloxacin.",
+    "__EMPTY_6": 35
+  },
+  {
+    "__EMPTY": 157,
+    "__EMPTY_1": "Amiodaron",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Levomepromazin",
+    "__EMPTY_2": "Tăng nguy cơ kéo dài khoảng QT",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "amisulprid, amitriptylin, citalopram, cloroquin, clorpromazin, escitalopram, haloperidol, hydroxycloroquin, hydroxyzin, levomepromazin,\nmoxifloxacin.",
+    "__EMPTY_6": 35
+  },
+  {
+    "__EMPTY": 158,
+    "__EMPTY_1": "Amiodaron",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Moxifloxacin",
+    "__EMPTY_2": "Tăng nguy cơ kéo dài khoảng QT",
+    "__EMPTY_3": "CHỐNG CHỈ ĐỊNH phối hợp.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "amisulprid, amitriptylin, citalopram, cloroquin, clorpromazin, escitalopram, haloperidol, hydroxycloroquin, hydroxyzin, levomepromazin,\nmoxifloxacin.",
+    "__EMPTY_6": 35
+  },
+  {
+    "__EMPTY": 159,
+    "__EMPTY_1": "Metformin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Iobitridol",
+    "__EMPTY_2": "Tăng nguy cơ nhiễm toan lactic.",
+    "__EMPTY_3": "Ở bệnh nhân suy thận: CHỐNG CHỈ ĐỊNH phối hợp. Ở bệnh nhân có chức năng thận bình thường: ngừng metformin trước hoặc tại thời điểm thực hiện chiếu chụp có sử dụng thuốc cản quang chứa iod. Đánh giá lại chức năng thận sau khi chiếu chụp ít nhất 48 giờ và chỉ dùng lại metformin nếu chức năng thận ổn định.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc cản quang iod",
+    "__EMPTY_6": 36
+  },
+  {
+    "__EMPTY": 160,
+    "__EMPTY_1": "Metformin",
+    "TƯƠNG TÁC THUỐC HUYẾT ÁP TIM MẠCH VỚI NHAU VÀ VỚI CÁC NHÓM THUỐC KHÁC ": "Thuốc cản quang iod",
+    "__EMPTY_2": "Tăng nguy cơ nhiễm toan lactic.",
+    "__EMPTY_3": "Ở bệnh nhân suy thận: CHỐNG CHỈ ĐỊNH phối hợp. Ở bệnh nhân có chức năng thận bình thường: ngừng metformin trước hoặc tại thời điểm thực hiện chiếu chụp có sử dụng thuốc cản quang chứa iod. Đánh giá lại chức năng thận sau khi chiếu chụp ít nhất 48 giờ và chỉ dùng lại metformin nếu chức năng thận ổn định.",
+    "__EMPTY_4": "ThS Nguyễn Mai Hoa, PGS.TS Nguyễn Hoàng Anh. TTQG về TTT và PUCH của thuốc",
+    "__EMPTY_5": "Thuốc cản quang iod",
+    "__EMPTY_6": 36
+  }
+]

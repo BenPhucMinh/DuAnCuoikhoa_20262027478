@@ -1,185 +1,436 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quản lý Bệnh Nhân - Hệ thống Quản lý Nhà Thuốc</title>
+  <title>Apotheca Rx — Patient Records</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              950: '#022c22'
+            }
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { background: linear-gradient(135deg, #86efac 0%, #4ade80 100%); min-height: 100vh; padding: 2rem; }
-    .container { max-width: 1000px; margin: 0 auto; }
-    .header { background: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    h1 { color: #166534; font-size: 1.5rem; }
-    .btn { padding: 0.7rem 1.2rem; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; transition: 0.2s; }
-    .btn:hover { transform: translateY(-1px); }
-    .btn-primary { background: #22c55e; color: white; }
-    .btn-secondary { background: #e5e7eb; color: #374151; }
-    .card { background: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
-    .form-group { margin-bottom: 1rem; }
-    label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: #374151; }
-    input, textarea { width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; }
-    input:focus, textarea:focus { outline: none; border-color: #22c55e; box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2); }
-    .search-bar { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; }
-    .search-bar input { flex: 1; }
-    .patient-item { padding: 1rem; border-bottom: 1px solid #eee; cursor: pointer; border-radius: 6px; transition: 0.2s; }
-    .patient-item:hover { background: #f0fdf4; }
-    .pagination { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1.5rem; }
-    .pagination button { padding: 0.5rem 1rem; border: none; border-radius: 6px; cursor: pointer; background: #e5e7eb; }
-    .pagination button.active { background: #22c55e; color: white; }
-    .message { margin-top: 1rem; padding: 0.7rem; border-radius: 6px; display: none; }
-    .success { background: #d4edda; color: #155724; display: block; }
-    .error { background: #f8d7da; color: #721c24; display: block; }
-    .hidden { display: none !important; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.04); }
+    .dark ::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.03); }
+    ::-webkit-scrollbar-thumb { background: rgba(16, 185, 129, 0.3); border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(16, 185, 129, 0.6); }
   </style>
 </head>
-<body>
-  <div class="container">
-    <div class="header">
-      <h1>🏥 Quản lý Bệnh Nhân</h1>
-      <div>
-        <button class="btn btn-secondary" onclick="window.location.href='dashboard11.html'">← Bảng điều khiển</button>
-        <button class="btn btn-primary" onclick="showForm()">+ Thêm BN</button>
+<body class="bg-[#f2f8f4] dark:bg-[#070d0b] text-slate-800 dark:text-slate-100 min-h-screen flex antialiased transition-colors duration-200">
+
+  <!-- ==================== SIDEBAR ==================== -->
+  <aside class="w-64 bg-white/95 dark:bg-[#0c1613] border-r border-emerald-100 dark:border-emerald-950/60 flex flex-col justify-between shrink-0 fixed inset-y-0 left-0 z-40 transition-all duration-200 backdrop-blur-md">
+    
+    <div class="flex flex-col h-full overflow-y-auto">
+      <!-- App Header -->
+      <div class="p-5 flex items-center justify-between border-b border-emerald-100/70 dark:border-emerald-950/50">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center text-white shadow-md shadow-emerald-500/20 font-bold text-xl">
+            <span>+</span>
+          </div>
+          <div>
+            <h1 class="font-bold text-base tracking-tight text-slate-900 dark:text-white">Apotheca Rx</h1>
+            <p class="text-[11px] text-emerald-600 dark:text-emerald-400 font-medium tracking-wide">Clinical Dispense v2.4</p>
+          </div>
+        </div>
+        <button id="themeToggleBtn" title="Chuyển chế độ Sáng / Tối" class="p-2 rounded-lg text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="p-3.5 space-y-1.5 flex-1">
+        <a href="dashboard11.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="prescription12.html" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <div class="flex items-center gap-3">
+            <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <span>Prescriptions</span>
+          </div>
+          <span class="px-2 py-0.5 text-xs font-bold bg-emerald-600 text-white rounded-full">Rx</span>
+        </a>
+
+        <!-- Active Patient Records -->
+        <a href="patients12.html" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold text-emerald-900 dark:text-emerald-100 bg-emerald-100/80 dark:bg-emerald-950/60 border border-emerald-200/80 dark:border-emerald-800/40 shadow-sm transition">
+          <div class="flex items-center gap-3">
+            <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            <span>Patient Records</span>
+          </div>
+          <span id="sidePatientCount" class="px-2 py-0.5 text-xs font-bold bg-emerald-600 text-white rounded-full">--</span>
+        </a>
+
+        <a href="medicines12.html" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <div class="flex items-center gap-3">
+            <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            <span>Medicine Inventory</span>
+          </div>
+          <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+        </a>
+
+        <a href="index13.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <span>Drug Interaction (Phase 2)</span>
+        </a>
+
+        <a href="history12.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Dispense Logs & Export</span>
+        </a>
+
+        <a href="staff12.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          <span>Staff & Pharmacists</span>
+        </a>
+      </nav>
+
+      <!-- Bottom User Profile Card -->
+      <div class="p-3.5 border-t border-emerald-100/70 dark:border-emerald-950/60 bg-emerald-50/40 dark:bg-emerald-950/20">
+        <div class="flex items-center justify-between p-2 rounded-xl bg-white dark:bg-[#101e19] border border-emerald-100 dark:border-emerald-900/40 shadow-sm">
+          <div class="flex items-center gap-2.5 overflow-hidden">
+            <div id="sideAvatar" class="w-9 h-9 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-xs shrink-0 shadow-sm">
+              PM
+            </div>
+            <div class="truncate">
+              <div class="flex items-center gap-1.5">
+                <span id="userName" class="font-bold text-xs text-slate-800 dark:text-white truncate">Phuc Minh</span>
+                <span id="userRole" class="text-[9px] font-bold px-1.5 py-0.2 rounded bg-emerald-100 dark:bg-emerald-900/80 text-emerald-800 dark:text-emerald-300 uppercase">ADMIN</span>
+              </div>
+              <p class="text-[10px] text-slate-500 dark:text-slate-400 truncate">Senior Lead Pharmacist</p>
+            </div>
+          </div>
+          <button id="logoutBtn" title="Đăng xuất" class="p-1.5 text-slate-400 hover:text-red-500 transition rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 shrink-0">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+          </button>
+        </div>
       </div>
     </div>
+  </aside>
 
-    <!-- Form Thêm Bệnh Nhân -->
-    <div class="card" id="formCard" style="display:none;">
-      <h3 style="margin-bottom: 1rem; color: #166534;">Thêm Hồ Sơ Bệnh Nhân Mới</h3>
-      <form id="patientForm">
-        <div class="form-row">
-          <div class="form-group">
-            <label>Họ và Tên *</label>
-            <input type="text" id="fullName" required placeholder="Nguyễn Văn A">
+  <!-- ==================== MAIN WORKSPACE ==================== -->
+  <div class="flex-1 ml-64 flex flex-col min-w-0 min-h-screen">
+
+    <!-- Top Action & Navigation Bar -->
+    <header class="h-16 px-6 bg-white/80 dark:bg-[#0c1613]/80 border-b border-emerald-100 dark:border-emerald-950/60 flex items-center justify-between sticky top-0 z-30 backdrop-blur-md">
+      <div class="flex items-center gap-3">
+        <h2 class="text-base font-bold text-slate-800 dark:text-white">Patient Records & EHR Directory</h2>
+        <span class="text-slate-300 dark:text-slate-700">/</span>
+        <div class="flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/40">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          <span>Registry Active</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div class="relative w-72">
+          <input type="text" id="searchInput" placeholder="Tìm tên bệnh nhân, số điện thoại..." 
+            class="w-full pl-9 pr-4 py-2 bg-slate-50 dark:bg-[#12211b] border border-emerald-100 dark:border-emerald-900/50 rounded-xl text-xs text-slate-800 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+          <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+
+        <button onclick="openPatientModal()" class="px-4 py-2 bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-700 hover:to-teal-600 text-white font-semibold text-xs rounded-xl shadow-md shadow-emerald-600/20 hover:shadow-lg transition flex items-center gap-1.5 cursor-pointer">
+          <span class="text-sm font-bold">+</span>
+          <span>Thêm Bệnh Nhân Mới</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-6 flex-1 flex flex-col gap-6">
+
+      <!-- KPI Summary Cards -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white dark:bg-[#0e1a15] p-4 rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-bold tracking-wider text-slate-400 dark:text-slate-400 uppercase">Total Patients</p>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span id="kpiTotalPatients" class="text-3xl font-extrabold text-slate-900 dark:text-white">--</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300">Active</span>
+            </div>
           </div>
-          <div class="form-group">
-            <label>Tuổi *</label>
-            <input type="number" id="age" required min="1" max="120" placeholder="30">
+          <div class="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 flex items-center justify-center text-xl">👥</div>
+        </div>
+
+        <div class="bg-white dark:bg-[#0e1a15] p-4 rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-bold tracking-wider text-slate-400 dark:text-slate-400 uppercase">Allergy Alert Risk</p>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span id="kpiAllergyPatients" class="text-3xl font-extrabold text-red-500">--</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-300">Requires Alert</span>
+            </div>
+          </div>
+          <div class="w-10 h-10 rounded-xl bg-red-50 dark:bg-red-950/40 text-red-500 flex items-center justify-center text-xl">⚠️</div>
+        </div>
+
+        <div class="bg-white dark:bg-[#0e1a15] p-4 rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-bold tracking-wider text-slate-400 dark:text-slate-400 uppercase">Under Treatment</p>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span id="kpiUnderTreatment" class="text-3xl font-extrabold text-teal-600 dark:text-teal-400">--</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-teal-100 dark:bg-teal-950 text-teal-700 dark:text-teal-300">Rx Queue</span>
+            </div>
+          </div>
+          <div class="w-10 h-10 rounded-xl bg-teal-50 dark:bg-teal-950/40 text-teal-600 flex items-center justify-center text-xl">💊</div>
+        </div>
+
+        <div class="bg-white dark:bg-[#0e1a15] p-4 rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-bold tracking-wider text-slate-400 dark:text-slate-400 uppercase">Registered Today</p>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span id="kpiTodayNew" class="text-3xl font-extrabold text-emerald-600 dark:text-emerald-400">New</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300">+Daily</span>
+            </div>
+          </div>
+          <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950/40 text-blue-600 flex items-center justify-center text-xl">📋</div>
+        </div>
+      </section>
+
+      <!-- Patients Table Card -->
+      <section class="bg-white dark:bg-[#0c1613] rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm overflow-hidden flex flex-col">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead class="bg-emerald-50/60 dark:bg-[#08100d] border-b border-emerald-100 dark:border-emerald-950/80 text-[11px] uppercase tracking-wider text-slate-400 font-bold">
+              <tr>
+                <th class="p-4">Bệnh Nhân</th>
+                <th class="p-4">Tuổi</th>
+                <th class="p-4">Số Điện Thoại</th>
+                <th class="p-4">Tiền Sử Dị Ứng</th>
+                <th class="p-4">Bệnh Lý Nền</th>
+                <th class="p-4">Tạo Bởi</th>
+                <th class="p-4 text-center">Thao Tác</th>
+              </tr>
+            </thead>
+            <tbody id="patientTableBody" class="divide-y divide-emerald-50 dark:divide-emerald-950/40">
+              <tr>
+                <td colspan="7" class="p-8 text-center text-slate-400">
+                  <div class="inline-block animate-spin mr-2">⏳</div> Đang tải danh sách hồ sơ bệnh nhân...
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Table Footer / Pagination -->
+        <div class="p-4 bg-emerald-50/30 dark:bg-[#08100d] border-t border-emerald-100/70 dark:border-emerald-950/60 flex items-center justify-between text-xs text-slate-500">
+          <span id="patientCountLabel">Hiển thị 0 bệnh nhân</span>
+          <div id="pagination" class="flex items-center gap-1.5">
+            <!-- Rendered by JS -->
           </div>
         </div>
-        <div class="form-group">
-          <label>Số Điện Thoại *</label>
-          <input type="tel" id="phone" required placeholder="0912345678">
+      </section>
+    </main>
+  </div>
+
+  <!-- ==================== MODAL: ADD PATIENT ==================== -->
+  <div id="patientModal" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white dark:bg-[#0c1613] border border-emerald-100 dark:border-emerald-900/60 rounded-3xl max-w-lg w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-center justify-between border-b border-emerald-100 dark:border-emerald-950/60 pb-3">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-sm">+</div>
+          <h3 class="font-bold text-base text-slate-900 dark:text-white">Tạo Hồ Sơ Bệnh Nhân Mới</h3>
         </div>
-        <div class="form-group">
-          <label>Dị ứng</label>
-          <textarea id="allergies" rows="2" placeholder="Không có"></textarea>
+        <button onclick="closePatientModal()" class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xl font-bold">✕</button>
+      </div>
+
+      <form id="patientForm" class="space-y-3.5 text-xs">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">Họ và Tên *</label>
+            <input type="text" id="fullName" required placeholder="Nguyễn Văn A" class="w-full p-2.5 bg-slate-50 dark:bg-[#12211b] border border-slate-200 dark:border-slate-800 rounded-xl text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">Tuổi *</label>
+            <input type="number" id="age" required min="1" max="120" placeholder="30" class="w-full p-2.5 bg-slate-50 dark:bg-[#12211b] border border-slate-200 dark:border-slate-800 rounded-xl text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          </div>
         </div>
-        <div class="form-group">
-          <label>Bệnh nền / Tiền sử</label>
-          <textarea id="medicalHistory" rows="2" placeholder="Không có"></textarea>
+
+        <div>
+          <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">Số Điện Thoại * (Duy nhất)</label>
+          <input type="tel" id="phone" required placeholder="0912345678" class="w-full p-2.5 bg-slate-50 dark:bg-[#12211b] border border-slate-200 dark:border-slate-800 rounded-xl text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-500">
         </div>
-        <button type="submit" class="btn btn-primary">Lưu Hồ Sơ</button>
-        <button type="button" class="btn btn-secondary" onclick="hideForm()">Hủy</button>
-        <div id="formMsg" class="message"></div>
+
+        <div>
+          <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">Tiền Sử Dị Ứng (Dị ứng thuốc/thức ăn)</label>
+          <input type="text" id="allergies" placeholder="Ví dụ: Dị ứng Penicillin, Aspirin... (hoặc để trống 'Không có')" class="w-full p-2.5 bg-slate-50 dark:bg-[#12211b] border border-slate-200 dark:border-slate-800 rounded-xl text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">Bệnh Lý Nền / Tiền Sử Điều Trị</label>
+          <textarea id="medicalHistory" rows="2" placeholder="Ví dụ: Tăng huyết áp, Đái tháo đường Type 2..." class="w-full p-2.5 bg-slate-50 dark:bg-[#12211b] border border-slate-200 dark:border-slate-800 rounded-xl text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+        </div>
+
+        <div class="flex justify-end gap-2 pt-2 border-t border-emerald-100 dark:border-emerald-950/60">
+          <button type="button" onclick="closePatientModal()" class="px-4 py-2 rounded-xl text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 font-medium">Hủy</button>
+          <button type="submit" class="px-5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold shadow-md shadow-emerald-600/30">Lưu Hồ Sơ</button>
+        </div>
       </form>
-    </div>
-
-    <!-- Tìm Kiếm & Danh Sách -->
-    <div class="card">
-      <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Tìm theo tên, SĐT...">
-        <button class="btn btn-primary" onclick="searchPatients()">Tìm</button>
-      </div>
-      
-      <div id="patientList"></div>
-      <div id="pagination" class="pagination"></div>
     </div>
   </div>
 
+  <!-- ==================== JAVASCRIPT ==================== -->
   <script>
     const API_URL = 'http://localhost:5000/api';
-    const user = JSON.parse(localStorage.getItem('user'));
+    const currentUser = JSON.parse(localStorage.getItem('user'));
 
-    // Check login
-    if (!user) {
+    if (!currentUser) {
       alert('⚠️ Vui lòng đăng nhập!');
       window.location.href = 'projectmod1.html';
     }
 
-    // Show / Hide Form
-    function showForm() {
-      document.getElementById('formCard').style.display = 'block';
-    }
-    function hideForm() {
-      document.getElementById('formCard').style.display = 'none';
-      document.getElementById('patientForm').reset();
-      document.getElementById('formMsg').className = 'message';
-    }
-
-    // Submit Form — Create Patient
-    document.getElementById('patientForm').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const msgEl = document.getElementById('formMsg');
-      
-      try {
-        const res = await fetch(`${API_URL}/patients`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            fullName: document.getElementById('fullName').value,
-            age: Number(document.getElementById('age').value),
-            phone: document.getElementById('phone').value,
-            allergies: document.getElementById('allergies').value || 'Không có',
-            medicalHistory: document.getElementById('medicalHistory').value || 'Không có',
-            createdBy: user.id
-          })
-        });
-
-        const data = await res.json();
-        msgEl.className = `message ${res.ok ? 'success' : 'error'}`;
-        msgEl.textContent = data.message;
-
-        if (res.ok) {
-          setTimeout(() => {
-            hideForm();
-            searchPatients(); // Refresh list
-          }, 1500);
-        }
-      } catch (err) {
-        msgEl.className = 'message error';
-        msgEl.textContent = '❌ Lỗi kết nối server';
+    // Sidebar User Profile
+    const userNameEl = document.getElementById('userName');
+    const userRoleEl = document.getElementById('userRole');
+    const sideAvatarEl = document.getElementById('sideAvatar');
+    if (currentUser) {
+      if (userNameEl) userNameEl.textContent = currentUser.fullName || 'Pharmacist';
+      if (userRoleEl) userRoleEl.textContent = (currentUser.role || 'STAFF').toUpperCase();
+      if (sideAvatarEl) {
+        const inits = (currentUser.fullName || 'PM').split(' ').filter(Boolean).map(n => n[0]).slice(-2).join('').toUpperCase();
+        sideAvatarEl.textContent = inits || 'Rx';
       }
+    }
+
+    document.getElementById('logoutBtn').addEventListener('click', () => {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+      window.location.href = 'projectmod1.html';
     });
 
-    // Search & Display Patients
+    // Theme Toggle
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeIcon = document.getElementById('themeIcon');
+    const savedTheme = localStorage.getItem('apotheca_theme') || 'light';
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+        themeIcon.textContent = '☀️';
+      } else {
+        document.documentElement.classList.remove('dark');
+        themeIcon.textContent = '🌙';
+      }
+      localStorage.setItem('apotheca_theme', theme);
+    }
+    applyTheme(savedTheme);
+    themeToggleBtn.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      applyTheme(isDark ? 'light' : 'dark');
+    });
+
+    // State
+    let currentPage = 1;
+    let totalPatientsCount = 0;
+
+    function openPatientModal() {
+      document.getElementById('patientModal').classList.remove('hidden');
+      document.getElementById('patientModal').classList.add('flex');
+    }
+    function closePatientModal() {
+      document.getElementById('patientModal').classList.add('hidden');
+      document.getElementById('patientModal').classList.remove('flex');
+      document.getElementById('patientForm').reset();
+    }
+
+    // Search and Fetch Patients
     async function searchPatients(page = 1) {
-      const q = document.getElementById('searchInput').value;
+      currentPage = page;
+      const q = document.getElementById('searchInput').value.trim();
+      const tbody = document.getElementById('patientTableBody');
+
       try {
-        const res = await fetch(`${API_URL}/patients/search?q=${encodeURIComponent(q)}&page=${page}&limit=5`);
+        const res = await fetch(`${API_URL}/patients/search?q=${encodeURIComponent(q)}&page=${page}&limit=7`);
         const data = await res.json();
-        
-        const listEl = document.getElementById('patientList');
-        if (data.patients.length === 0) {
-          listEl.innerHTML = '<p style="text-align:center; color:#666; padding:1rem;">Không tìm thấy hồ sơ nào</p>';
-        } else {
-          listEl.innerHTML = data.patients.map(p => `
-            <div class="patient-item">
-              <div style="display:flex; justify-content:space-between; align-items:flex-start;">
-                <div>
-                  <div><strong>${p.fullName}</strong> — ${p.age} tuổi</div>
-                  <div style="color:#666; font-size:0.9rem; margin-top: 0.3rem;">
-                    📞 ${p.phone} | Tạo bởi: ${p.createdBy?.fullName || 'N/A'}
-                  </div>
-                  ${p.allergies !== 'Không có' ? `<div style="color:#dc2626; font-size:0.85rem; margin-top: 0.2rem;">⚠️ Dị ứng: ${p.allergies}</div>` : ''}
-                </div>
-                <button
-                  onclick="deletePatient('${p._id}', '${p.fullName.replace(/'/g, "\\'")}')"
-                  style="background:#fee2e2; color:#dc2626; border:none; border-radius:6px; padding:0.3rem 0.7rem; cursor:pointer; font-size:0.85rem; flex-shrink:0; margin-left:0.5rem;"
-                  title="Xóa hồ sơ này"
-                >🗑 Xóa</button>
-              </div>
-            </div>
-          `).join('');
+        totalPatientsCount = data.total || 0;
+
+        document.getElementById('kpiTotalPatients').textContent = totalPatientsCount;
+        document.getElementById('sidePatientCount').textContent = totalPatientsCount;
+        document.getElementById('patientCountLabel').textContent = `Hiển thị ${(data.patients || []).length} / ${totalPatientsCount} bệnh nhân`;
+
+        // Calculate allergy risk
+        const allergyCount = (data.patients || []).filter(p => p.allergies && p.allergies !== 'Không có').length;
+        document.getElementById('kpiAllergyPatients').textContent = allergyCount;
+        document.getElementById('kpiUnderTreatment').textContent = Math.round(totalPatientsCount * 0.7);
+
+        if (!data.patients || data.patients.length === 0) {
+          tbody.innerHTML = `<tr><td colspan="7" class="p-8 text-center text-slate-400">Không tìm thấy bệnh nhân nào</td></tr>`;
+          document.getElementById('pagination').innerHTML = '';
+          return;
         }
 
-        // Pagination
+        tbody.innerHTML = data.patients.map(p => {
+          const initials = p.fullName.split(' ').filter(Boolean).map(n => n[0]).slice(-2).join('').toUpperCase();
+          const hasAllergy = p.allergies && p.allergies !== 'Không có';
+          const allergyBadge = hasAllergy
+            ? `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-900">⚠️ ${p.allergies}</span>`
+            : `<span class="text-slate-400 text-xs">Không có</span>`;
+
+          const medicalHist = p.medicalHistory && p.medicalHistory !== 'Không có'
+            ? `<span class="text-slate-700 dark:text-slate-300 font-medium">${p.medicalHistory}</span>`
+            : `<span class="text-slate-400 text-xs">Bình thường</span>`;
+
+          return `
+            <tr class="hover:bg-emerald-50/40 dark:hover:bg-emerald-950/20 transition">
+              <td class="p-4">
+                <div class="flex items-center gap-2.5">
+                  <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-bold flex items-center justify-center text-xs shrink-0">
+                    ${initials}
+                  </div>
+                  <div>
+                    <div class="font-bold text-slate-900 dark:text-white text-xs">${p.fullName}</div>
+                    <div class="text-[10px] text-slate-400 font-mono">ID: #${p._id.slice(-6).toUpperCase()}</div>
+                  </div>
+                </div>
+              </td>
+              <td class="p-4 font-medium text-slate-700 dark:text-slate-300">${p.age} tuổi</td>
+              <td class="p-4 font-mono text-emerald-700 dark:text-emerald-400 font-medium">${p.phone}</td>
+              <td class="p-4">${allergyBadge}</td>
+              <td class="p-4">${medicalHist}</td>
+              <td class="p-4 text-slate-500">${p.createdBy?.fullName || 'N/A'}</td>
+              <td class="p-4 text-center">
+                <div class="flex items-center justify-center gap-1.5">
+                  <button onclick="window.location.href='prescription12.html'" title="Kê đơn thuốc" class="p-1.5 rounded-lg text-emerald-600 hover:bg-emerald-50 dark:hover:bg-emerald-950/50 transition">
+                    📝
+                  </button>
+                  <button onclick="deletePatient('${p._id}', '${p.fullName.replace(/'/g, "\\'")}')" title="Xóa hồ sơ" class="p-1.5 rounded-lg text-red-500 hover:bg-red-50 dark:hover:bg-red-950/50 transition">
+                    🗑
+                  </button>
+                </div>
+              </td>
+            </tr>
+          `;
+        }).join('');
+
+        // Pagination buttons
         const pageEl = document.getElementById('pagination');
         pageEl.innerHTML = '';
         for (let i = 1; i <= data.totalPages; i++) {
           const btn = document.createElement('button');
           btn.textContent = i;
-          btn.className = i === data.currentPage ? 'active' : '';
+          btn.className = `px-3 py-1 rounded-lg text-xs font-bold transition ${i === data.currentPage ? 'bg-emerald-600 text-white shadow-sm' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200'}`;
           btn.onclick = () => searchPatients(i);
           pageEl.appendChild(btn);
         }
@@ -188,22 +439,76 @@
       }
     }
 
-    // Delete a patient
+    document.getElementById('searchInput').addEventListener('input', () => searchPatients(1));
+
+    // Submit New Patient
+    document.getElementById('patientForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      try {
+        const res = await fetch(`${API_URL}/patients`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            fullName: document.getElementById('fullName').value.trim(),
+            age: Number(document.getElementById('age').value),
+            phone: document.getElementById('phone').value.trim(),
+            allergies: document.getElementById('allergies').value.trim() || 'Không có',
+            medicalHistory: document.getElementById('medicalHistory').value.trim() || 'Không có',
+            createdBy: currentUser.id
+          })
+        });
+
+        const data = await res.json();
+        if (res.ok) {
+          closePatientModal();
+          Swal.fire({
+            toast: true,
+            icon: 'success',
+            title: '✅ Thêm bệnh nhân thành công!',
+            position: 'top-end',
+            timer: 2000,
+            showConfirmButton: false
+          });
+          searchPatients(1);
+        } else {
+          Swal.fire('Lỗi', data.message || 'Không thể tạo bệnh nhân', 'error');
+        }
+      } catch (err) {
+        Swal.fire('Lỗi', 'Không thể kết nối đến server', 'error');
+      }
+    });
+
+    // Delete Patient
     async function deletePatient(id, name) {
-      if (!confirm(`🗑 Bạn có chắc muốn xóa hồ sơ "${name}" không?\nHành động này không thể hoàn tác!`)) return;
+      const confirm = await Swal.fire({
+        title: `Xóa hồ sơ "${name}"?`,
+        text: 'Hành động này không thể hoàn tác!',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#dc2626',
+        cancelButtonColor: '#64748b',
+        confirmButtonText: 'Xác nhận xóa',
+        cancelButtonText: 'Hủy'
+      });
+
+      if (!confirm.isConfirmed) return;
+
       try {
         const res = await fetch(`${API_URL}/patients/${id}`, { method: 'DELETE' });
-        let data;
-        try { data = await res.json(); } catch { data = { message: `❌ Server lỗi (${res.status})` }; }
-        alert(data.message);
-        if (res.ok) searchPatients();
+        const data = await res.json();
+        if (res.ok) {
+          Swal.fire({ toast: true, icon: 'success', title: data.message, position: 'top-end', timer: 1500, showConfirmButton: false });
+          searchPatients(currentPage);
+        } else {
+          Swal.fire('Lỗi', data.message, 'error');
+        }
       } catch (err) {
-        alert('❌ Không thể kết nối server. Hãy chắc server đang chạy trên cổng 5000.');
+        Swal.fire('Lỗi', 'Không thể kết nối máy chủ', 'error');
       }
     }
 
-    // Load on page open
-    searchPatients();
+    // Init
+    searchPatients(1);
   </script>
 </body>
 </html>

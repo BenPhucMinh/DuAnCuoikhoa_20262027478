@@ -1,96 +1,248 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quản lý Tài Khoản Nhân Viên - Hệ thống Quản lý Nhà Thuốc</title>
+  <title>Apotheca Rx — Staff & Pharmacists Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              950: '#022c22'
+            }
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body {
-      background: linear-gradient(135deg, #86efac 0%, #4ade80 100%);
-      min-height: 100vh;
-      padding: 2rem;
-    }
-    .container { max-width: 1000px; margin: 0 auto; }
-    .header {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      margin-bottom: 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    h1 { color: #166534; font-size: 1.5rem; }
-    .btn {
-      padding: 0.7rem 1.2rem;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: 0.2s;
-    }
-    .btn:hover { transform: translateY(-1px); }
-    .btn-secondary { background: #e5e7eb; color: #374151; }
-    .btn-save { background: #22c55e; color: white; }
-    .btn-delete { background: #ef4444; color: white; }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      margin-bottom: 1rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .staff-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 0;
-      border-bottom: 1px solid #eee;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-    }
-    .staff-row:last-child { border-bottom: none; }
-    .staff-info { flex: 1; min-width: 200px; }
-    .staff-name { font-weight: bold; color: #166534; font-size: 1rem; }
-    .staff-email { color: #666; font-size: 0.9rem; }
-    .role-select {
-      padding: 0.5rem 1rem;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      font-size: 0.9rem;
-    }
-    .role-badge {
-      display: inline-block;
-      padding: 0.3rem 0.8rem;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      font-weight: bold;
-    }
-    .role-admin { background: #3b82f6; color: white; }
-    .role-pharmacist { background: #22c55e; color: white; }
-    .role-nurse { background: #f59e0b; color: white; }
-    .message { margin-top: 1rem; padding: 0.7rem; border-radius: 6px; display: none; }
-    .success { background: #d4edda; color: #155724; display: block; }
-    .error { background: #f8d7da; color: #721c24; display: block; }
-    .loading { text-align: center; padding: 2rem; color: #666; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.04); }
+    .dark ::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.03); }
+    ::-webkit-scrollbar-thumb { background: rgba(16, 185, 129, 0.3); border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(16, 185, 129, 0.6); }
   </style>
 </head>
-<body>
-  <div class="container">
-    <div class="header">
-      <h1>👤 Quản lý Tài Khoản Nhân Viên</h1>
-      <button class="btn btn-secondary" onclick="window.location.href='dashboard11.html'">← Bảng điều khiển</button>
-    </div>
+<body class="bg-[#f2f8f4] dark:bg-[#070d0b] text-slate-800 dark:text-slate-100 min-h-screen flex antialiased transition-colors duration-200">
 
-    <div class="card">
-      <p style="margin-bottom: 1rem; color:#666;">Chỉ Quản trị viên mới có quyền xem & chỉnh sửa vai trò</p>
-      <div id="messageBox" class="message"></div>
-      <div id="staffList" class="loading">Đang tải danh sách...</div>
+  <!-- ==================== SIDEBAR ==================== -->
+  <aside class="w-64 bg-white/95 dark:bg-[#0c1613] border-r border-emerald-100 dark:border-emerald-950/60 flex flex-col justify-between shrink-0 fixed inset-y-0 left-0 z-40 transition-all duration-200 backdrop-blur-md">
+    
+    <div class="flex flex-col h-full overflow-y-auto">
+      <!-- App Header -->
+      <div class="p-5 flex items-center justify-between border-b border-emerald-100/70 dark:border-emerald-950/50">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center text-white shadow-md shadow-emerald-500/20 font-bold text-xl">
+            <span>+</span>
+          </div>
+          <div>
+            <h1 class="font-bold text-base tracking-tight text-slate-900 dark:text-white">Apotheca Rx</h1>
+            <p class="text-[11px] text-emerald-600 dark:text-emerald-400 font-medium tracking-wide">Clinical Dispense v2.4</p>
+          </div>
+        </div>
+        <button id="themeToggleBtn" title="Chuyển chế độ Sáng / Tối" class="p-2 rounded-lg text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="p-3.5 space-y-1.5 flex-1">
+        <a href="dashboard11.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          <span>Dashboard</span>
+        </a>
+
+        <a href="prescription12.html" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <div class="flex items-center gap-3">
+            <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <span>Prescriptions</span>
+          </div>
+          <span class="px-2 py-0.5 text-xs font-bold bg-emerald-600 text-white rounded-full">Rx</span>
+        </a>
+
+        <a href="patients12.html" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <div class="flex items-center gap-3">
+            <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            <span>Patient Records</span>
+          </div>
+        </a>
+
+        <a href="medicines12.html" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <div class="flex items-center gap-3">
+            <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            <span>Medicine Inventory</span>
+          </div>
+          <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+        </a>
+
+        <a href="index13.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <span>Drug Interaction (Phase 2)</span>
+        </a>
+
+        <a href="history12.html" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <span>Dispense Logs & Export</span>
+        </a>
+
+        <!-- Active Staff & Pharmacists -->
+        <a href="staff12.html" class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold text-emerald-900 dark:text-emerald-100 bg-emerald-100/80 dark:bg-emerald-950/60 border border-emerald-200/80 dark:border-emerald-800/40 shadow-sm transition">
+          <div class="flex items-center gap-3">
+            <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            <span>Staff & Pharmacists</span>
+          </div>
+          <span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-emerald-600 text-white uppercase">RBAC</span>
+        </a>
+      </nav>
+
+      <!-- Bottom User Profile Card -->
+      <div class="p-3.5 border-t border-emerald-100/70 dark:border-emerald-950/60 bg-emerald-50/40 dark:bg-emerald-950/20">
+        <div class="flex items-center justify-between p-2 rounded-xl bg-white dark:bg-[#101e19] border border-emerald-100 dark:border-emerald-900/40 shadow-sm">
+          <div class="flex items-center gap-2.5 overflow-hidden">
+            <div id="sideAvatar" class="w-9 h-9 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-xs shrink-0 shadow-sm">
+              PM
+            </div>
+            <div class="truncate">
+              <div class="flex items-center gap-1.5">
+                <span id="userName" class="font-bold text-xs text-slate-800 dark:text-white truncate">Phuc Minh</span>
+                <span id="userRole" class="text-[9px] font-bold px-1.5 py-0.2 rounded bg-emerald-100 dark:bg-emerald-900/80 text-emerald-800 dark:text-emerald-300 uppercase">ADMIN</span>
+              </div>
+              <p class="text-[10px] text-slate-500 dark:text-slate-400 truncate">Senior Lead Pharmacist</p>
+            </div>
+          </div>
+          <button id="logoutBtn" title="Đăng xuất" class="p-1.5 text-slate-400 hover:text-red-500 transition rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 shrink-0">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+          </button>
+        </div>
+      </div>
     </div>
+  </aside>
+
+  <!-- ==================== MAIN WORKSPACE ==================== -->
+  <div class="flex-1 ml-64 flex flex-col min-w-0 min-h-screen">
+
+    <!-- Top Action & Navigation Bar -->
+    <header class="h-16 px-6 bg-white/80 dark:bg-[#0c1613]/80 border-b border-emerald-100 dark:border-emerald-950/60 flex items-center justify-between sticky top-0 z-30 backdrop-blur-md">
+      <div class="flex items-center gap-3">
+        <h2 class="text-base font-bold text-slate-800 dark:text-white">Staff Management & Role-Based Access</h2>
+        <span class="text-slate-300 dark:text-slate-700">/</span>
+        <div class="flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200/60 dark:border-blue-800/40">
+          <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+          <span>Admin Access Only</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div class="relative w-72">
+          <input type="text" id="searchInput" placeholder="Tìm tên, email nhân viên..." 
+            class="w-full pl-9 pr-4 py-2 bg-slate-50 dark:bg-[#12211b] border border-emerald-100 dark:border-emerald-900/50 rounded-xl text-xs text-slate-800 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+          <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-6 flex-1 flex flex-col gap-6">
+
+      <!-- KPI Summary Cards -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white dark:bg-[#0e1a15] p-4 rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-bold tracking-wider text-slate-400 dark:text-slate-400 uppercase">Total Personnel</p>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span id="kpiTotalStaff" class="text-3xl font-extrabold text-slate-900 dark:text-white">--</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300">Active</span>
+            </div>
+          </div>
+          <div class="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 flex items-center justify-center text-xl">👤</div>
+        </div>
+
+        <div class="bg-white dark:bg-[#0e1a15] p-4 rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-bold tracking-wider text-slate-400 dark:text-slate-400 uppercase">Administrators</p>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span id="kpiAdminCount" class="text-3xl font-extrabold text-blue-600 dark:text-blue-400">--</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300">Full Access</span>
+            </div>
+          </div>
+          <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950/40 text-blue-600 flex items-center justify-center text-xl">🛡️</div>
+        </div>
+
+        <div class="bg-white dark:bg-[#0e1a15] p-4 rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-bold tracking-wider text-slate-400 dark:text-slate-400 uppercase">Pharmacists</p>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span id="kpiPharmCount" class="text-3xl font-extrabold text-emerald-600 dark:text-emerald-400">--</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300">Dispense Auth</span>
+            </div>
+          </div>
+          <div class="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 flex items-center justify-center text-xl">💊</div>
+        </div>
+
+        <div class="bg-white dark:bg-[#0e1a15] p-4 rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-bold tracking-wider text-slate-400 dark:text-slate-400 uppercase">Nurses / Clinicians</p>
+            <div class="flex items-baseline gap-2 mt-1">
+              <span id="kpiNurseCount" class="text-3xl font-extrabold text-amber-500">--</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300">Prescribe Auth</span>
+            </div>
+          </div>
+          <div class="w-10 h-10 rounded-xl bg-amber-50 dark:bg-amber-950/40 text-amber-500 flex items-center justify-center text-xl">🩺</div>
+        </div>
+      </section>
+
+      <!-- Staff Roster Table Card -->
+      <section class="bg-white dark:bg-[#0c1613] rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm overflow-hidden flex flex-col">
+        <div class="p-4 border-b border-emerald-100/70 dark:border-emerald-950/60 flex items-center justify-between">
+          <div>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white">Danh Sách Tài Khoản Nhân Sự</h3>
+            <p class="text-xs text-slate-400">Chỉ Quản trị viên (Admin) mới có quyền điều chỉnh vai trò và quyền hạn.</p>
+          </div>
+          <span id="staffTotalLabel" class="text-xs font-bold text-emerald-600">0 tài khoản</span>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs">
+            <thead class="bg-emerald-50/60 dark:bg-[#08100d] border-b border-emerald-100 dark:border-emerald-950/80 text-[11px] uppercase tracking-wider text-slate-400 font-bold">
+              <tr>
+                <th class="p-4">Nhân Viên</th>
+                <th class="p-4">Email</th>
+                <th class="p-4">Số Điện Thoại</th>
+                <th class="p-4 text-center">Vai Trò Hiện Tại</th>
+                <th class="p-4 text-center">Phân Quyền / Đổi Vai Trò</th>
+                <th class="p-4 text-center">Thao Tác</th>
+              </tr>
+            </thead>
+            <tbody id="staffTableBody" class="divide-y divide-emerald-50 dark:divide-emerald-950/40">
+              <tr>
+                <td colspan="6" class="p-8 text-center text-slate-400">
+                  <div class="inline-block animate-spin mr-2">⏳</div> Đang tải danh sách nhân viên...
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
   </div>
 
+  <!-- ==================== JAVASCRIPT ==================== -->
   <script>
     const API_URL = 'http://localhost:5000/api';
     const currentUser = JSON.parse(localStorage.getItem('user'));
@@ -100,63 +252,157 @@
       window.location.href = 'projectmod1.html';
     }
 
-    // Only admin can access this page
     if (currentUser.role !== 'admin') {
       alert('⚠️ Chỉ Quản trị viên mới có quyền truy cập trang này!');
       window.location.href = 'dashboard11.html';
     }
 
-    // Load all staff
-    async function loadStaff() {
-      try {
-        const res = await fetch(`${API_URL}/staff`);
-        const staff = await res.json();
-        renderStaffList(staff);
-      } catch (err) {
-        console.error('Load error:', err);
-        document.getElementById('staffList').innerHTML = 
-          '<p style="color:red; text-align:center;">Lỗi tải danh sách nhân viên</p>';
+    // Sidebar User Profile
+    const userNameEl = document.getElementById('userName');
+    const userRoleEl = document.getElementById('userRole');
+    const sideAvatarEl = document.getElementById('sideAvatar');
+    if (currentUser) {
+      if (userNameEl) userNameEl.textContent = currentUser.fullName || 'Admin';
+      if (userRoleEl) userRoleEl.textContent = (currentUser.role || 'ADMIN').toUpperCase();
+      if (sideAvatarEl) {
+        const inits = (currentUser.fullName || 'PM').split(' ').filter(Boolean).map(n => n[0]).slice(-2).join('').toUpperCase();
+        sideAvatarEl.textContent = inits || 'AD';
       }
     }
 
-    function renderStaffList(list) {
-      const el = document.getElementById('staffList');
-      
-      if (!list.length) {
-        el.innerHTML = '<p style="color:#666; text-align:center;">Chưa có tài khoản nào</p>';
+    document.getElementById('logoutBtn').addEventListener('click', () => {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+      window.location.href = 'projectmod1.html';
+    });
+
+    // Theme Toggle
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeIcon = document.getElementById('themeIcon');
+    const savedTheme = localStorage.getItem('apotheca_theme') || 'light';
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+        themeIcon.textContent = '☀️';
+      } else {
+        document.documentElement.classList.remove('dark');
+        themeIcon.textContent = '🌙';
+      }
+      localStorage.setItem('apotheca_theme', theme);
+    }
+    applyTheme(savedTheme);
+    themeToggleBtn.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      applyTheme(isDark ? 'light' : 'dark');
+    });
+
+    let allStaff = [];
+
+    // Load Staff Roster
+    async function loadStaff() {
+      const tbody = document.getElementById('staffTableBody');
+      try {
+        const res = await fetch(`${API_URL}/staff`);
+        allStaff = await res.json();
+
+        // Calculate KPI roles
+        let admins = 0, pharms = 0, nurses = 0;
+        allStaff.forEach(s => {
+          if (s.role === 'admin') admins++;
+          else if (s.role === 'pharmacist') pharms++;
+          else nurses++;
+        });
+
+        document.getElementById('kpiTotalStaff').textContent = allStaff.length;
+        document.getElementById('kpiAdminCount').textContent = admins;
+        document.getElementById('kpiPharmCount').textContent = pharms;
+        document.getElementById('kpiNurseCount').textContent = nurses;
+        document.getElementById('staffTotalLabel').textContent = `${allStaff.length} tài khoản`;
+
+        renderStaffTable(allStaff);
+      } catch (err) {
+        console.error('Staff fetch error:', err);
+        tbody.innerHTML = `<tr><td colspan="6" class="p-8 text-center text-red-500 font-bold">Lỗi kết nối máy chủ!</td></tr>`;
+      }
+    }
+
+    function renderStaffTable(list) {
+      const tbody = document.getElementById('staffTableBody');
+      if (!list || list.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6" class="p-8 text-center text-slate-400">Không tìm thấy tài khoản nào.</td></tr>`;
         return;
       }
 
-      el.innerHTML = list.map(s => {
-        const roleClass = s.role === 'admin' ? 'role-admin' : 
-                          s.role === 'pharmacist' ? 'role-pharmacist' : 'role-nurse';
-        const roleText = s.role === 'admin' ? 'Quản trị viên' : 
-                         s.role === 'pharmacist' ? 'Dược sĩ' : 'Y tá';
-        const isCurrentUser = s._id === currentUser.id;
+      tbody.innerHTML = list.map(s => {
+        const inits = (s.fullName || 'PM').split(' ').filter(Boolean).map(n => n[0]).slice(-2).join('').toUpperCase();
+        const isSelf = s._id === currentUser.id;
+
+        let roleBadge = '';
+        if (s.role === 'admin') {
+          roleBadge = `<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800">Quản trị viên</span>`;
+        } else if (s.role === 'pharmacist') {
+          roleBadge = `<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">Dược sĩ</span>`;
+        } else {
+          roleBadge = `<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 dark:bg-amber-950 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800">Y tá / Điều dưỡng</span>`;
+        }
 
         return `
-          <div class="staff-row">
-            <div class="staff-info">
-              <div class="staff-name">${s.fullName}</div>
-              <div class="staff-email">${s.email}</div>
-            </div>
-            <span class="role-badge ${roleClass}">${roleText}</span>
-            ${isCurrentUser ? 
-              '<em style="color:#999; font-size:0.85rem;">Bạn (không đổi)</em>' : 
-              `<select class="role-select" onchange="changeRole('${s._id}', this.value)">
-                <option value="admin" ${s.role==='admin'?'selected':''}>Quản trị viên</option>
-                <option value="pharmacist" ${s.role==='pharmacist'?'selected':''}>Dược sĩ</option>
-                <option value="nurse" ${s.role==='nurse'?'selected':''}>Y tá</option>
-              </select>
-              <button class="btn btn-delete" onclick="deleteStaff('${s._id}')">Xóa</button>`
-            }
-          </div>
+          <tr class="hover:bg-emerald-50/40 dark:hover:bg-emerald-950/20 transition">
+            <td class="p-4">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 font-bold flex items-center justify-center text-xs shrink-0">
+                  ${inits}
+                </div>
+                <div>
+                  <div class="font-bold text-slate-900 dark:text-white text-xs flex items-center gap-1.5">
+                    <span>${s.fullName}</span>
+                    ${isSelf ? '<span class="text-[9px] font-bold px-1.5 py-0.2 rounded bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300">Bạn</span>' : ''}
+                  </div>
+                  <div class="text-[10px] text-slate-400 font-mono">ID: #${s._id.slice(-6).toUpperCase()}</div>
+                </div>
+              </div>
+            </td>
+            <td class="p-4 text-slate-600 dark:text-slate-400">${s.email}</td>
+            <td class="p-4 font-mono text-slate-700 dark:text-slate-300">${s.phone || 'Chưa cập nhật'}</td>
+            <td class="p-4 text-center">${roleBadge}</td>
+            <td class="p-4 text-center">
+              ${isSelf ? `
+                <span class="text-xs text-slate-400 italic">Không thể đổi vai trò chính mình</span>
+              ` : `
+                <select onchange="changeRole('${s._id}', this.value, '${s.fullName.replace(/'/g, "\\'")}')" class="p-1.5 bg-slate-50 dark:bg-[#12211b] border border-slate-200 dark:border-slate-800 rounded-lg text-xs text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-emerald-500">
+                  <option value="admin" ${s.role === 'admin' ? 'selected' : ''}>Quản trị viên</option>
+                  <option value="pharmacist" ${s.role === 'pharmacist' ? 'selected' : ''}>Dược sĩ</option>
+                  <option value="nurse" ${s.role === 'nurse' ? 'selected' : ''}>Y tá</option>
+                </select>
+              `}
+            </td>
+            <td class="p-4 text-center">
+              ${isSelf ? `
+                <span class="text-slate-300 dark:text-slate-700">-</span>
+              ` : `
+                <button onclick="deleteStaff('${s._id}', '${s.fullName.replace(/'/g, "\\'")}')" title="Xóa tài khoản" class="p-1.5 rounded-lg text-red-500 hover:bg-red-50 dark:hover:bg-red-950/50 transition">
+                  🗑
+                </button>
+              `}
+            </td>
+          </tr>
         `;
       }).join('');
     }
 
+    // Live search
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      const filtered = allStaff.filter(s => {
+        const name = (s.fullName || '').toLowerCase();
+        const email = (s.email || '').toLowerCase();
+        return name.includes(q) || email.includes(q);
+      });
+      renderStaffTable(filtered);
+    });
+
     // Change role
-    async function changeRole(staffId, newRole) {
+    async function changeRole(staffId, newRole, name) {
       try {
         const res = await fetch(`${API_URL}/staff/${staffId}/role`, {
           method: 'PATCH',
@@ -164,37 +410,54 @@
           body: JSON.stringify({ role: newRole })
         });
         const data = await res.json();
-        showMessage(data.message, res.ok ? 'success' : 'error');
-        setTimeout(loadStaff, 800);
+        if (res.ok) {
+          Swal.fire({
+            toast: true,
+            icon: 'success',
+            title: `Đã đổi vai trò "${name}" thành ${newRole}!`,
+            position: 'top-end',
+            timer: 2000,
+            showConfirmButton: false
+          });
+          loadStaff();
+        } else {
+          Swal.fire('Lỗi', data.message, 'error');
+        }
       } catch (err) {
-        showMessage('❌ Lỗi kết nối server', 'error');
+        Swal.fire('Lỗi', 'Không thể kết nối máy chủ', 'error');
       }
     }
 
     // Delete staff
-    async function deleteStaff(staffId) {
-      if (!confirm('⚠️ Xác nhận xóa tài khoản này? Hành động không thể hoàn tác!')) return;
-      
+    async function deleteStaff(staffId, name) {
+      const confirm = await Swal.fire({
+        title: `Xóa tài khoản "${name}"?`,
+        text: 'Hành động này không thể hoàn tác!',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#dc2626',
+        cancelButtonColor: '#64748b',
+        confirmButtonText: 'Xác nhận xóa',
+        cancelButtonText: 'Hủy'
+      });
+
+      if (!confirm.isConfirmed) return;
+
       try {
-        const res = await fetch(`${API_URL}/staff/${staffId}`, {
-          method: 'DELETE'
-        });
+        const res = await fetch(`${API_URL}/staff/${staffId}`, { method: 'DELETE' });
         const data = await res.json();
-        showMessage(data.message, res.ok ? 'success' : 'error');
-        setTimeout(loadStaff, 800);
+        if (res.ok) {
+          Swal.fire({ toast: true, icon: 'success', title: data.message, position: 'top-end', timer: 2000, showConfirmButton: false });
+          loadStaff();
+        } else {
+          Swal.fire('Lỗi', data.message, 'error');
+        }
       } catch (err) {
-        showMessage('❌ Lỗi kết nối server', 'error');
+        Swal.fire('Lỗi', 'Không thể kết nối máy chủ', 'error');
       }
     }
 
-    function showMessage(text, type) {
-      const box = document.getElementById('messageBox');
-      box.className = `message ${type}`;
-      box.textContent = text;
-      setTimeout(() => { box.className = 'message'; }, 4000);
-    }
-
-    // Start
+    // Init
     loadStaff();
   </script>
 </body>

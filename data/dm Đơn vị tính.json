@@ -1,0 +1,108 @@
+[
+  {
+    "__EMPTY": "STT",
+    "DANH MỤC ĐƠN VỊ TÍNH": "Mã đơn vị",
+    "__EMPTY_1": "Tên đơn vị (Tiếng việt)",
+    "__EMPTY_2": "Tên đơn vị (Tiếng anh)"
+  },
+  {
+    "__EMPTY": 1,
+    "__EMPTY_1": "Bịch"
+  },
+  {
+    "__EMPTY": 2,
+    "__EMPTY_1": "Bình"
+  },
+  {
+    "__EMPTY": 3,
+    "__EMPTY_1": "Bộ"
+  },
+  {
+    "__EMPTY": 4,
+    "__EMPTY_1": "Bơm tiêm"
+  },
+  {
+    "__EMPTY": 5,
+    "__EMPTY_1": "Cái"
+  },
+  {
+    "__EMPTY": 6,
+    "__EMPTY_1": "Cặp"
+  },
+  {
+    "__EMPTY": 7,
+    "__EMPTY_1": "Cây"
+  },
+  {
+    "__EMPTY": 8,
+    "__EMPTY_1": "Chai"
+  },
+  {
+    "__EMPTY": 9,
+    "__EMPTY_1": "Chiếc"
+  },
+  {
+    "__EMPTY": 10,
+    "__EMPTY_1": "Cuộn"
+  },
+  {
+    "__EMPTY": 11,
+    "__EMPTY_1": "Đôi"
+  },
+  {
+    "__EMPTY": 12,
+    "__EMPTY_1": "Gói"
+  },
+  {
+    "__EMPTY": 13,
+    "__EMPTY_1": "Hộp"
+  },
+  {
+    "__EMPTY": 14,
+    "__EMPTY_1": "Kg"
+  },
+  {
+    "__EMPTY": 15,
+    "__EMPTY_1": "Lọ"
+  },
+  {
+    "__EMPTY": 16,
+    "__EMPTY_1": "Miếng"
+  },
+  {
+    "__EMPTY": 17,
+    "__EMPTY_1": "Ống"
+  },
+  {
+    "__EMPTY": 18,
+    "__EMPTY_1": "Sợi"
+  },
+  {
+    "__EMPTY": 19,
+    "__EMPTY_1": "Tép"
+  },
+  {
+    "__EMPTY": 20,
+    "__EMPTY_1": "Test"
+  },
+  {
+    "__EMPTY": 21,
+    "__EMPTY_1": "Tube"
+  },
+  {
+    "__EMPTY": 22,
+    "__EMPTY_1": "Tuýp"
+  },
+  {
+    "__EMPTY": 23,
+    "__EMPTY_1": "Vĩ"
+  },
+  {
+    "__EMPTY": 24,
+    "__EMPTY_1": "Viên"
+  },
+  {
+    "__EMPTY": 25,
+    "__EMPTY_1": "Xấp"
+  }
+]

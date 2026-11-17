@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh Mục Nhóm ATC - Quản Lý Kho Dược Phẩm</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="style09.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <nav class="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+        <h1 class="text-2xl font-bold flex items-center gap-2">
+          <span>🧬</span> Danh Mục Nhóm ATC
+        </h1>
+        <div class="flex flex-wrap items-center gap-4 text-sm font-medium">
+          <a href="index13.html" class="hover:text-blue-200 transition">Trang Chủ</a>
+          <a href="medicines11.html" class="hover:text-blue-200 transition">Danh Sách Thuốc</a>
+          <a href="manufacturers13.html" class="hover:text-blue-200 transition">Nhà Sản Xuất</a>
+          <a href="suppliers13.html" class="hover:text-blue-200 transition">Nhà Cung Cấp</a>
+          <a href="atc13.html" class="font-bold underline text-white">Nhóm ATC</a>
+          <a href="/dashboard11.html" class="bg-blue-700 hover:bg-blue-800 px-3 py-1.5 rounded-lg transition text-xs uppercase font-bold tracking-wider">Hệ Thống Kê Đơn 🏥</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-4 py-6">
+    <!-- Header & Search -->
+    <div class="bg-white rounded-xl shadow-sm p-4 mb-6 border border-gray-100 flex flex-col md:flex-row gap-4 justify-between items-center">
+      <div class="w-full md:w-96">
+        <input type="text" id="searchInput" placeholder="🔍 Tìm tên nhóm ATC, mã nhóm..." 
+          class="w-full p-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+      </div>
+      <div class="text-sm text-gray-500 font-medium">
+        Tổng số: <span id="totalCount" class="font-bold text-blue-600">Đang tải...</span>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left">
+          <thead class="bg-blue-50 text-blue-900 border-b border-blue-100 uppercase text-xs">
+            <tr>
+              <th class="px-5 py-3.5 font-bold w-20">ID</th>
+              <th class="px-5 py-3.5 font-bold w-32">Mã Nhóm</th>
+              <th class="px-5 py-3.5 font-bold">Tên Nhóm Phân Loại ATC</th>
+            </tr>
+          </thead>
+          <tbody id="atc-body" class="divide-y divide-gray-100">
+            <tr>
+              <td colspan="3" class="px-5 py-8 text-center text-gray-500">
+                <div class="inline-block animate-spin mr-2">⏳</div> Đang tải dữ liệu...
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let allATC = [];
+
+    async function loadATC() {
+      const tbody = document.getElementById('atc-body');
+      try {
+        const res = await fetch('/api/atc');
+        if (!res.ok) throw new Error('API không phản hồi');
+        
+        allATC = await res.json();
+        renderATC(allATC);
+
+        document.getElementById('totalCount').textContent = `${allATC.length} nhóm ATC`;
+        
+        Swal.fire({
+          toast: true, icon: 'success', timer: 1500,
+          position: 'top-end', showConfirmButton: false,
+          title: `Đã tải ${allATC.length} nhóm ATC`
+        });
+      } catch (err) {
+        console.error('Lỗi tải dữ liệu:', err);
+        tbody.innerHTML = 
+          '<tr><td colspan="3" class="px-5 py-8 text-center text-red-500 font-medium">❌ Lỗi tải dữ liệu! Vui lòng kiểm tra server.</td></tr>';
+        document.getElementById('totalCount').textContent = 'Lỗi';
+      }
+    }
+
+    function renderATC(list) {
+      const tbody = document.getElementById('atc-body');
+      if (!list || list.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="3" class="px-5 py-8 text-center text-gray-500">Không tìm thấy nhóm ATC nào</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = list.map(a => {
+        const id = a.id || a.id_nhom || '';
+        const code = a.ma_nhom || '';
+        const name = a.ten_chinh || a.ten_nhom || '';
+
+        return `
+          <tr class="hover:bg-blue-50/50 transition">
+            <td class="px-5 py-3 font-semibold text-gray-700">${id}</td>
+            <td class="px-5 py-3 font-mono font-medium text-blue-600">${code}</td>
+            <td class="px-5 py-3 font-medium text-gray-900">${name}</td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    // Live search
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      const kw = e.target.value.toLowerCase().trim();
+      const filtered = allATC.filter(a => {
+        const name = (a.ten_chinh || a.ten_nhom || '').toLowerCase();
+        const code = String(a.ma_nhom || '').toLowerCase();
+        return name.includes(kw) || code.includes(kw);
+      });
+      renderATC(filtered);
+      document.getElementById('totalCount').textContent = `${filtered.length}/${allATC.length} nhóm ATC`;
+    });
+
+    loadATC();
+  </script>
+</body>
+</html>
+

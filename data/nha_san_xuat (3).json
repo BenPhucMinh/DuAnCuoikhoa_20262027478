@@ -1,0 +1,1430 @@
+[
+  {
+    "id": 1,
+    "id_nsx": 1,
+    "ten_nsx": "A. Menarini Manufacturing Logistics and Services S.r.l",
+    "quoc_gia": "Ý"
+  },
+  {
+    "id": 2,
+    "id_nsx": 2,
+    "ten_nsx": "Abbott Biologicals B.V",
+    "quoc_gia": "Hà Lan"
+  },
+  {
+    "id": 3,
+    "id_nsx": 3,
+    "ten_nsx": "Adipharm EAD",
+    "quoc_gia": "Bỉ"
+  },
+  {
+    "id": 4,
+    "id_nsx": 4,
+    "ten_nsx": "AMANTA HEALTHCARE LIMITED",
+    "quoc_gia": "Bangladesh"
+  },
+  {
+    "id": 5,
+    "id_nsx": 5,
+    "ten_nsx": "APTISSEN",
+    "quoc_gia": "Bỉ"
+  },
+  {
+    "id": 6,
+    "id_nsx": 6,
+    "ten_nsx": "ASTRAZENECA AB",
+    "quoc_gia": "Thụy Điển"
+  },
+  {
+    "id": 7,
+    "id_nsx": 7,
+    "ten_nsx": "AstraZeneca AB",
+    "quoc_gia": "Thụy Điển"
+  },
+  {
+    "id": 8,
+    "id_nsx": 8,
+    "ten_nsx": "Astrea Fontaine",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 9,
+    "id_nsx": 9,
+    "ten_nsx": "AY PHARMACEUTICALS",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 10,
+    "id_nsx": 10,
+    "ten_nsx": "Balkanpharma - Dupnitsa AD",
+    "quoc_gia": "Bungari"
+  },
+  {
+    "id": 11,
+    "id_nsx": 11,
+    "ten_nsx": "Bayer",
+    "quoc_gia": "Đức"
+  },
+  {
+    "id": 12,
+    "id_nsx": 12,
+    "ten_nsx": "Bayer AG",
+    "quoc_gia": "Đức"
+  },
+  {
+    "id": 13,
+    "id_nsx": 13,
+    "ten_nsx": "Beaufour Ipsen Industrie",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 14,
+    "id_nsx": 14,
+    "ten_nsx": "BỆNH VIỆN DA LIỄU TP.HỒ CHÍ MINH",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 15,
+    "id_nsx": 15,
+    "ten_nsx": "BERLIN CHEMIE AG",
+    "quoc_gia": "Đức"
+  },
+  {
+    "id": 16,
+    "id_nsx": 16,
+    "ten_nsx": "Biocodex",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 17,
+    "id_nsx": 17,
+    "ten_nsx": "Biocon Biologics Limited",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 18,
+    "id_nsx": 18,
+    "ten_nsx": "BLUEPHARMA",
+    "quoc_gia": "Bồ Đào Nha"
+  },
+  {
+    "id": 19,
+    "id_nsx": 19,
+    "ten_nsx": "Boehringer Ingelheim",
+    "quoc_gia": "Đức"
+  },
+  {
+    "id": 20,
+    "id_nsx": 20,
+    "ten_nsx": "Catalent Germany Eberbach GmbH",
+    "quoc_gia": "Đức"
+  },
+  {
+    "id": 21,
+    "id_nsx": 21,
+    "ten_nsx": "Celon",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 22,
+    "id_nsx": 22,
+    "ten_nsx": "Chi nhánh 3 - Công ty CP Dược phẩm Imexpharm tại Bình Dương",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 23,
+    "id_nsx": 23,
+    "ten_nsx": "Chi nhánh Agimexpharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 24,
+    "id_nsx": 24,
+    "ten_nsx": "Chi nhánh Imexpharm Vĩnh Lộc",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 25,
+    "id_nsx": 25,
+    "ten_nsx": "Chi nhánh OPC Bình Dương",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 26,
+    "id_nsx": 26,
+    "ten_nsx": "Chi nhánh Usarichpharm - Phong Phú",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 27,
+    "id_nsx": 27,
+    "ten_nsx": "Chi nhánh Vidipha Bình Dương",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 28,
+    "id_nsx": 28,
+    "ten_nsx": "Chi nhánh TNHH Dược phẩm & Sinh học Y tế",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 29,
+    "id_nsx": 29,
+    "ten_nsx": "Chi nhánh Agimexpharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 30,
+    "id_nsx": 30,
+    "ten_nsx": "Chi nhánh Syntech - Hải Dương",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 31,
+    "id_nsx": 31,
+    "ten_nsx": "Chi nhánh II - TNHH DP Sài Gòn tại Bình Dương",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 32,
+    "id_nsx": 32,
+    "ten_nsx": "Chinoin Pharmaceutical and Chemical Works",
+    "quoc_gia": "Hungary"
+  },
+  {
+    "id": 33,
+    "id_nsx": 33,
+    "ten_nsx": "Công ty cổ phần Dược Apimed",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 34,
+    "id_nsx": 34,
+    "ten_nsx": "Công ty cổ phần dược Đồng Nai",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 35,
+    "id_nsx": 35,
+    "ten_nsx": "Công ty cổ phần Dược Hà Tĩnh",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 36,
+    "id_nsx": 36,
+    "ten_nsx": "CTCP Dược Hậu Giang - CN Nhà máy DHG",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 37,
+    "id_nsx": 37,
+    "ten_nsx": "Công ty cổ phần dược phẩm An Thiên",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 38,
+    "id_nsx": 38,
+    "ten_nsx": "Công ty Cổ phần Dược phẩm Boston Việt Nam",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 39,
+    "id_nsx": 39,
+    "ten_nsx": "Công ty cổ phần dược phẩm CPC1 Hà Nội",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 40,
+    "id_nsx": 40,
+    "ten_nsx": "Công Ty Cổ Phần Dược Phẩm Cửu Long",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 41,
+    "id_nsx": 41,
+    "ten_nsx": "Công ty cổ phần dược phẩm Đạt Vi Phú",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 42,
+    "id_nsx": 42,
+    "ten_nsx": "Công ty Cổ phần Dược phẩm Dược liệu Pharmedic",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 43,
+    "id_nsx": 43,
+    "ten_nsx": "CPH Dược phẩm Fremed",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 44,
+    "id_nsx": 44,
+    "ten_nsx": "Công ty cổ phần dược phẩm Hà Tây",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 45,
+    "id_nsx": 45,
+    "ten_nsx": "Công ty cổ phần dược phẩm Imexpharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 46,
+    "id_nsx": 46,
+    "ten_nsx": "Công ty cổ phần Dược phẩm Khánh Hòa",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 47,
+    "id_nsx": 47,
+    "ten_nsx": "Công ty cổ phần dược phẩm Me Di Sun",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 48,
+    "id_nsx": 48,
+    "ten_nsx": "CPH Dược phẩm Medisun",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 49,
+    "id_nsx": 49,
+    "ten_nsx": "Công ty cổ phần dược phẩm Phong Phú - Usarichpharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 50,
+    "id_nsx": 50,
+    "ten_nsx": "Công ty cổ phần Dược phẩm Phương Đông",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 51,
+    "id_nsx": 51,
+    "ten_nsx": "CPH Dược phẩm Quốc tế Mercipharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 52,
+    "id_nsx": 52,
+    "ten_nsx": "Công ty Cổ Phần Dược Phẩm Reliv",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 53,
+    "id_nsx": 53,
+    "ten_nsx": "Công ty Cổ phần Dược phẩm SAVI",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 54,
+    "id_nsx": 54,
+    "ten_nsx": "Công ty cổ phần dược phẩm SAVI (Savipharm JSC)",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 55,
+    "id_nsx": 55,
+    "ten_nsx": "Công ty cổ phần dược phẩm Tipharco",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 56,
+    "id_nsx": 56,
+    "ten_nsx": "Công ty cổ phần Dược phẩm Trung Ương 1 - Pharbaco",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 57,
+    "id_nsx": 57,
+    "ten_nsx": "Công ty cổ phần dược phẩm TV. Pharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 58,
+    "id_nsx": 58,
+    "ten_nsx": "Công ty cổ phần dược phẩm TV.Pharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 59,
+    "id_nsx": 59,
+    "ten_nsx": "Công ty cổ phần Dược phẩm Vĩnh Phúc",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 60,
+    "id_nsx": 60,
+    "ten_nsx": "Công ty cổ phần dược phẩm Wealphar",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 61,
+    "id_nsx": 61,
+    "ten_nsx": "CPH Dược Phúc Vinh",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 62,
+    "id_nsx": 62,
+    "ten_nsx": "Công ty cổ phần dược S.Pharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 63,
+    "id_nsx": 63,
+    "ten_nsx": "Công ty cổ phần dược và vật tư y tế Bình Thuận",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 64,
+    "id_nsx": 64,
+    "ten_nsx": "Công ty cổ phần dược vật tư y tế Hải Dương",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 65,
+    "id_nsx": 65,
+    "ten_nsx": "Công ty cổ phần dược VTYT Hà Nam",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 66,
+    "id_nsx": 66,
+    "ten_nsx": "CPH Dược - Trang thiết bị Y tế Bình Định (Bidiphar)",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 67,
+    "id_nsx": 67,
+    "ten_nsx": "Công ty cổ phần Fresenius Kabi Việt Nam",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 68,
+    "id_nsx": 68,
+    "ten_nsx": "Công ty Cổ Phần Hóa - Dược Phẩm Mekophar",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 69,
+    "id_nsx": 69,
+    "ten_nsx": "Công ty cổ phần Kỹ thuật Dược Bình Định",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 70,
+    "id_nsx": 70,
+    "ten_nsx": "CPH Nhà máy Bách Thảo Dược",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 71,
+    "id_nsx": 71,
+    "ten_nsx": "Công ty Cổ phần Pymepharco",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 72,
+    "id_nsx": 72,
+    "ten_nsx": "Công ty Cổ phần Tập đoàn Merap",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 73,
+    "id_nsx": 73,
+    "ten_nsx": "Công ty Cổ phần Thương mại Dược phẩm Quang Minh",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 74,
+    "id_nsx": 74,
+    "ten_nsx": "CPH Trang thiết bị Y tế Đồng Sen",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 75,
+    "id_nsx": 75,
+    "ten_nsx": "Công ty cổ phần US Pharma USA",
+    "quoc_gia": "Mỹ"
+  },
+  {
+    "id": 76,
+    "id_nsx": 76,
+    "ten_nsx": "Công ty Cổ phần Vắcxin và Sinh phẩm Nha Trang",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 77,
+    "id_nsx": 77,
+    "ten_nsx": "Công ty Cổ phần Xuất nhập khẩu Y tế Domesco",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 78,
+    "id_nsx": 78,
+    "ten_nsx": "Công ty CP Dược Medisun",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 79,
+    "id_nsx": 79,
+    "ten_nsx": "Công ty CP Dược Apimed",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 80,
+    "id_nsx": 80,
+    "ten_nsx": "Công ty CP Dược Khoa",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 81,
+    "id_nsx": 81,
+    "ten_nsx": "CP Dược phẩm Quốc tế Canada Việt Nam",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 82,
+    "id_nsx": 82,
+    "ten_nsx": "CP Dược phẩm Quốc tế STP",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 83,
+    "id_nsx": 83,
+    "ten_nsx": "Công ty CP Dược Vật tư Y tế Hà Nam",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 84,
+    "id_nsx": 84,
+    "ten_nsx": "Công ty CP Medcen",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 85,
+    "id_nsx": 85,
+    "ten_nsx": "CPDP Ampharco USA",
+    "quoc_gia": "Mỹ"
+  },
+  {
+    "id": 86,
+    "id_nsx": 86,
+    "ten_nsx": "CPDP Công nghệ cao Abipha",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 87,
+    "id_nsx": 87,
+    "ten_nsx": "CPDP SaVi",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 88,
+    "id_nsx": 88,
+    "ten_nsx": "CPDP Vĩnh Phúc",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 89,
+    "id_nsx": 89,
+    "ten_nsx": "LDDP Mebiphar - Austrapharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 90,
+    "id_nsx": 90,
+    "ten_nsx": "Liên doanh Meyer - BPC",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 91,
+    "id_nsx": 91,
+    "ten_nsx": "TNHH BRV Healthcare",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 92,
+    "id_nsx": 92,
+    "ten_nsx": "TNHH DRP Inter",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 93,
+    "id_nsx": 93,
+    "ten_nsx": "TNHH Dược phẩm Avani",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 94,
+    "id_nsx": 94,
+    "ten_nsx": "TNHH Dược phẩm Tradiphar",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 95,
+    "id_nsx": 95,
+    "ten_nsx": "TNHH Hasan - Dermapharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 96,
+    "id_nsx": 96,
+    "ten_nsx": "TNHH Liên doanh Hasan - Dermapharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 97,
+    "id_nsx": 97,
+    "ten_nsx": "TNHH Liên doanh Quốc tế Sanofrance",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 98,
+    "id_nsx": 98,
+    "ten_nsx": "TNHH Liên doanh Stellapharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 99,
+    "id_nsx": 99,
+    "ten_nsx": "TNHH Liên doanh Stellapharm - CN1",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 100,
+    "id_nsx": 100,
+    "ten_nsx": "TNHH MTV Vắcxin Pasteur Đà Lạt",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 101,
+    "id_nsx": 101,
+    "ten_nsx": "TNHH MTV Dược Phẩm 150 Cophavina",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 102,
+    "id_nsx": 102,
+    "ten_nsx": "TNHH Nước giải khát Suntory PepsiCo VN",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 103,
+    "id_nsx": 103,
+    "ten_nsx": "TNHH Roche Pharma",
+    "quoc_gia": "Thụy Sĩ"
+  },
+  {
+    "id": 104,
+    "id_nsx": 104,
+    "ten_nsx": "TNHH Sản xuất Dược phẩm Nanogen Lâm Đồng",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 105,
+    "id_nsx": 105,
+    "ten_nsx": "TNHH Sinh Dược phẩm Hera",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 106,
+    "id_nsx": 106,
+    "ten_nsx": "TNHH TM An Phú Khang",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 107,
+    "id_nsx": 107,
+    "ten_nsx": "TNHH Traphaco Hưng Yên",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 108,
+    "id_nsx": 108,
+    "ten_nsx": "TNHH United International Pharma",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 109,
+    "id_nsx": 109,
+    "ten_nsx": "CSSX: Catalent Germany / Berlin Chemie",
+    "quoc_gia": "Đức"
+  },
+  {
+    "id": 110,
+    "id_nsx": 110,
+    "ten_nsx": "CSSX: Merck Healthcare / Merck Mexico",
+    "quoc_gia": "Đức / Mexico"
+  },
+  {
+    "id": 111,
+    "id_nsx": 111,
+    "ten_nsx": "CTCP Dược Hậu Giang",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 112,
+    "id_nsx": 112,
+    "ten_nsx": "CTCP Dược Hậu Giang - CN Nhà máy",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 113,
+    "id_nsx": 113,
+    "ten_nsx": "CTCP Sunrise Plus VN",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 114,
+    "id_nsx": 114,
+    "ten_nsx": "CTCP Tập đoàn DP Trung ương Queen Diamond Diophaco",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 115,
+    "id_nsx": 115,
+    "ten_nsx": "CTy CP DP Công nghệ cao Beatexpharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 116,
+    "id_nsx": 116,
+    "ten_nsx": "CTy CP DP Nam Hà",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 117,
+    "id_nsx": 117,
+    "ten_nsx": "CTy CP DP OPC",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 118,
+    "id_nsx": 118,
+    "ten_nsx": "CTy CP DP Pulipha",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 119,
+    "id_nsx": 119,
+    "ten_nsx": "CTy CP DP Quốc tế Dolexphar",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 120,
+    "id_nsx": 120,
+    "ten_nsx": "CTy CP DP TW Dahupha",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 121,
+    "id_nsx": 121,
+    "ten_nsx": "CTy CP DP VGAS",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 122,
+    "id_nsx": 122,
+    "ten_nsx": "CTy CP Dược MP Quốc tế Lisacos",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 123,
+    "id_nsx": 123,
+    "ten_nsx": "CTy CP Liên doanh Dược MP Diamond Pháp",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 124,
+    "id_nsx": 124,
+    "ten_nsx": "CTy CP Phát triển Dược Vesta",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 125,
+    "id_nsx": 125,
+    "ten_nsx": "CTy CP Thực phẩm Dinh dưỡng Nutrinest",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 126,
+    "id_nsx": 126,
+    "ten_nsx": "CTy CP TM và DP Đông Nam Á",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 127,
+    "id_nsx": 127,
+    "ten_nsx": "CTy TNHH ADC",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 128,
+    "id_nsx": 128,
+    "ten_nsx": "CTy TNHH Đông Dược Xuân Quang",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 129,
+    "id_nsx": 129,
+    "ten_nsx": "CTy TNHH DP Fusi",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 130,
+    "id_nsx": 130,
+    "ten_nsx": "CTy TNHH DP Nam Việt - Navico",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 131,
+    "id_nsx": 131,
+    "ten_nsx": "CTy TNHH Dược Mỹ Phẩm Quang Xanh",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 132,
+    "id_nsx": 132,
+    "ten_nsx": "Daewoong Pharmaceutical Co., Ltd",
+    "quoc_gia": "Hàn Quốc"
+  },
+  {
+    "id": 133,
+    "id_nsx": 133,
+    "ten_nsx": "Delpharm Milano S.r.l",
+    "quoc_gia": "Ý"
+  },
+  {
+    "id": 134,
+    "id_nsx": 134,
+    "ten_nsx": "Delpharm Tours",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 135,
+    "id_nsx": 135,
+    "ten_nsx": "DP 3/2",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 136,
+    "id_nsx": 136,
+    "ten_nsx": "DP Hải Linh",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 137,
+    "id_nsx": 137,
+    "ten_nsx": "DP Liên doanh Mediphar",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 138,
+    "id_nsx": 138,
+    "ten_nsx": "Dragenopharm",
+    "quoc_gia": "Đức"
+  },
+  {
+    "id": 139,
+    "id_nsx": 139,
+    "ten_nsx": "ERBEX s.r.l",
+    "quoc_gia": "Ý"
+  },
+  {
+    "id": 140,
+    "id_nsx": 140,
+    "ten_nsx": "ERIC FAVRE Wellness",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 141,
+    "id_nsx": 141,
+    "ten_nsx": "Farcoderma S.r.l",
+    "quoc_gia": "Ý"
+  },
+  {
+    "id": 142,
+    "id_nsx": 142,
+    "ten_nsx": "Farmaprim",
+    "quoc_gia": "Moldova"
+  },
+  {
+    "id": 143,
+    "id_nsx": 143,
+    "ten_nsx": "Ferngrove Pharmaceuticals Australia Pty Ltd",
+    "quoc_gia": "Úc"
+  },
+  {
+    "id": 144,
+    "id_nsx": 144,
+    "ten_nsx": "Ferrer Internacional S.A",
+    "quoc_gia": "Tây Ban Nha"
+  },
+  {
+    "id": 145,
+    "id_nsx": 145,
+    "ten_nsx": "Fidia Farmaceutici S.p.A",
+    "quoc_gia": "Ý"
+  },
+  {
+    "id": 146,
+    "id_nsx": 146,
+    "ten_nsx": "Fresenius Kabi Austria GmbH",
+    "quoc_gia": "Áo"
+  },
+  {
+    "id": 147,
+    "id_nsx": 147,
+    "ten_nsx": "Gamma Chemicals PTE",
+    "quoc_gia": "Singapore"
+  },
+  {
+    "id": 148,
+    "id_nsx": 148,
+    "ten_nsx": "Gedeon Richter Plc",
+    "quoc_gia": "Hungary"
+  },
+  {
+    "id": 149,
+    "id_nsx": 149,
+    "ten_nsx": "Glaxo Wellcome SA",
+    "quoc_gia": "Anh Quốc"
+  },
+  {
+    "id": 150,
+    "id_nsx": 150,
+    "ten_nsx": "GlaxoSmithKline LLC",
+    "quoc_gia": "Anh Quốc / Mỹ"
+  },
+  {
+    "id": 151,
+    "id_nsx": 151,
+    "ten_nsx": "Glaxowellcome Production",
+    "quoc_gia": "Anh Quốc"
+  },
+  {
+    "id": 152,
+    "id_nsx": 152,
+    "ten_nsx": "Glenmark",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 153,
+    "id_nsx": 153,
+    "ten_nsx": "Hanlim Pharm Co., Ltd",
+    "quoc_gia": "Hàn Quốc"
+  },
+  {
+    "id": 154,
+    "id_nsx": 154,
+    "ten_nsx": "Hetero Labs Limited",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 155,
+    "id_nsx": 155,
+    "ten_nsx": "Hisamitsu",
+    "quoc_gia": "Nhật Bản"
+  },
+  {
+    "id": 156,
+    "id_nsx": 156,
+    "ten_nsx": "HK Inno N Corporation",
+    "quoc_gia": "Hàn Quốc"
+  },
+  {
+    "id": 157,
+    "id_nsx": 157,
+    "ten_nsx": "Huizhou Kaiyi Technology Co., Ltd",
+    "quoc_gia": "Trung Quốc"
+  },
+  {
+    "id": 158,
+    "id_nsx": 158,
+    "ten_nsx": "Huy Vân",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 159,
+    "id_nsx": 159,
+    "ten_nsx": "Incepta Pharmaceuticals Ltd",
+    "quoc_gia": "Bangladesh"
+  },
+  {
+    "id": 160,
+    "id_nsx": 160,
+    "ten_nsx": "Inforlife S.A",
+    "quoc_gia": "Brazil"
+  },
+  {
+    "id": 161,
+    "id_nsx": 161,
+    "ten_nsx": "Innothera Chouzy",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 162,
+    "id_nsx": 162,
+    "ten_nsx": "Interthai Pharmaceutical Manufacturing Ltd",
+    "quoc_gia": "Thái Lan"
+  },
+  {
+    "id": 163,
+    "id_nsx": 163,
+    "ten_nsx": "Ipca Laboratories Ltd",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 164,
+    "id_nsx": 164,
+    "ten_nsx": "Iprad Santé",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 165,
+    "id_nsx": 165,
+    "ten_nsx": "Janssen Cilag S.p.A",
+    "quoc_gia": "Ý"
+  },
+  {
+    "id": 166,
+    "id_nsx": 166,
+    "ten_nsx": "Khác",
+    "quoc_gia": "—"
+  },
+  {
+    "id": 167,
+    "id_nsx": 167,
+    "ten_nsx": "Korea United Pharm",
+    "quoc_gia": "Hàn Quốc"
+  },
+  {
+    "id": 168,
+    "id_nsx": 168,
+    "ten_nsx": "Laboratoires Chemineau",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 169,
+    "id_nsx": 169,
+    "ten_nsx": "Laboratoires SVR",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 170,
+    "id_nsx": 170,
+    "ten_nsx": "La Roche-Posay",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 171,
+    "id_nsx": 171,
+    "ten_nsx": "LAVENA PLC",
+    "quoc_gia": "Bungari"
+  },
+  {
+    "id": 172,
+    "id_nsx": 172,
+    "ten_nsx": "LDP-Laboratorios Torlan, S.A",
+    "quoc_gia": "Tây Ban Nha"
+  },
+  {
+    "id": 173,
+    "id_nsx": 173,
+    "ten_nsx": "Lek Pharmaceuticals d.d",
+    "quoc_gia": "Slovenia"
+  },
+  {
+    "id": 174,
+    "id_nsx": 174,
+    "ten_nsx": "Leo Laboratories Limited",
+    "quoc_gia": "Đan Mạch"
+  },
+  {
+    "id": 175,
+    "id_nsx": 175,
+    "ten_nsx": "Les Laboratoires Servier Industrie",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 176,
+    "id_nsx": 176,
+    "ten_nsx": "Les Trois Chênes",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 177,
+    "id_nsx": 177,
+    "ten_nsx": "Lindopharm GmbH",
+    "quoc_gia": "Đức"
+  },
+  {
+    "id": 178,
+    "id_nsx": 178,
+    "ten_nsx": "M/s Cipla Ltd",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 179,
+    "id_nsx": 179,
+    "ten_nsx": "Macleods Pharmaceuticals Ltd",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 180,
+    "id_nsx": 180,
+    "ten_nsx": "Masenz Danya Group S.L",
+    "quoc_gia": "Tây Ban Nha"
+  },
+  {
+    "id": 181,
+    "id_nsx": 181,
+    "ten_nsx": "Medochemie Ltd - Ampoule Facility",
+    "quoc_gia": "Síp"
+  },
+  {
+    "id": 182,
+    "id_nsx": 182,
+    "ten_nsx": "Medochemie Ltd - Central Factory",
+    "quoc_gia": "Síp"
+  },
+  {
+    "id": 183,
+    "id_nsx": 183,
+    "ten_nsx": "Mega Lifesciences Public Company Limited",
+    "quoc_gia": "Thái Lan"
+  },
+  {
+    "id": 184,
+    "id_nsx": 184,
+    "ten_nsx": "Meiji Seika Pharma",
+    "quoc_gia": "Nhật Bản"
+  },
+  {
+    "id": 185,
+    "id_nsx": 185,
+    "ten_nsx": "Merck Healthcare KGaA",
+    "quoc_gia": "Đức"
+  },
+  {
+    "id": 186,
+    "id_nsx": 186,
+    "ten_nsx": "Merck Santé S.a.S",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 187,
+    "id_nsx": 187,
+    "ten_nsx": "Merck Sante s.a.s.",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 188,
+    "id_nsx": 188,
+    "ten_nsx": "Merz",
+    "quoc_gia": "Đức"
+  },
+  {
+    "id": 189,
+    "id_nsx": 189,
+    "ten_nsx": "Meyer Organics Pvt. Ltd",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 190,
+    "id_nsx": 190,
+    "ten_nsx": "Micro Labs Limited",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 191,
+    "id_nsx": 191,
+    "ten_nsx": "Mylan Laboratories Limited",
+    "quoc_gia": "Mỹ"
+  },
+  {
+    "id": 192,
+    "id_nsx": 192,
+    "ten_nsx": "Mylan Laboratories S.A.S",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 193,
+    "id_nsx": 193,
+    "ten_nsx": "Mylan Laboratories SAS",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 194,
+    "id_nsx": 194,
+    "ten_nsx": "Naos Les Laboratoires",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 195,
+    "id_nsx": 195,
+    "ten_nsx": "Naprod Life Sciences Pvt. Ltd",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 196,
+    "id_nsx": 196,
+    "ten_nsx": "Natrol",
+    "quoc_gia": "Mỹ"
+  },
+  {
+    "id": 197,
+    "id_nsx": 197,
+    "ten_nsx": "Nhà máy 2 - TNHH Liên doanh Hasan-Dermapharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 198,
+    "id_nsx": 198,
+    "ten_nsx": "Nhà máy 2 - TNHH LD Hasan-Dermapharm",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 199,
+    "id_nsx": 199,
+    "ten_nsx": "Novartis Farma S.p.A",
+    "quoc_gia": "Ý"
+  },
+  {
+    "id": 200,
+    "id_nsx": 200,
+    "ten_nsx": "Novo Nordisk A/S",
+    "quoc_gia": "Đan Mạch"
+  },
+  {
+    "id": 201,
+    "id_nsx": 201,
+    "ten_nsx": "Nuvita Ilac ve Kimya San. Tic. A.Ş",
+    "quoc_gia": "Thổ Nhĩ Kỳ"
+  },
+  {
+    "id": 202,
+    "id_nsx": 202,
+    "ten_nsx": "O.F.I. Officina Farmaceutica Italiana S.p.A",
+    "quoc_gia": "Ý"
+  },
+  {
+    "id": 203,
+    "id_nsx": 203,
+    "ten_nsx": "Olic (Thailand) Ltd",
+    "quoc_gia": "Thái Lan"
+  },
+  {
+    "id": 204,
+    "id_nsx": 204,
+    "ten_nsx": "Opella Healthcare International SAS",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 205,
+    "id_nsx": 205,
+    "ten_nsx": "Orzax",
+    "quoc_gia": "Thổ Nhĩ Kỳ"
+  },
+  {
+    "id": 206,
+    "id_nsx": 206,
+    "ten_nsx": "Panpharmarma",
+    "quoc_gia": "Thổ Nhĩ Kỳ"
+  },
+  {
+    "id": 207,
+    "id_nsx": 207,
+    "ten_nsx": "Patheon Puerto Rico / Merck",
+    "quoc_gia": "Mỹ / Đức"
+  },
+  {
+    "id": 208,
+    "id_nsx": 208,
+    "ten_nsx": "Pfizer Italia S.R.L",
+    "quoc_gia": "Ý"
+  },
+  {
+    "id": 209,
+    "id_nsx": 209,
+    "ten_nsx": "Pharmatis",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 210,
+    "id_nsx": 210,
+    "ten_nsx": "Pierre Fabre Médicament Production",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 211,
+    "id_nsx": 211,
+    "ten_nsx": "PT. Novell Pharmaceutical Laboratories",
+    "quoc_gia": "Indonesia"
+  },
+  {
+    "id": 212,
+    "id_nsx": 212,
+    "ten_nsx": "Rafarm SA",
+    "quoc_gia": "Hy Lạp"
+  },
+  {
+    "id": 213,
+    "id_nsx": 213,
+    "ten_nsx": "Recipharm Fontaine",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 214,
+    "id_nsx": 214,
+    "ten_nsx": "Remedica Ltd",
+    "quoc_gia": "Síp"
+  },
+  {
+    "id": 215,
+    "id_nsx": 215,
+    "ten_nsx": "Robinson Pharma, Inc",
+    "quoc_gia": "Mỹ"
+  },
+  {
+    "id": 216,
+    "id_nsx": 216,
+    "ten_nsx": "Rovi Pharma Industrial Services",
+    "quoc_gia": "Tây Ban Nha"
+  },
+  {
+    "id": 217,
+    "id_nsx": 217,
+    "ten_nsx": "S.C. Rompharm Company S.r.l",
+    "quoc_gia": "Romania"
+  },
+  {
+    "id": 218,
+    "id_nsx": 218,
+    "ten_nsx": "S.C. Slavia Pharm S.R.L",
+    "quoc_gia": "Romania"
+  },
+  {
+    "id": 219,
+    "id_nsx": 219,
+    "ten_nsx": "S.I.I.T SRL",
+    "quoc_gia": "Romania"
+  },
+  {
+    "id": 220,
+    "id_nsx": 220,
+    "ten_nsx": "SA Alcon-Couvreur NV",
+    "quoc_gia": "Bỉ"
+  },
+  {
+    "id": 221,
+    "id_nsx": 221,
+    "ten_nsx": "Samjin Pharmaceutical Co., Ltd",
+    "quoc_gia": "Hàn Quốc"
+  },
+  {
+    "id": 222,
+    "id_nsx": 222,
+    "ten_nsx": "Sanofi Aventis S.A",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 223,
+    "id_nsx": 223,
+    "ten_nsx": "Sanofi S.P.A",
+    "quoc_gia": "Ý"
+  },
+  {
+    "id": 224,
+    "id_nsx": 224,
+    "ten_nsx": "Santen",
+    "quoc_gia": "Nhật Bản"
+  },
+  {
+    "id": 225,
+    "id_nsx": 225,
+    "ten_nsx": "Septodont",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 226,
+    "id_nsx": 226,
+    "ten_nsx": "Siegfried Barbera, S.L",
+    "quoc_gia": "Tây Ban Nha"
+  },
+  {
+    "id": 227,
+    "id_nsx": 227,
+    "ten_nsx": "Siu Guan Chem. Ind. Co., Ltd",
+    "quoc_gia": "Philippines"
+  },
+  {
+    "id": 228,
+    "id_nsx": 228,
+    "ten_nsx": "Sophartex",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 229,
+    "id_nsx": 229,
+    "ten_nsx": "SPM",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 230,
+    "id_nsx": 230,
+    "ten_nsx": "The Acme Laboratories Ltd",
+    "quoc_gia": "Bangladesh"
+  },
+  {
+    "id": 231,
+    "id_nsx": 231,
+    "ten_nsx": "The Madras Pharmaceuticals",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 232,
+    "id_nsx": 232,
+    "ten_nsx": "Trapharco",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 233,
+    "id_nsx": 233,
+    "ten_nsx": "Troikaa Pharmaceuticals Ltd",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 234,
+    "id_nsx": 234,
+    "ten_nsx": "Upsa SAS",
+    "quoc_gia": "Pháp"
+  },
+  {
+    "id": 235,
+    "id_nsx": 235,
+    "ten_nsx": "USV Private Limited",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 236,
+    "id_nsx": 236,
+    "ten_nsx": "Vinphaco",
+    "quoc_gia": "Việt Nam"
+  },
+  {
+    "id": 237,
+    "id_nsx": 237,
+    "ten_nsx": "Windlas",
+    "quoc_gia": "Ấn Độ"
+  },
+  {
+    "id": 238,
+    "id_nsx": 238,
+    "ten_nsx": "Xưởng sản xuất Nutifine",
+    "quoc_gia": "Việt Nam"
+  }
+]

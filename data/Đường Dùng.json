@@ -1,0 +1,327 @@
+[
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": "STT",
+    "__EMPTY": "Mã đường dùng",
+    "__EMPTY_1": "Đường dùng/dạng dùng"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": "(1)",
+    "__EMPTY": "(2)",
+    "__EMPTY_1": "(3)"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 1,
+    "__EMPTY": "1.01",
+    "__EMPTY_1": "Uống"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 2,
+    "__EMPTY": "1.02",
+    "__EMPTY_1": "Ngậm"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 3,
+    "__EMPTY": "1.03",
+    "__EMPTY_1": "Nhai"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 4,
+    "__EMPTY": "1.04",
+    "__EMPTY_1": "Đặt dưới lưỡi"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 5,
+    "__EMPTY": "1.05",
+    "__EMPTY_1": "Ngậm dưới lưỡi"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 6,
+    "__EMPTY": "2.01",
+    "__EMPTY_1": "Tiêm bắp"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 7,
+    "__EMPTY": "2.02",
+    "__EMPTY_1": "Tiêm dưới da"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 8,
+    "__EMPTY": "2.03",
+    "__EMPTY_1": "Tiêm trong da"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 9,
+    "__EMPTY": 2.04,
+    "__EMPTY_1": "Tiêm tĩnh mạch"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 10,
+    "__EMPTY": "2.05",
+    "__EMPTY_1": "Tiêm truyền tĩnh mạch"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 11,
+    "__EMPTY": "2.06",
+    "__EMPTY_1": "Tiêm vào ổ khớp"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 12,
+    "__EMPTY": "2.07",
+    "__EMPTY_1": "Tiêm nội nhãn cầu"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 13,
+    "__EMPTY": "2.08",
+    "__EMPTY_1": "Tiêm trong dịch kính của mắt"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 14,
+    "__EMPTY": "2.09",
+    "__EMPTY_1": "Tiêm vào các khoang của cơ thể"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 15,
+    "__EMPTY": 2.1,
+    "__EMPTY_1": "Tiêm"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 16,
+    "__EMPTY": "2.11",
+    "__EMPTY_1": "Tiêm động mạch khối u"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 17,
+    "__EMPTY": "2.12",
+    "__EMPTY_1": "Tiêm vào khoang tự nhiên"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 18,
+    "__EMPTY": "2.13",
+    "__EMPTY_1": "Tiêm vào khối u"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 19,
+    "__EMPTY": 2.14,
+    "__EMPTY_1": "Truyền tĩnh mạch"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 20,
+    "__EMPTY": "2.15",
+    "__EMPTY_1": "Tiêm truyền"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 21,
+    "__EMPTY": "3.01",
+    "__EMPTY_1": "Bôi"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 22,
+    "__EMPTY": "3.02",
+    "__EMPTY_1": "Xoa ngoài"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 23,
+    "__EMPTY": "3.03",
+    "__EMPTY_1": "Dán trên da"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 24,
+    "__EMPTY": "3.04",
+    "__EMPTY_1": "Xịt ngoài da"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 25,
+    "__EMPTY": "3.05",
+    "__EMPTY_1": "Dùng ngoài"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 26,
+    "__EMPTY": "4.01",
+    "__EMPTY_1": "Đặt âm đạo"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 27,
+    "__EMPTY": "4.02",
+    "__EMPTY_1": "Đặt hậu môn"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 28,
+    "__EMPTY": "4.03",
+    "__EMPTY_1": "Thụt hậu môn - trực tràng"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 29,
+    "__EMPTY": "4.04",
+    "__EMPTY_1": "Đặt"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 30,
+    "__EMPTY": "4.05",
+    "__EMPTY_1": "Đặt tử cung"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 31,
+    "__EMPTY": "4.06",
+    "__EMPTY_1": "Thụt"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 32,
+    "__EMPTY": "5.01",
+    "__EMPTY_1": "Phun mù"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 33,
+    "__EMPTY": "5.02",
+    "__EMPTY_1": "Dạng hít"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 34,
+    "__EMPTY": "5.03",
+    "__EMPTY_1": "Bột hít"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 35,
+    "__EMPTY": "5.04",
+    "__EMPTY_1": "Xịt"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 36,
+    "__EMPTY": "5.05",
+    "__EMPTY_1": "Khí dung"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 37,
+    "__EMPTY": "5.06",
+    "__EMPTY_1": "Đường hô hấp"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 38,
+    "__EMPTY": "5.07",
+    "__EMPTY_1": "Xịt mũi"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 39,
+    "__EMPTY": "5.08",
+    "__EMPTY_1": "Xịt họng"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 40,
+    "__EMPTY": "5.09",
+    "__EMPTY_1": "Thuốc mũi"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 41,
+    "__EMPTY": "5.10",
+    "__EMPTY_1": "Nhỏ mũi"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 42,
+    "__EMPTY": "6.01",
+    "__EMPTY_1": "Nhỏ mắt"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 43,
+    "__EMPTY": "6.02",
+    "__EMPTY_1": "Tra mắt"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 44,
+    "__EMPTY": "6.03",
+    "__EMPTY_1": "Thuốc mắt"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 45,
+    "__EMPTY": 6.04,
+    "__EMPTY_1": "Nhỏ tai"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 46,
+    "__EMPTY": "9.01",
+    "__EMPTY_1": "Áp ngoài da"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 47,
+    "__EMPTY": "9.02",
+    "__EMPTY_1": "Áp sát khối u"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 48,
+    "__EMPTY": "9.03",
+    "__EMPTY_1": "Bình khí lỏng hoặc nén"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 49,
+    "__EMPTY": "9.04",
+    "__EMPTY_1": "Bình khí nén"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 50,
+    "__EMPTY": "9.05",
+    "__EMPTY_1": "Bôi trực tràng"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 51,
+    "__EMPTY": "9.06",
+    "__EMPTY_1": "Đánh tưa lưỡi"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 52,
+    "__EMPTY": "9.07",
+    "__EMPTY_1": "Cấy vào khối u"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 53,
+    "__EMPTY": "9.08",
+    "__EMPTY_1": "Chiếu ngoài"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 54,
+    "__EMPTY": "9.09",
+    "__EMPTY_1": "Dung dịch"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 55,
+    "__EMPTY": "9.10",
+    "__EMPTY_1": "Dung dịch rửa"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 56,
+    "__EMPTY": "9.11",
+    "__EMPTY_1": "Dung dịch thẩm phân"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 57,
+    "__EMPTY": "9.12",
+    "__EMPTY_1": "Phun"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 58,
+    "__EMPTY": "9.13",
+    "__EMPTY_1": "Túi"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 59,
+    "__EMPTY": "9.14",
+    "__EMPTY_1": "Hỗn dịch"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 60,
+    "__EMPTY": "9.15",
+    "__EMPTY_1": "Bột đông khô để pha hỗn dịch"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 61,
+    "__EMPTY": "9.16",
+    "__EMPTY_1": "Phức hợp lipid"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 62,
+    "__EMPTY": "9.17",
+    "__EMPTY_1": "Liposome"
+  },
+  {
+    " Danh mục mã đường dùng/dạng dùng \n": 63,
+    "__EMPTY": "9.18",
+    "__EMPTY_1": "Polymeric micelle"
+  }
+]

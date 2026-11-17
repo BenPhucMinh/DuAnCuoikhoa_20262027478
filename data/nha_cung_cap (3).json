@@ -1,0 +1,380 @@
+[
+  {
+    "id": 1,
+    "id_ncc": 1,
+    "ma_ncc": "NCC1",
+    "ten_ncc": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TV.PHARM",
+    "Tên NCC": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TV.PHARM",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 2,
+    "id_ncc": 2,
+    "ma_ncc": "NCC2",
+    "ten_ncc": "CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG",
+    "Tên NCC": "CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 3,
+    "id_ncc": 3,
+    "ma_ncc": "NCC3",
+    "ten_ncc": "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHÁNH HÒA",
+    "Tên NCC": "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHÁNH HÒA",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 4,
+    "id_ncc": 4,
+    "ma_ncc": "NCC4",
+    "ten_ncc": "CÔNG TY CỔ PHẦN SANTAV",
+    "Tên NCC": "CÔNG TY CỔ PHẦN SANTAV",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 5,
+    "id_ncc": 5,
+    "ma_ncc": "NCC5",
+    "ten_ncc": "CÔNG TY TNHH VẬT TƯ Y TẾ HALUCO",
+    "Tên NCC": "CÔNG TY TNHH VẬT TƯ Y TẾ HALUCO",
+    "quoc_gia": "Khác",
+    "TENNUOC SX": "Khác"
+  },
+  {
+    "id": 6,
+    "id_ncc": 6,
+    "ma_ncc": "NCC6",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM THIẾT BỊ Y TẾ ÂU VIỆT",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM THIẾT BỊ Y TẾ ÂU VIỆT",
+    "quoc_gia": "Ấn Độ",
+    "TENNUOC SX": "Ấn Độ"
+  },
+  {
+    "id": 7,
+    "id_ncc": 7,
+    "ma_ncc": "NCC7",
+    "ten_ncc": "CÔNG TY CỔ PHẦN DƯỢC PHẨM AGIMEXPHARM",
+    "Tên NCC": "CÔNG TY CỔ PHẦN DƯỢC PHẨM AGIMEXPHARM",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 8,
+    "id_ncc": 8,
+    "ma_ncc": "NCC8",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM VIỆT ĐỨC",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 9,
+    "id_ncc": 9,
+    "ma_ncc": "NCC9",
+    "ten_ncc": "CHI NHÁNH CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG TẠI TỈNH BÌNH DƯƠNG",
+    "Tên NCC": "CHI NHÁNH CÔNG TY CỔ PHẦN DƯỢC HẬU GIANG TẠI TỈNH BÌNH DƯƠNG",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 10,
+    "id_ncc": 10,
+    "ma_ncc": "NCC10",
+    "ten_ncc": "CÔNG TY CP DƯỢC PHẨM AGIMEXPHARM",
+    "Tên NCC": "CÔNG TY CP DƯỢC PHẨM AGIMEXPHARM",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 11,
+    "id_ncc": 11,
+    "ma_ncc": "NCC11",
+    "ten_ncc": "CÔNG TY CỔ PHẦN TẬP ĐOÀN MERAP",
+    "Tên NCC": "CÔNG TY CỔ PHẦN TẬP ĐOÀN MERAP",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 12,
+    "id_ncc": 12,
+    "ma_ncc": "NCC12",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM HƯNG NHẤT",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM HƯNG NHẤT",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 13,
+    "id_ncc": 13,
+    "ma_ncc": "NCC13",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM VIỆT HÂN",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM VIỆT HÂN",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 14,
+    "id_ncc": 14,
+    "ma_ncc": "NCC14",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM NGUYÊN ANH KHOA",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM NGUYÊN ANH KHOA",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 15,
+    "id_ncc": 15,
+    "ma_ncc": "NCC15",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM CẨM TÚ",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM CẨM TÚ",
+    "quoc_gia": "Khác",
+    "TENNUOC SX": "Khác"
+  },
+  {
+    "id": 16,
+    "id_ncc": 16,
+    "ma_ncc": "NCC16",
+    "ten_ncc": "CÔNG TY CỔ PHẦN O2PHARM",
+    "Tên NCC": "CÔNG TY CỔ PHẦN O2PHARM",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 17,
+    "id_ncc": 17,
+    "ma_ncc": "NCC17",
+    "ten_ncc": "CÔNG TY TNHH THƯƠNG MẠI DƯỢC THUẬN GIA",
+    "Tên NCC": "CÔNG TY TNHH THƯƠNG MẠI DƯỢC THUẬN GIA",
+    "quoc_gia": "Pháp",
+    "TENNUOC SX": "Pháp"
+  },
+  {
+    "id": 18,
+    "id_ncc": 18,
+    "ma_ncc": "NCC18",
+    "ten_ncc": "CÔNG TY CÔ PHẦN DƯỢC PHẨM BOSTON",
+    "Tên NCC": "CÔNG TY CÔ PHẦN DƯỢC PHẨM BOSTON",
+    "quoc_gia": "Khác",
+    "TENNUOC SX": "Khác"
+  },
+  {
+    "id": 19,
+    "id_ncc": 19,
+    "ma_ncc": "NCC19",
+    "ten_ncc": "CÔNG TY CỔ PHẦN DƯỢC PHẨM MEDBOLIDE",
+    "Tên NCC": "CÔNG TY CỔ PHẦN DƯỢC PHẨM MEDBOLIDE",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 20,
+    "id_ncc": 20,
+    "ma_ncc": "NCC20",
+    "ten_ncc": "CÔNG TY CỔ PHẦN DƯỢC PHẨM SANOFRANCE MIỀN NAM",
+    "Tên NCC": "CÔNG TY CỔ PHẦN DƯỢC PHẨM SANOFRANCE MIỀN NAM",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 21,
+    "id_ncc": 21,
+    "ma_ncc": "HOÀNG ĐỨC",
+    "ten_ncc": "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẬN 10 CỬA HÀNG SỐ 35 (CỦA HÀNG SỐ 41)",
+    "Tên NCC": "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUẬN 10 CỬA HÀNG SỐ 35 (CỦA HÀNG SỐ 41)",
+    "quoc_gia": "Khác",
+    "TENNUOC SX": "Khác"
+  },
+  {
+    "id": 22,
+    "id_ncc": 22,
+    "ma_ncc": "NCC22",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM GIGAMED",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM GIGAMED",
+    "quoc_gia": "Khác",
+    "TENNUOC SX": "Khác"
+  },
+  {
+    "id": 23,
+    "id_ncc": 23,
+    "ma_ncc": "NCC23",
+    "ten_ncc": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+    "Tên NCC": "CÔNG TY CỔ PHẦN DƯỢC LIỆU TRUNG ƯƠNG 2",
+    "quoc_gia": "Khác",
+    "TENNUOC SX": "Khác"
+  },
+  {
+    "id": 24,
+    "id_ncc": 24,
+    "ma_ncc": "NCC24",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM HUY CƯỜNG",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM HUY CƯỜNG",
+    "quoc_gia": "Bulgaria",
+    "TENNUOC SX": "Bulgaria"
+  },
+  {
+    "id": 25,
+    "id_ncc": 25,
+    "ma_ncc": "NCC25",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM ĐỨC VIỆT",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM ĐỨC VIỆT",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 26,
+    "id_ncc": 26,
+    "ma_ncc": "NCC26",
+    "ten_ncc": "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+    "Tên NCC": "CÔNG TY CỔ PHẦN DƯỢC PHẨM KHƯƠNG DUY",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 27,
+    "id_ncc": 27,
+    "ma_ncc": "NCC27",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM VICTORY",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM VICTORY",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 28,
+    "id_ncc": 28,
+    "ma_ncc": "NCC28",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM HOÀNG KHANG",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM HOÀNG KHANG",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 29,
+    "id_ncc": 29,
+    "ma_ncc": "NCC29",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM TRUNG HẠNH",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM TRUNG HẠNH",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 30,
+    "id_ncc": 30,
+    "ma_ncc": "NCC30",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM THÁI TÚ",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM THÁI TÚ",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 31,
+    "id_ncc": 31,
+    "ma_ncc": "NCC31",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM ĐÔ THÀNH",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM ĐÔ THÀNH",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 32,
+    "id_ncc": 32,
+    "ma_ncc": "NCC32",
+    "ten_ncc": "CÔNG TY CỔ PHẦN DƯỢC PHẨM FPT LONG CHÂU",
+    "Tên NCC": "CÔNG TY CỔ PHẦN DƯỢC PHẨM FPT LONG CHÂU",
+    "quoc_gia": "Khác",
+    "TENNUOC SX": "Khác"
+  },
+  {
+    "id": 33,
+    "id_ncc": 33,
+    "ma_ncc": "NCC33",
+    "ten_ncc": "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM HAI MƯƠI THÁNG MƯỜI",
+    "Tên NCC": "CÔNG TY TNHH THƯƠNG MẠI DƯỢC PHẨM HAI MƯƠI THÁNG MƯỜI",
+    "quoc_gia": "Khác",
+    "TENNUOC SX": "Khác"
+  },
+  {
+    "id": 34,
+    "id_ncc": 34,
+    "ma_ncc": "NCC34",
+    "ten_ncc": "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI-CHI NHÁNH HỒ CHÍ MINH",
+    "Tên NCC": "CÔNG TY CỔ PHẦN DƯỢC PHẨM CPC1 HÀ NỘI-CHI NHÁNH HỒ CHÍ MINH",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 35,
+    "id_ncc": 35,
+    "ma_ncc": "NCC35",
+    "ten_ncc": "CÔNG TY CỔ PHẦN DƯỢC PHẨM DMEXPHARM",
+    "Tên NCC": "CÔNG TY CỔ PHẦN DƯỢC PHẨM DMEXPHARM",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 36,
+    "id_ncc": 36,
+    "ma_ncc": "NCC36",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM NOVOPHARM MN",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM NOVOPHARM MN",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 37,
+    "id_ncc": 37,
+    "ma_ncc": "NCC37",
+    "ten_ncc": "CÔNG TY CỔ PHẦN GONSA",
+    "Tên NCC": "CÔNG TY CỔ PHẦN GONSA",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 38,
+    "id_ncc": 38,
+    "ma_ncc": "NCC38",
+    "ten_ncc": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+    "Tên NCC": "CÔNG TY CỔ PHẦN DƯỢC PHẨM TRUNG ƯƠNG CODUPHA",
+    "quoc_gia": "Ấn Độ",
+    "TENNUOC SX": "Ấn Độ"
+  },
+  {
+    "id": 39,
+    "id_ncc": 39,
+    "ma_ncc": "NCC39",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM TÂN AN",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM TÂN AN",
+    "quoc_gia": "Việt Nam",
+    "TENNUOC SX": "Việt Nam"
+  },
+  {
+    "id": 40,
+    "id_ncc": 40,
+    "ma_ncc": "NCC40",
+    "ten_ncc": "CÔNG TY TNHH DƯỢC PHẨM AN BẢO",
+    "Tên NCC": "CÔNG TY TNHH DƯỢC PHẨM AN BẢO",
+    "quoc_gia": "Khác",
+    "TENNUOC SX": "Khác"
+  },
+  {
+    "id": 41,
+    "id_ncc": 41,
+    "ma_ncc": "NCC41",
+    "ten_ncc": "CHI NHÁNH MIỀN ĐÔNG-CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+    "Tên NCC": "CHI NHÁNH MIỀN ĐÔNG-CÔNG TY CỔ PHẦN DƯỢC PHẨM OPC",
+    "quoc_gia": "Khác",
+    "TENNUOC SX": "Khác"
+  },
+  {
+    "id": 42,
+    "id_ncc": 42,
+    "ma_ncc": "NCC42",
+    "ten_ncc": "CÔNG TY TNHH TÂN PHỐI PHONG PHÚ",
+    "Tên NCC": "CÔNG TY TNHH TÂN PHỐI PHONG PHÚ",
+    "quoc_gia": "Khác",
+    "TENNUOC SX": "Khác"
+  }
+]

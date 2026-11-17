@@ -1,97 +1,139 @@
-/* === DASHBOARD STYLES === */
+/* =========================================================
+   Apotheca Rx / Pharmacy Management System - Global Design System
+   ========================================================= */
 
-body {
-  margin: 0;
-  background: linear-gradient(135deg, #86efac 0%, #4ade80 100%);
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
+@charset "UTF-8";
+
+:root {
+  --brand-50: #ecfdf5;
+  --brand-100: #d1fae5;
+  --brand-200: #a7f3d0;
+  --brand-300: #6ee7b7;
+  --brand-400: #34d399;
+  --brand-500: #10b981;
+  --brand-600: #059669;
+  --brand-700: #047857;
+  --brand-800: #065f46;
+  --brand-900: #064e3b;
+  --brand-950: #022c22;
+
+  --bg-workspace-light: #f2f8f4;
+  --bg-sidebar-light: rgba(255, 255, 255, 0.95);
+  --border-light: rgba(16, 185, 129, 0.15);
+
+  --bg-workspace-dark: #070d0b;
+  --bg-sidebar-dark: #0c1613;
+  --border-dark: rgba(16, 185, 129, 0.12);
 }
 
-.dashboard-container {
-  min-height: 100vh;
-  padding: 2rem;
+/* Base Body Defaults */
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.dashboard-header {
-  display: flex;
-  justify-content: space-between;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.6);
+}
+
+/* Glow & Accent Utilities */
+.glow-mint {
+  box-shadow: 0 0 20px -3px rgba(16, 185, 129, 0.25);
+}
+
+.dark .glow-mint {
+  box-shadow: 0 0 25px -4px rgba(16, 185, 129, 0.35);
+}
+
+/* Smooth Card Hover Transition */
+.stat-card {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+/* Table Enhancements */
+table tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+/* Badge Styles */
+.badge-pill-success {
+  display: inline-flex;
   align-items: center;
-  background: white;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
+  gap: 0.25rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  background-color: #d1fae5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
 }
 
-.dashboard-header h1 {
-  display: flex;
+.dark .badge-pill-success {
+  background-color: rgba(6, 78, 59, 0.6);
+  color: #6ee7b7;
+  border-color: rgba(5, 150, 105, 0.4);
+}
+
+.badge-pill-danger {
+  display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-size: 22px;
-  color: #166534;
+  gap: 0.25rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
 }
 
-.user-info {
-  display: flex;
+.dark .badge-pill-danger {
+  background-color: rgba(127, 29, 29, 0.5);
+  color: #fca5a5;
+  border-color: rgba(185, 28, 28, 0.4);
+}
+
+.badge-pill-warning {
+  display: inline-flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.25rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  background-color: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
 }
 
-.role-badge {
-  background: #22c55e;
-  color: white;
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-}
-
-.btn-logout {
-  background: #ef4444;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.welcome-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-}
-
-.card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card h3 {
-  margin-bottom: 0.5rem;
-  color: #166534;
-}
-
-.card-btn {
-  margin-top: 1rem;
-  width: 100%;
-  padding: 0.7rem;
-  background: #22c55e;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+.dark .badge-pill-warning {
+  background-color: rgba(120, 53, 15, 0.5);
+  color: #fcd34d;
+  border-color: rgba(180, 83, 9, 0.4);
 }

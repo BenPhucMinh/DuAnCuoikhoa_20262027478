@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nhà Sản Xuất - Quản Lý Kho Dược Phẩm</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="style09.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <nav class="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+        <h1 class="text-2xl font-bold flex items-center gap-2">
+          <span>🏭</span> Nhà Sản Xuất
+        </h1>
+        <div class="flex flex-wrap items-center gap-4 text-sm font-medium">
+          <a href="index13.html" class="hover:text-blue-200 transition">Trang Chủ</a>
+          <a href="medicines11.html" class="hover:text-blue-200 transition">Danh Sách Thuốc</a>
+          <a href="manufacturers13.html" class="font-bold underline text-white">Nhà Sản Xuất</a>
+          <a href="suppliers13.html" class="hover:text-blue-200 transition">Nhà Cung Cấp</a>
+          <a href="atc13.html" class="hover:text-blue-200 transition">Nhóm ATC</a>
+          <a href="/dashboard11.html" class="bg-blue-700 hover:bg-blue-800 px-3 py-1.5 rounded-lg transition text-xs uppercase font-bold tracking-wider">Hệ Thống Kê Đơn 🏥</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-4 py-6">
+    <!-- Header & Search -->
+    <div class="bg-white rounded-xl shadow-sm p-4 mb-6 border border-gray-100 flex flex-col md:flex-row gap-4 justify-between items-center">
+      <div class="w-full md:w-96">
+        <input type="text" id="searchInput" placeholder="🔍 Tìm tên nhà sản xuất, quốc gia..." 
+          class="w-full p-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+      </div>
+      <div class="text-sm text-gray-500 font-medium">
+        Tổng số: <span id="totalCount" class="font-bold text-blue-600">Đang tải...</span>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left">
+          <thead class="bg-blue-50 text-blue-900 border-b border-blue-100 uppercase text-xs">
+            <tr>
+              <th class="px-5 py-3.5 font-bold w-20">ID</th>
+              <th class="px-5 py-3.5 font-bold">Tên Nhà Sản Xuất</th>
+              <th class="px-5 py-3.5 font-bold w-48">Quốc Gia</th>
+            </tr>
+          </thead>
+          <tbody id="manufacturers-body" class="divide-y divide-gray-100">
+            <tr>
+              <td colspan="3" class="px-5 py-8 text-center text-gray-500">
+                <div class="inline-block animate-spin mr-2">⏳</div> Đang tải dữ liệu...
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let allManufacturers = [];
+
+    async function loadManufacturers() {
+      const tbody = document.getElementById('manufacturers-body');
+      try {
+        const res = await fetch('/api/manufacturers');
+        if (!res.ok) throw new Error('API không phản hồi');
+        
+        allManufacturers = await res.json();
+        renderManufacturers(allManufacturers);
+
+        document.getElementById('totalCount').textContent = `${allManufacturers.length} nhà sản xuất`;
+        
+        Swal.fire({
+          toast: true, icon: 'success', timer: 1500,
+          position: 'top-end', showConfirmButton: false,
+          title: `Đã tải ${allManufacturers.length} nhà sản xuất`
+        });
+      } catch (err) {
+        console.error('Lỗi tải dữ liệu:', err);
+        tbody.innerHTML = 
+          '<tr><td colspan="3" class="px-5 py-8 text-center text-red-500 font-medium">❌ Lỗi tải dữ liệu! Vui lòng kiểm tra server.</td></tr>';
+        document.getElementById('totalCount').textContent = 'Lỗi';
+      }
+    }
+
+    function renderManufacturers(list) {
+      const tbody = document.getElementById('manufacturers-body');
+      if (!list || list.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="3" class="px-5 py-8 text-center text-gray-500">Không tìm thấy nhà sản xuất nào</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = list.map(m => {
+        const id = m.id || m.id_nsx || '';
+        const name = m.ten_nsx || m['TÊN NHÀ SẢN XUẤT'] || 'Chưa cập nhật';
+        const country = m.quoc_gia || m['TENNUOC SX'] || 'Việt Nam';
+
+        return `
+          <tr class="hover:bg-blue-50/50 transition">
+            <td class="px-5 py-3 font-semibold text-gray-700">${id}</td>
+            <td class="px-5 py-3 font-medium text-gray-900">${name}</td>
+            <td class="px-5 py-3 text-gray-600">
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                ${country}
+              </span>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    // Live search
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      const kw = e.target.value.toLowerCase().trim();
+      const filtered = allManufacturers.filter(m => {
+        const name = (m.ten_nsx || m['TÊN NHÀ SẢN XUẤT'] || '').toLowerCase();
+        const country = (m.quoc_gia || m['TENNUOC SX'] || '').toLowerCase();
+        return name.includes(kw) || country.includes(kw);
+      });
+      renderManufacturers(filtered);
+      document.getElementById('totalCount').textContent = `${filtered.length}/${allManufacturers.length} nhà sản xuất`;
+    });
+
+    loadManufacturers();
+  </script>
+</body>
+</html>

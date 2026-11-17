@@ -1,0 +1,57 @@
+[
+  {
+    "STT": 1,
+    "NỘI DUNG KIỂM SOÁT ĐẶC BIỆT": "1. Thuốc gây nghiện ",
+    "IN ĐƠN THUỐC": "Mẫu Đơn thuốc “N” (Mẫu đơn thuốc gây nghiện)",
+    "IN PHIẾU XUẤT KHO": "Phiếu xuất kho thuốc gây nghiện, thuốc hướng thần, thuốc tiền chất theo mẫu phiếu quy định tại Phụ lục XVII kèm theo Thông tư 20/2017/TT-BYT",
+    "MẪU SỔ SÁCH - BÁO CÁO": "Sổ theo dõi xuất, nhập, tồn kho Phụ lục VIII kèm theo Thông tư 20/2017/TT-BYT",
+    "__EMPTY_1": "Mục 4, Điều 47 54/2017/NĐ-CP-Trước ngày 15 tháng 7 và trước ngày 15 tháng 01 hàng năm, cơ sở bán buôn, cơ sở bán lẻ báo cáo 06 (sáu) tháng và báo cáo năm tương ứng về việc xuất, nhập, tồn khoMẫu số 11, 12, 13 tại Phụ lục II ban hành kèm theo Nghị định  này và gửi Sở Y tế nơi cơ sở đặt trụ sở"
+  },
+  {
+    "STT": 2,
+    "NỘI DUNG KIỂM SOÁT ĐẶC BIỆT": "2. Thuốc hướng thần ",
+    "IN ĐƠN THUỐC": "Mẫu Đơn thuốc “H” (Mẫu đơn thuốc hướng thần, thuốc tiền chất)"
+  },
+  {
+    "STT": 3,
+    "NỘI DUNG KIỂM SOÁT ĐẶC BIỆT": "3. Thuốc tiền chất ",
+    "IN ĐƠN THUỐC": "Mẫu Đơn thuốc “H” (Mẫu đơn thuốc hướng thần, thuốc tiền chất)"
+  },
+  {
+    "STT": 9,
+    "NỘI DUNG KIỂM SOÁT ĐẶC BIỆT": "9. Thuốc Phòng xạ ",
+    "IN ĐƠN THUỐC": "Đơn thuốc"
+  },
+  {
+    "STT": 4,
+    "NỘI DUNG KIỂM SOÁT ĐẶC BIỆT": "4. Thuốc dạng phối hợp có chứa dược chất gây nghiện ",
+    "IN ĐƠN THUỐC": "Đơn thuốc",
+    "MẪU SỔ SÁCH - BÁO CÁO": "Mục số 2-Điều 15 TT 20/2017/TT-BYT- Sổ theo dõi thông tin chi tiết khách hàng Phụ lục XXI Thông tư ",
+    "__EMPTY": "sổ theo dõi xuất, nhập, tồn kho thuốc theo mẫu sổ quy định tại Phụ lục XVIII kèm theo Thông  20/2017/TT-BYT"
+  },
+  {
+    "STT": 5,
+    "NỘI DUNG KIỂM SOÁT ĐẶC BIỆT": "5. Thuốc dạng phối hợp có chứa dược chất hướng thần ",
+    "IN ĐƠN THUỐC": "Đơn thuốc"
+  },
+  {
+    "STT": 6,
+    "NỘI DUNG KIỂM SOÁT ĐẶC BIỆT": "6. Thuốc dạng phối hợp có chứa tiền chất ",
+    "IN ĐƠN THUỐC": "Đơn thuốc"
+  },
+  {
+    "STT": 7,
+    "NỘI DUNG KIỂM SOÁT ĐẶC BIỆT": "7. Thuốc cấm sử dụng trong một số ngành, lĩnh vực",
+    "IN ĐƠN THUỐC": "Đơn thuốc"
+  },
+  {
+    "STT": 8,
+    "NỘI DUNG KIỂM SOÁT ĐẶC BIỆT": "8. Thuốc độc",
+    "IN ĐƠN THUỐC": "Đơn thuốc"
+  },
+  {
+    "STT": 10,
+    "NỘI DUNG KIỂM SOÁT ĐẶC BIỆT": "10. Thuốc điều trị bệnh Ung thư",
+    "IN ĐƠN THUỐC": "Đơn thuốc"
+  }
+]

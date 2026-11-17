@@ -1,0 +1,49 @@
+[
+  {
+    "__EMPTY": "STT",
+    "DANH MỤC NHÓM DƯỢC": "MÃ NHÓM DƯỢC",
+    "__EMPTY_1": "TÊN NHÓM DƯỢC",
+    "__EMPTY_2": "KÊ ĐƠN",
+    "__EMPTY_3": "VIỆN PHÍ"
+  },
+  {
+    "__EMPTY": 1,
+    "DANH MỤC NHÓM DƯỢC": "THUOC",
+    "__EMPTY_1": "1. Thuốc (hóa dược- ĐY)-Văc xin - Sinh phẩm",
+    "__EMPTY_2": "ĐƠN THUỐC",
+    "__EMPTY_3": "THUỐC"
+  },
+  {
+    "__EMPTY": 2,
+    "__EMPTY_2": "ĐƠN THUỐC",
+    "__EMPTY_3": "THUỐC"
+  },
+  {
+    "__EMPTY": 3,
+    "DANH MỤC NHÓM DƯỢC": "VTYT",
+    "__EMPTY_1": "3. Vật tư trang thiết bị y tế tiêu hao",
+    "__EMPTY_2": "PHIẾU TƯ VẤN SỬ DỤNG",
+    "__EMPTY_3": "HỖ TRỢ ĐIỀU TRỊ"
+  },
+  {
+    "__EMPTY": 4,
+    "DANH MỤC NHÓM DƯỢC": "HOACHAT",
+    "__EMPTY_1": "4. Hóa chất",
+    "__EMPTY_2": "PHIẾU TƯ VẤN SỬ DỤNG",
+    "__EMPTY_3": "HỖ TRỢ ĐIỀU TRỊ"
+  },
+  {
+    "__EMPTY": 5,
+    "DANH MỤC NHÓM DƯỢC": "TPCN",
+    "__EMPTY_1": "5. Thực phẩm chức năng",
+    "__EMPTY_2": "PHIẾU TƯ VẤN SỬ DỤNG",
+    "__EMPTY_3": "HỖ TRỢ ĐIỀU TRỊ"
+  },
+  {
+    "__EMPTY": 6,
+    "DANH MỤC NHÓM DƯỢC": "DMP",
+    "__EMPTY_1": "6. Dược Mỹ phẩm",
+    "__EMPTY_2": "PHIẾU TƯ VẤN SỬ DỤNG",
+    "__EMPTY_3": "HỖ TRỢ ĐIỀU TRỊ"
+  }
+]

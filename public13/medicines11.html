@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh Sách Thuốc - Quản Lý Kho Dược Phẩm</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="style09.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <nav class="bg-blue-600 text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+        <h1 class="text-2xl font-bold flex items-center gap-2">
+          <span>💊</span> Danh Sách Thuốc & Vật Tư
+        </h1>
+        <div class="flex flex-wrap items-center gap-4 text-sm font-medium">
+          <a href="index13.html" class="hover:text-blue-200 transition">Trang Chủ</a>
+          <a href="medicines11.html" class="font-bold underline text-white">Danh Sách Thuốc</a>
+          <a href="manufacturers13.html" class="hover:text-blue-200 transition">Nhà Sản Xuất</a>
+          <a href="suppliers13.html" class="hover:text-blue-200 transition">Nhà Cung Cấp</a>
+          <a href="atc13.html" class="hover:text-blue-200 transition">Nhóm ATC</a>
+          <a href="/dashboard11.html" class="bg-blue-700 hover:bg-blue-800 px-3 py-1.5 rounded-lg transition text-xs uppercase font-bold tracking-wider">Hệ Thống Kê Đơn 🏥</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-4 py-6">
+    <!-- Header & Search Box -->
+    <div class="bg-white rounded-xl shadow-sm p-4 mb-6 border border-gray-100 flex flex-col md:flex-row gap-4 justify-between items-center">
+      <div class="w-full md:w-96">
+        <input type="text" id="searchInput" placeholder="🔍 Tìm tên thuốc, hoạt chất, nhà sản xuất..." 
+          class="w-full p-2.5 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
+      </div>
+      <div class="text-sm text-gray-500 font-medium">
+        Tổng số: <span id="totalCount" class="font-bold text-blue-600">Đang tải...</span>
+      </div>
+    </div>
+
+    <!-- Medicines Table -->
+    <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm text-left">
+          <thead class="bg-blue-50 text-blue-900 border-b border-blue-100 uppercase text-xs">
+            <tr>
+              <th class="px-4 py-3.5 font-bold w-16">STT</th>
+              <th class="px-4 py-3.5 font-bold">Tên Thành Phẩm</th>
+              <th class="px-4 py-3.5 font-bold">Tên Hoạt Chất</th>
+              <th class="px-4 py-3.5 font-bold w-32">Đơn Giá</th>
+              <th class="px-4 py-3.5 font-bold">Nhà Sản Xuất</th>
+            </tr>
+          </thead>
+          <tbody id="medicines-body" class="divide-y divide-gray-100">
+            <tr>
+              <td colspan="5" class="px-4 py-8 text-center text-gray-500">
+                <div class="inline-block animate-spin mr-2">⏳</div> Đang tải dữ liệu...
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    let allMedicines = [];
+
+    async function loadMedicines() {
+      const tbody = document.getElementById('medicines-body');
+      try {
+        const res = await fetch('/api/medicines-db');
+        if (!res.ok) throw new Error('API không phản hồi');
+        
+        allMedicines = await res.json();
+        displayMedicines(allMedicines);
+
+        document.getElementById('totalCount').textContent = `${allMedicines.length} thuốc`;
+        Swal.fire({ toast: true, icon: 'success', title: `Đã tải ${allMedicines.length} thuốc!`, position: 'top-end', timer: 1500, showConfirmButton: false });
+      } catch (err) {
+        console.error('Lỗi tải dữ liệu:', err);
+        tbody.innerHTML = 
+          '<tr><td colspan="5" class="px-4 py-8 text-center text-red-500 font-medium">❌ Lỗi tải dữ liệu! Vui lòng kiểm tra server.</td></tr>';
+        document.getElementById('totalCount').textContent = 'Lỗi';
+      }
+    }
+
+    function displayMedicines(list) {
+      const tbody = document.getElementById('medicines-body');
+      if (!list || list.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="5" class="px-4 py-8 text-center text-gray-500">Không tìm thấy thuốc nào</td></tr>';
+        return;
+      }
+
+      tbody.innerHTML = list.map(m => {
+        const stt = m.STT || m.stt || m.id || '';
+        const tenThanhPham = m.TEN_THANH_PHAM || m.ten_thanh_pham || 'Chưa cập nhật';
+        const tenHoatChat = m.TEN_HOAT_CHAT || m.ten_hoat_chat || '-';
+        const rawPrice = m.DONGIA ?? m.don_gia;
+        const donGia = typeof rawPrice === 'number' ? rawPrice.toLocaleString('vi-VN') + ' đ' : (rawPrice || '-');
+        const tenNsx = m.TEN_NHA_SAN_XUAT || m.ten_nha_san_xuat || m.ten_nsx || '-';
+
+        return `
+          <tr class="hover:bg-blue-50/50 transition">
+            <td class="px-4 py-3 font-semibold text-gray-700">${stt}</td>
+            <td class="px-4 py-3 font-medium text-gray-900">${tenThanhPham}</td>
+            <td class="px-4 py-3 text-gray-600 text-xs">${tenHoatChat}</td>
+            <td class="px-4 py-3 font-semibold text-green-700 whitespace-nowrap">${donGia}</td>
+            <td class="px-4 py-3 text-gray-700 text-xs">${tenNsx}</td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    // Search
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      const keyword = e.target.value.toLowerCase().trim();
+      const filtered = allMedicines.filter(m => {
+        const tp = (m.TEN_THANH_PHAM || m.ten_thanh_pham || '').toLowerCase();
+        const hc = (m.TEN_HOAT_CHAT || m.ten_hoat_chat || '').toLowerCase();
+        const nsx = (m.TEN_NHA_SAN_XUAT || m.ten_nha_san_xuat || m.ten_nsx || '').toLowerCase();
+        return tp.includes(keyword) || hc.includes(keyword) || nsx.includes(keyword);
+      });
+      displayMedicines(filtered);
+      document.getElementById('totalCount').textContent = `${filtered.length}/${allMedicines.length} thuốc`;
+    });
+
+    loadMedicines();
+  </script>
+</body>
+</html>

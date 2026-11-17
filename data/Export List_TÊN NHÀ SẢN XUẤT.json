@@ -1,0 +1,1442 @@
+[
+  {
+    "id_nsx": 0,
+    "TÊN NHÀ SẢN XUẤT": "(Blanks)",
+    "Count": 7,
+    "Percent": 0.00338655055636188
+  },
+  {
+    "id_nsx": 1,
+    "TÊN NHÀ SẢN XUẤT": "12",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 2,
+    "TÊN NHÀ SẢN XUẤT": "A. Menarini Manufacturing Logistics and Services S.r.l",
+    "Count": 6,
+    "Percent": 0.00290275761973875
+  },
+  {
+    "id_nsx": 3,
+    "TÊN NHÀ SẢN XUẤT": "Abbott Biologicals B.V",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 4,
+    "TÊN NHÀ SẢN XUẤT": "Adipharm EAD",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 5,
+    "TÊN NHÀ SẢN XUẤT": "AMANTA HEALTHCARE LIMITED",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 6,
+    "TÊN NHÀ SẢN XUẤT": "APTISSEN",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 7,
+    "TÊN NHÀ SẢN XUẤT": "ASTRAZENCA AB",
+    "Count": 12,
+    "Percent": 0.0058055152394775
+  },
+  {
+    "id_nsx": 8,
+    "TÊN NHÀ SẢN XUẤT": "AstraZeneca AB",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 9,
+    "TÊN NHÀ SẢN XUẤT": "Astrea Fontaine",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 10,
+    "TÊN NHÀ SẢN XUẤT": "AY PHARMACEUTICALS",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 11,
+    "TÊN NHÀ SẢN XUẤT": "Balkanpharma - Dupnitsa AD",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 12,
+    "TÊN NHÀ SẢN XUẤT": "Bayer",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 13,
+    "TÊN NHÀ SẢN XUẤT": "Bayer AG",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 14,
+    "TÊN NHÀ SẢN XUẤT": "Beaufour Ipsen Industrie",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 15,
+    "TÊN NHÀ SẢN XUẤT": "BỆNH VIỆN DA LIỄU TP.HỒ CHÍ MINH",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 16,
+    "TÊN NHÀ SẢN XUẤT": "BERLIN CHEMIE AG",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 17,
+    "TÊN NHÀ SẢN XUẤT": "Biocodex",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 18,
+    "TÊN NHÀ SẢN XUẤT": "Biocon Biologics Limited",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 19,
+    "TÊN NHÀ SẢN XUẤT": "BLUEPHARMA",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 20,
+    "TÊN NHÀ SẢN XUẤT": "Boehringer Ingelheim",
+    "Count": 5,
+    "Percent": 0.00241896468311563
+  },
+  {
+    "id_nsx": 21,
+    "TÊN NHÀ SẢN XUẤT": "Catalent Germany Eberbach GmbH Gammelsbacher Strasse 2, 69412 Eberbach CHLB Đức/ Germany",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 22,
+    "TÊN NHÀ SẢN XUẤT": "Celon",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 23,
+    "TÊN NHÀ SẢN XUẤT": "Chi nhánh 3 - Công ty CP Dược phẩm Imexpharm tại Bình Dương",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 24,
+    "TÊN NHÀ SẢN XUẤT": "Chi nhánh công ty cổ phần dược phẩm Agimexpharm- Nhà máy sản xuất dược phẩm Agimexpharm",
+    "Count": 6,
+    "Percent": 0.00290275761973875
+  },
+  {
+    "id_nsx": 25,
+    "TÊN NHÀ SẢN XUẤT": "Chi nhánh công ty cổ phần dược phẩm Imexpharm Nhà máy kháng sinh công nghệ cao Vĩnh Lộc",
+    "Count": 8,
+    "Percent": 0.003870343492985
+  },
+  {
+    "id_nsx": 26,
+    "TÊN NHÀ SẢN XUẤT": "Chi nhánh Công ty Cổ phần Dược phẩm OPC tại Bình Dương - Nhà máy Dược phẩm OPC",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 27,
+    "TÊN NHÀ SẢN XUẤT": "Chi nhánh Công ty cổ phần dược phẩm Phong Phú- Nhà máy sản xuất dược phẩm Usarichpharm",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 28,
+    "TÊN NHÀ SẢN XUẤT": "Chi nhánh Công ty cổ phần dược phẩm Trung ương Vidipha Bình Dương",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 29,
+    "TÊN NHÀ SẢN XUẤT": "Chi nhánh Công ty cổ phần dược phẩm và sinh học y tế",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 30,
+    "TÊN NHÀ SẢN XUẤT": "Chi nhánh Công ty CPDP Agimexpharm - Nhà máy SX DP Agimexpharm",
+    "Count": 34,
+    "Percent": 0.0164489598451863
+  },
+  {
+    "id_nsx": 31,
+    "TÊN NHÀ SẢN XUẤT": "CHI NHÁNH CTCP DP SYNTECH - NHÀ MÁY HẢI DƯƠNG",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 32,
+    "TÊN NHÀ SẢN XUẤT": "CHI NHÁNH II-CÔNG TY TNHH DP SÀI GÒN TẠI BÌNH DƯƠNG",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 33,
+    "TÊN NHÀ SẢN XUẤT": "Chinoin Pharmaceutical and Chemical Works Private Co., Ltd.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 34,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần Dược Apimed",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 35,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược Đồng Nai",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 36,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần Dược Hà Tĩnh",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 37,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần Dược Hậu Giang - chi nhánh nhà máy Dược Phẩm DHG tại Hậu Giang",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 38,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược phẩm An Thiên",
+    "Count": 7,
+    "Percent": 0.00338655055636188
+  },
+  {
+    "id_nsx": 39,
+    "TÊN NHÀ SẢN XUẤT": "Công ty Cổ phần Dược phẩm Boston Việt Nam",
+    "Count": 43,
+    "Percent": 0.0208030962747944
+  },
+  {
+    "id_nsx": 40,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược phẩm CPC1 Hà Nội",
+    "Count": 36,
+    "Percent": 0.0174165457184325
+  },
+  {
+    "id_nsx": 41,
+    "TÊN NHÀ SẢN XUẤT": "Công Ty Cổ Phần Dược Phẩm Cửu Long",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 42,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược phẩm Đạt Vi Phú",
+    "Count": 10,
+    "Percent": 0.00483792936623125
+  },
+  {
+    "id_nsx": 43,
+    "TÊN NHÀ SẢN XUẤT": "Công ty Cổ phần Dược phẩm Dược liệu Pharmedic",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 44,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY CỔ PHẦN DƯỢC PHẨM FREMED",
+    "Count": 18,
+    "Percent": 0.00870827285921625
+  },
+  {
+    "id_nsx": 45,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược phẩm Hà Tây",
+    "Count": 13,
+    "Percent": 0.00628930817610063
+  },
+  {
+    "id_nsx": 46,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược phẩm Imexpharm",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 47,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần Dược phẩm Khánh Hòa",
+    "Count": 58,
+    "Percent": 0.0280599903241413
+  },
+  {
+    "id_nsx": 48,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược phẩm Me Di Sun",
+    "Count": 8,
+    "Percent": 0.003870343492985
+  },
+  {
+    "id_nsx": 49,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY CỔ PHẦN DƯỢC PHẨM MEDISUN",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 50,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược phẩm Phong Phú- Chi nhánh nhà máy Usarichpharm",
+    "Count": 5,
+    "Percent": 0.00241896468311563
+  },
+  {
+    "id_nsx": 51,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần Dược phẩm Phương Đông",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 52,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY CỔ PHẦN DƯỢC PHẨM QUỐC TẾ MERCIPHARM",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 53,
+    "TÊN NHÀ SẢN XUẤT": "Công ty Cổ Phần Dược Phẩm Reliv",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 54,
+    "TÊN NHÀ SẢN XUẤT": "Công ty Cổ phần Dược phẩm SAVI",
+    "Count": 8,
+    "Percent": 0.003870343492985
+  },
+  {
+    "id_nsx": 55,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược phẩm SAVI (Savipharm J.S.C).",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 56,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược phẩm Tipharco",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 57,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần Dược phẩm Trung Ương 1 - Pharbaco",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 58,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược phẩm TV. Pharm",
+    "Count": 12,
+    "Percent": 0.0058055152394775
+  },
+  {
+    "id_nsx": 59,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược phẩm TV.Pharm",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 60,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần Dược phẩm Vĩnh Phúc",
+    "Count": 6,
+    "Percent": 0.00290275761973875
+  },
+  {
+    "id_nsx": 61,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược phẩm Wealphar",
+    "Count": 7,
+    "Percent": 0.00338655055636188
+  },
+  {
+    "id_nsx": 62,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY CỔ PHẦN DƯỢC PHÚC VINH",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 63,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược S.Pharm",
+    "Count": 7,
+    "Percent": 0.00338655055636188
+  },
+  {
+    "id_nsx": 64,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược và vật tư y tế Bình Thuận",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 65,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược vật tư y tế Hải Dương",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 66,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần dược VTYT Hà Nam",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 67,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY CỔ PHẦN DƯỢC-TRANG THIẾT BỊ Y TẾ BÌNH ĐỊNH(BIDIPHAR)",
+    "Count": 5,
+    "Percent": 0.00241896468311563
+  },
+  {
+    "id_nsx": 68,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần Fresenius Kabi Việt Nam",
+    "Count": 9,
+    "Percent": 0.00435413642960813
+  },
+  {
+    "id_nsx": 69,
+    "TÊN NHÀ SẢN XUẤT": "Công ty Cổ Phần Hóa - Dược Phẩm Mekophar",
+    "Count": 7,
+    "Percent": 0.00338655055636188
+  },
+  {
+    "id_nsx": 70,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần kỹ thuật Dược Bình Định",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 71,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY CỔ PHẦN NHÀ MÁY BÁCH THẢO DƯỢC",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 72,
+    "TÊN NHÀ SẢN XUẤT": "Công ty Cổ phần Pymepharco",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 73,
+    "TÊN NHÀ SẢN XUẤT": "Công ty Cổ Phần Tập Đoàn Merap",
+    "Count": 63,
+    "Percent": 0.0304789550072569
+  },
+  {
+    "id_nsx": 74,
+    "TÊN NHÀ SẢN XUẤT": "Công ty Cổ phần Thương mại Dược phẩm Quang Minh",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 75,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY CỔ PHẦN TRANG THIẾT BỊ Y TẾ ĐỒNG SEN",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 76,
+    "TÊN NHÀ SẢN XUẤT": "Công ty cổ phần US pharma USA",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 77,
+    "TÊN NHÀ SẢN XUẤT": "Công ty Cổ phần Vắcxin và sinh phẩm Nha Trang",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 78,
+    "TÊN NHÀ SẢN XUẤT": "Công ty Cổ phần Xuất nhập khẩu Y tế DOMESCO",
+    "Count": 6,
+    "Percent": 0.00290275761973875
+  },
+  {
+    "id_nsx": 79,
+    "TÊN NHÀ SẢN XUẤT": "Công ty CP DP MEDISUN",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 80,
+    "TÊN NHÀ SẢN XUẤT": "Công ty CP Dược Apimed",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 81,
+    "TÊN NHÀ SẢN XUẤT": "Công ty CP Dược Khoa",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 82,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY CP DƯỢC PHẨM QUỐC TẾ CANADA VIỆT NAM",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 83,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY CP DƯỢC PHẨM QUỐC TẾ STP",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 84,
+    "TÊN NHÀ SẢN XUẤT": "Công ty CP dược Vật tư y tế Hà Nam",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 85,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY CP MEDCEN",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 86,
+    "TÊN NHÀ SẢN XUẤT": "Công ty CPDP Ampharco U.S.A",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 87,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY CPDP CÔNG NGHỆ CAO ABIPHA",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 88,
+    "TÊN NHÀ SẢN XUẤT": "Công ty CPDP SaVi",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 89,
+    "TÊN NHÀ SẢN XUẤT": "Công ty CPDP Vĩnh Phúc",
+    "Count": 24,
+    "Percent": 0.011611030478955
+  },
+  {
+    "id_nsx": 90,
+    "TÊN NHÀ SẢN XUẤT": "Công ty LDDP Mebiphar-Austrapharm",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 91,
+    "TÊN NHÀ SẢN XUẤT": "Công ty Liên doanh Meyer- BPC",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 92,
+    "TÊN NHÀ SẢN XUẤT": "Công ty TNHH BRV Healthcare",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 93,
+    "TÊN NHÀ SẢN XUẤT": "Công ty TNHH DRP Inter",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 94,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY TNHH DƯỢC PHẨM AVANI",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 95,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY TNHH DƯỢC PHẨM TRADIPHAR",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 96,
+    "TÊN NHÀ SẢN XUẤT": "Công ty TNHH Hasan - Dermapharm",
+    "Count": 53,
+    "Percent": 0.0256410256410256
+  },
+  {
+    "id_nsx": 97,
+    "TÊN NHÀ SẢN XUẤT": "Công ty TNHH liên doanh Hasan-Dermapharm",
+    "Count": 30,
+    "Percent": 0.0145137880986938
+  },
+  {
+    "id_nsx": 98,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY TNHH LIÊN DOANH QUỐC TẾ SANOFRANCE",
+    "Count": 11,
+    "Percent": 0.00532172230285438
+  },
+  {
+    "id_nsx": 99,
+    "TÊN NHÀ SẢN XUẤT": "Công ty TNHH Liên Doanh Stellapharm",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 100,
+    "TÊN NHÀ SẢN XUẤT": "Công ty TNHH Liên doanh Stellapharm - Chi nhánh 1",
+    "Count": 35,
+    "Percent": 0.0169327527818094
+  },
+  {
+    "id_nsx": 101,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY TNHH MỘT THÀNH VIÊN VẮC XIN PASTEUR ĐÀ LẠT",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 102,
+    "TÊN NHÀ SẢN XUẤT": "Công Ty TNHH MTV Dược Phẩm 150 Cophavina",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 103,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY TNHH NƯỚC GIẢI KHÁT SUNTORY PEPSICO VN",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 104,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY TNHH ROCHE PHARMA",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 105,
+    "TÊN NHÀ SẢN XUẤT": "Công ty TNHH sản xuất dược phẩm Nanogen Lâm Đồng",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 106,
+    "TÊN NHÀ SẢN XUẤT": "Công ty TNHH Sinh dược phẩm Hera",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 107,
+    "TÊN NHÀ SẢN XUẤT": "CÔNG TY TNHH TM AN PHÚ KHANG",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 108,
+    "TÊN NHÀ SẢN XUẤT": "Công ty TNHH Traphaco Hưng Yên",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 109,
+    "TÊN NHÀ SẢN XUẤT": "Công ty TNHH United International Pharma",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 110,
+    "TÊN NHÀ SẢN XUẤT": "CSSX: Catalent Germany Eberbach GmbH; Đóng gói và xuất xưởng: Berlin Chemie AG (Menarini Group)",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 111,
+    "TÊN NHÀ SẢN XUẤT": "CSSX: Merck Healthcare KGaA; CSĐG và xuất xưởng: Merck S.A de C.V.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 112,
+    "TÊN NHÀ SẢN XUẤT": "CTCP Dược Hậu Giang",
+    "Count": 7,
+    "Percent": 0.00338655055636188
+  },
+  {
+    "id_nsx": 113,
+    "TÊN NHÀ SẢN XUẤT": "CTCP Dược Hậu Giang - CN nhà máy DP DHG tại Hậu Giang",
+    "Count": 58,
+    "Percent": 0.0280599903241413
+  },
+  {
+    "id_nsx": 114,
+    "TÊN NHÀ SẢN XUẤT": "CTCP SUNRISE PLUS VN",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 115,
+    "TÊN NHÀ SẢN XUẤT": "CTCP TẬP ĐOÀN DP TRUNG ƯƠNG QUEEN DIAMOND DIOPHACO",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 116,
+    "TÊN NHÀ SẢN XUẤT": "CTy CP DP Công nghệ cao Beatexpharm",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 117,
+    "TÊN NHÀ SẢN XUẤT": "Cty CP DP Nam Hà",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 118,
+    "TÊN NHÀ SẢN XUẤT": "CTy CP DP OPC",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 119,
+    "TÊN NHÀ SẢN XUẤT": "CTy CP DP PULIPHA",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 120,
+    "TÊN NHÀ SẢN XUẤT": "CTy CP DP Quốc tế Dolexphar",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 121,
+    "TÊN NHÀ SẢN XUẤT": "CTy CP DP TW DAHUPHA",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 122,
+    "TÊN NHÀ SẢN XUẤT": "CTy CP DP VGAS",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 123,
+    "TÊN NHÀ SẢN XUẤT": "CTy CP Dược MP Quốc tế Lisacos",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 124,
+    "TÊN NHÀ SẢN XUẤT": "CTy CP Liên doanh Dược MP Diamond Pháp",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 125,
+    "TÊN NHÀ SẢN XUẤT": "CTy CP Phát triển Dược VESTA",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 126,
+    "TÊN NHÀ SẢN XUẤT": "CTy CP Thực phẩm dinh dưỡng Nutrinest",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 127,
+    "TÊN NHÀ SẢN XUẤT": "CTy CP TM và DP Đông Nam Á",
+    "Count": 5,
+    "Percent": 0.00241896468311563
+  },
+  {
+    "id_nsx": 128,
+    "TÊN NHÀ SẢN XUẤT": "CTy TNHH ADC",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 129,
+    "TÊN NHÀ SẢN XUẤT": "CTy TNHH Đông Dược Xuân Quang",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 130,
+    "TÊN NHÀ SẢN XUẤT": "CTy TNHH DP Fusi",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 131,
+    "TÊN NHÀ SẢN XUẤT": "CTy TNHH DP Nam Việt - NAVICO",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 132,
+    "TÊN NHÀ SẢN XUẤT": "Cty TNHH Dược Mỹ Phẫm Quang Xanh",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 133,
+    "TÊN NHÀ SẢN XUẤT": "Daewoong Pharmaceutical Co., Ltd",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 134,
+    "TÊN NHÀ SẢN XUẤT": "DELPHARM MILANO S.R.L.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 135,
+    "TÊN NHÀ SẢN XUẤT": "Delpharm Tours",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 136,
+    "TÊN NHÀ SẢN XUẤT": "DP 3/2",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 137,
+    "TÊN NHÀ SẢN XUẤT": "DP Hải Linh",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 138,
+    "TÊN NHÀ SẢN XUẤT": "DP Liên doanh Mediphar",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 139,
+    "TÊN NHÀ SẢN XUẤT": "Dragenopharm",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 140,
+    "TÊN NHÀ SẢN XUẤT": "ERBEX s.r.l.",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 141,
+    "TÊN NHÀ SẢN XUẤT": "ERIC FAVRE WELLNESS",
+    "Count": 5,
+    "Percent": 0.00241896468311563
+  },
+  {
+    "id_nsx": 142,
+    "TÊN NHÀ SẢN XUẤT": "Farcoderma S.r.l",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 143,
+    "TÊN NHÀ SẢN XUẤT": "Farmaprim",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 144,
+    "TÊN NHÀ SẢN XUẤT": "FERNGROVE PHARMACEUTICALS AUSTRALIA PTY LTD",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 145,
+    "TÊN NHÀ SẢN XUẤT": "Ferrer Internacional S.A",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 146,
+    "TÊN NHÀ SẢN XUẤT": "FIDIA FARMACEUTICI S.p.A.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 147,
+    "TÊN NHÀ SẢN XUẤT": "Fresenius Kabi Austria GmbH.",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 148,
+    "TÊN NHÀ SẢN XUẤT": "Gamma chemicals PTE",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 149,
+    "TÊN NHÀ SẢN XUẤT": "Gedeon Richter Plc",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 150,
+    "TÊN NHÀ SẢN XUẤT": "Glaxo Wellcome SA,",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 151,
+    "TÊN NHÀ SẢN XUẤT": "GlaxoSmithKline LLC",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 152,
+    "TÊN NHÀ SẢN XUẤT": "GLAXOWELLCOME PRODUCTION",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 153,
+    "TÊN NHÀ SẢN XUẤT": "GLENMARK",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 154,
+    "TÊN NHÀ SẢN XUẤT": "Hanlim Pharm Co, Ltd",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 155,
+    "TÊN NHÀ SẢN XUẤT": "Hetero Labs Limited",
+    "Count": 17,
+    "Percent": 0.00822447992259313
+  },
+  {
+    "id_nsx": 156,
+    "TÊN NHÀ SẢN XUẤT": "HISAMITSU",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 157,
+    "TÊN NHÀ SẢN XUẤT": "HK inno N Corporation",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 158,
+    "TÊN NHÀ SẢN XUẤT": "HUIZHOU KAIYI TECHNOLOGY CO., LTD.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 159,
+    "TÊN NHÀ SẢN XUẤT": "HUY VAN",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 160,
+    "TÊN NHÀ SẢN XUẤT": "Incepta Pharmaceuticals Ltd",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 161,
+    "TÊN NHÀ SẢN XUẤT": "InfoRlife S.A",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 162,
+    "TÊN NHÀ SẢN XUẤT": "Innothera Chouzy",
+    "Count": 9,
+    "Percent": 0.00435413642960813
+  },
+  {
+    "id_nsx": 163,
+    "TÊN NHÀ SẢN XUẤT": "INTERTHAI PHARMACEUTICAL MANUFACTURING LTD.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 164,
+    "TÊN NHÀ SẢN XUẤT": "Ipca Laboratories Ltd.",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 165,
+    "TÊN NHÀ SẢN XUẤT": "IPRAD Sante",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 166,
+    "TÊN NHÀ SẢN XUẤT": "Janssen Cilag S.P.A.",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 167,
+    "TÊN NHÀ SẢN XUẤT": "Khác",
+    "Count": 1034,
+    "Percent": 0.500241896468312
+  },
+  {
+    "id_nsx": 168,
+    "TÊN NHÀ SẢN XUẤT": "KOREA UNITED PHARM",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 169,
+    "TÊN NHÀ SẢN XUẤT": "Laboratoires Chemineau",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 170,
+    "TÊN NHÀ SẢN XUẤT": "LABORATOIRES SVR",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 171,
+    "TÊN NHÀ SẢN XUẤT": "LAROCHE-POSAY LABORATOIRE PHARMACEUTIQUE",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 172,
+    "TÊN NHÀ SẢN XUẤT": "LAVENA PLC, 9700 SHUMEN, INDUSTRIAL AREA, P.O.BOX 114, BULGARIA",
+    "Count": 6,
+    "Percent": 0.00290275761973875
+  },
+  {
+    "id_nsx": 173,
+    "TÊN NHÀ SẢN XUẤT": "LDP-LABORATORIOS TORLAN, S.A.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 174,
+    "TÊN NHÀ SẢN XUẤT": "Lek Pharmaceuticals d.d,",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 175,
+    "TÊN NHÀ SẢN XUẤT": "LEO Laboratories Limited",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 176,
+    "TÊN NHÀ SẢN XUẤT": "Les Laboratoires Servier Industrie",
+    "Count": 14,
+    "Percent": 0.00677310111272375
+  },
+  {
+    "id_nsx": 177,
+    "TÊN NHÀ SẢN XUẤT": "LES TROIS CHÊNES",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 178,
+    "TÊN NHÀ SẢN XUẤT": "Lindopharm GmbH",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 179,
+    "TÊN NHÀ SẢN XUẤT": "M/s Cipla Ltd",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 180,
+    "TÊN NHÀ SẢN XUẤT": "Macleods Pharmaceuticals Ltd.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 181,
+    "TÊN NHÀ SẢN XUẤT": "MASENZ DANYA GROUP S.L",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 182,
+    "TÊN NHÀ SẢN XUẤT": "Medochemie Ltd- Ampoule Injectable Facility",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 183,
+    "TÊN NHÀ SẢN XUẤT": "Medochemie Ltd.- central Factory",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 184,
+    "TÊN NHÀ SẢN XUẤT": "MEGA Lifesciences Public company Limited",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 185,
+    "TÊN NHÀ SẢN XUẤT": "Meiji seika pharma",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 186,
+    "TÊN NHÀ SẢN XUẤT": "Merck Healthcare KGaA",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 187,
+    "TÊN NHÀ SẢN XUẤT": "MERCK SANTE S.a.S",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 188,
+    "TÊN NHÀ SẢN XUẤT": "Merck Sante s.a.s.",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 189,
+    "TÊN NHÀ SẢN XUẤT": "Merz",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 190,
+    "TÊN NHÀ SẢN XUẤT": "MEYER ORGANICS PVT. LTD.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 191,
+    "TÊN NHÀ SẢN XUẤT": "Micro Labs Limited",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 192,
+    "TÊN NHÀ SẢN XUẤT": "MYLAN LABORATORIES LIMITED",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 193,
+    "TÊN NHÀ SẢN XUẤT": "Mylan Laboratories S.A.S.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 194,
+    "TÊN NHÀ SẢN XUẤT": "Mylan Laboratories SAS",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 195,
+    "TÊN NHÀ SẢN XUẤT": "NAOS LES LABORATOIRES",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 196,
+    "TÊN NHÀ SẢN XUẤT": "Naprod Life Sciences Pvt. Ltd.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 197,
+    "TÊN NHÀ SẢN XUẤT": "NATROL",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 198,
+    "TÊN NHÀ SẢN XUẤT": "Nhà máy 2 công ty TNHH Liên doanh Hasan - Dermapharm",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 199,
+    "TÊN NHÀ SẢN XUẤT": "Nhà máy 2 công ty TNHH liên doanh Hasan-Dermapharm",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 200,
+    "TÊN NHÀ SẢN XUẤT": "NOVARTIS FARMA S.p.A",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 201,
+    "TÊN NHÀ SẢN XUẤT": "NOVO NORDISK A/S",
+    "Count": 10,
+    "Percent": 0.00483792936623125
+  },
+  {
+    "id_nsx": 202,
+    "TÊN NHÀ SẢN XUẤT": "Nuvita Ilac ve Kimya San. Tic. A. S.",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 203,
+    "TÊN NHÀ SẢN XUẤT": "O.F.I. OFFICINA FARMACEUTICA ITALIANA S.p.A.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 204,
+    "TÊN NHÀ SẢN XUẤT": "OLIC (Thailand) Ltd.",
+    "Count": 7,
+    "Percent": 0.00338655055636188
+  },
+  {
+    "id_nsx": 205,
+    "TÊN NHÀ SẢN XUẤT": "Opella Healthcare International SAS",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 206,
+    "TÊN NHÀ SẢN XUẤT": "ORZAX",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 207,
+    "TÊN NHÀ SẢN XUẤT": "Panpharmarma",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 208,
+    "TÊN NHÀ SẢN XUẤT": "Patheon Puerto Rico, Inc.; đóng gói tại Merck Sharp & Dohme B.V.",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 209,
+    "TÊN NHÀ SẢN XUẤT": "Pfizer Italia S.R.L",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 210,
+    "TÊN NHÀ SẢN XUẤT": "Pharmatis",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 211,
+    "TÊN NHÀ SẢN XUẤT": "Pierre Fabre Medicament Production",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 212,
+    "TÊN NHÀ SẢN XUẤT": "PT. Novell Pharmaceutical Laboratories",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 213,
+    "TÊN NHÀ SẢN XUẤT": "RAFARM SA",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 214,
+    "TÊN NHÀ SẢN XUẤT": "RECIPHARM FONTAINE",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 215,
+    "TÊN NHÀ SẢN XUẤT": "REMEDICA LTD.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 216,
+    "TÊN NHÀ SẢN XUẤT": "ROBINSON PHARMA, INC",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 217,
+    "TÊN NHÀ SẢN XUẤT": "ROVI PHARMA INDUSTRIAL SERVICES",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 218,
+    "TÊN NHÀ SẢN XUẤT": "S.C. Rompharm Company S.r.l",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 219,
+    "TÊN NHÀ SẢN XUẤT": "S.C. Slavia Pharm S.R.L.",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 220,
+    "TÊN NHÀ SẢN XUẤT": "S.I.I.T SRL",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 221,
+    "TÊN NHÀ SẢN XUẤT": "SA Alcon-Couvreur NV",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 222,
+    "TÊN NHÀ SẢN XUẤT": "Samjin Pharmaceutical Co., Ltd.",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 223,
+    "TÊN NHÀ SẢN XUẤT": "Sanofi Aventis S.A.",
+    "Count": 7,
+    "Percent": 0.00338655055636188
+  },
+  {
+    "id_nsx": 224,
+    "TÊN NHÀ SẢN XUẤT": "Sanofi S.P.A",
+    "Count": 4,
+    "Percent": 0.0019351717464925
+  },
+  {
+    "id_nsx": 225,
+    "TÊN NHÀ SẢN XUẤT": "Santen",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 226,
+    "TÊN NHÀ SẢN XUẤT": "SEPTODONT",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 227,
+    "TÊN NHÀ SẢN XUẤT": "SIEGFRIED BARBERA,S.L",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 228,
+    "TÊN NHÀ SẢN XUẤT": "Siu Guan Chem. Ind. Co., Ltd",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 229,
+    "TÊN NHÀ SẢN XUẤT": "Sophartex",
+    "Count": 6,
+    "Percent": 0.00290275761973875
+  },
+  {
+    "id_nsx": 230,
+    "TÊN NHÀ SẢN XUẤT": "SPM",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 231,
+    "TÊN NHÀ SẢN XUẤT": "The Acme Laboratories Ltd",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 232,
+    "TÊN NHÀ SẢN XUẤT": "The Madras Pharmaceuticals",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 233,
+    "TÊN NHÀ SẢN XUẤT": "Trapharco",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 234,
+    "TÊN NHÀ SẢN XUẤT": "Troikaa Pharmaceuticals Ltd.",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 235,
+    "TÊN NHÀ SẢN XUẤT": "UPSA SAS",
+    "Count": 3,
+    "Percent": 0.00145137880986938
+  },
+  {
+    "id_nsx": 236,
+    "TÊN NHÀ SẢN XUẤT": "USV Private Limited",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 237,
+    "TÊN NHÀ SẢN XUẤT": "VINPHACO",
+    "Count": 2,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 238,
+    "TÊN NHÀ SẢN XUẤT": "Windlas",
+    "Count": 1,
+    "Percent": "<0.1%"
+  },
+  {
+    "id_nsx": 239,
+    "TÊN NHÀ SẢN XUẤT": "XƯỞNG SẢN XUẤT NUTIFINE",
+    "Count": 1,
+    "Percent": "<0.1%"
+  }
+]

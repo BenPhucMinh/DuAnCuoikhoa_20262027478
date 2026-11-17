@@ -1,0 +1,821 @@
+[
+  {
+    "id": 1,
+    "id_nhom": 1,
+    "ma_nhom": 1,
+    "ten_chinh": "1.1. Thuốc gây tê, gây mê",
+    "ten_nhom": "1.1. Thuốc gây tê, gây mê"
+  },
+  {
+    "id": 2,
+    "id_nhom": 2,
+    "ma_nhom": 2,
+    "ten_chinh": "1.2. Thuốc giãn cơ, thuốc giải giãn cơ",
+    "ten_nhom": "1.2. Thuốc giãn cơ, thuốc giải giãn cơ"
+  },
+  {
+    "id": 3,
+    "id_nhom": 3,
+    "ma_nhom": 3,
+    "ten_chinh": "2.1. Thuốc giảm đau, hạ sốt; chống viêm không steroid",
+    "ten_nhom": "2.1. Thuốc giảm đau, hạ sốt; chống viêm không steroid"
+  },
+  {
+    "id": 4,
+    "id_nhom": 4,
+    "ma_nhom": 4,
+    "ten_chinh": "2.2. Thuốc điều trị gút",
+    "ten_nhom": "2.2. Thuốc điều trị gút"
+  },
+  {
+    "id": 5,
+    "id_nhom": 5,
+    "ma_nhom": 5,
+    "ten_chinh": "2.3. Thuốc chống thoái hóa khớp",
+    "ten_nhom": "2.3. Thuốc chống thoái hóa khớp"
+  },
+  {
+    "id": 6,
+    "id_nhom": 6,
+    "ma_nhom": 6,
+    "ten_chinh": "2.4. Thuốc khác - giảm đau, hạ sốt, kháng viêm và Xương Khớp",
+    "ten_nhom": "2.4. Thuốc khác - giảm đau, hạ sốt, kháng viêm và Xương Khớp"
+  },
+  {
+    "id": 7,
+    "id_nhom": 7,
+    "ma_nhom": 7,
+    "ten_chinh": "3. THUỐC CHỐNG DỊ ỨNG VÀ DÙNG TRONG CÁC TRƯỜNG HỢP QUÁ MẪN",
+    "ten_nhom": "3. THUỐC CHỐNG DỊ ỨNG VÀ DÙNG TRONG CÁC TRƯỜNG HỢP QUÁ MẪN"
+  },
+  {
+    "id": 8,
+    "id_nhom": 8,
+    "ma_nhom": 8,
+    "ten_chinh": "4. THUỐC GIẢI ĐỘC VÀ CÁC THUỐC DÙNG TRONG TRƯỜNG HỢP NGỘ ĐỘC",
+    "ten_nhom": "4. THUỐC GIẢI ĐỘC VÀ CÁC THUỐC DÙNG TRONG TRƯỜNG HỢP NGỘ ĐỘC"
+  },
+  {
+    "id": 9,
+    "id_nhom": 9,
+    "ma_nhom": 9,
+    "ten_chinh": "5. THUỐC CHỐNG CO GIẬT, CHỐNG ĐỘNG KINH",
+    "ten_nhom": "5. THUỐC CHỐNG CO GIẬT, CHỐNG ĐỘNG KINH"
+  },
+  {
+    "id": 10,
+    "id_nhom": 10,
+    "ma_nhom": 10,
+    "ten_chinh": "6.1. Thuốc trị giun, sán",
+    "ten_nhom": "6.1. Thuốc trị giun, sán"
+  },
+  {
+    "id": 11,
+    "id_nhom": 11,
+    "ma_nhom": 11,
+    "ten_chinh": "6.2. Chống nhiễm khuẩn",
+    "ten_nhom": "6.2. Chống nhiễm khuẩn"
+  },
+  {
+    "id": 12,
+    "id_nhom": 12,
+    "ma_nhom": 12,
+    "ten_chinh": "6.2. Chống nhiễm khuẩn",
+    "ten_nhom": "6.2. Chống nhiễm khuẩn"
+  },
+  {
+    "id": 13,
+    "id_nhom": 13,
+    "ma_nhom": 13,
+    "ten_chinh": "6.2. Chống nhiễm khuẩn",
+    "ten_nhom": "6.2. Chống nhiễm khuẩn"
+  },
+  {
+    "id": 14,
+    "id_nhom": 14,
+    "ma_nhom": 14,
+    "ten_chinh": "6.2. Chống nhiễm khuẩn",
+    "ten_nhom": "6.2. Chống nhiễm khuẩn"
+  },
+  {
+    "id": 15,
+    "id_nhom": 15,
+    "ma_nhom": 15,
+    "ten_chinh": "6.2. Chống nhiễm khuẩn",
+    "ten_nhom": "6.2. Chống nhiễm khuẩn"
+  },
+  {
+    "id": 16,
+    "id_nhom": 16,
+    "ma_nhom": 16,
+    "ten_chinh": "6.2. Chống nhiễm khuẩn",
+    "ten_nhom": "6.2. Chống nhiễm khuẩn"
+  },
+  {
+    "id": 17,
+    "id_nhom": 17,
+    "ma_nhom": 17,
+    "ten_chinh": "6.2. Chống nhiễm khuẩn",
+    "ten_nhom": "6.2. Chống nhiễm khuẩn"
+  },
+  {
+    "id": 18,
+    "id_nhom": 18,
+    "ma_nhom": 18,
+    "ten_chinh": "6.2. Chống nhiễm khuẩn",
+    "ten_nhom": "6.2. Chống nhiễm khuẩn"
+  },
+  {
+    "id": 19,
+    "id_nhom": 19,
+    "ma_nhom": 19,
+    "ten_chinh": "6.2. Chống nhiễm khuẩn",
+    "ten_nhom": "6.2. Chống nhiễm khuẩn"
+  },
+  {
+    "id": 20,
+    "id_nhom": 20,
+    "ma_nhom": 20,
+    "ten_chinh": "6.2. Chống nhiễm khuẩn",
+    "ten_nhom": "6.2. Chống nhiễm khuẩn"
+  },
+  {
+    "id": 21,
+    "id_nhom": 21,
+    "ma_nhom": 21,
+    "ten_chinh": "6.2. Chống nhiễm khuẩn",
+    "ten_nhom": "6.2. Chống nhiễm khuẩn"
+  },
+  {
+    "id": 22,
+    "id_nhom": 22,
+    "ma_nhom": 22,
+    "ten_chinh": "6.2.12 Thuốc đặt phụ khoa",
+    "ten_nhom": "6.2.12 Thuốc đặt phụ khoa"
+  },
+  {
+    "id": 23,
+    "id_nhom": 23,
+    "ma_nhom": 23,
+    "ten_chinh": "6.3. Thuốc chống vi rút",
+    "ten_nhom": "6.3. Thuốc chống vi rút"
+  },
+  {
+    "id": 24,
+    "id_nhom": 24,
+    "ma_nhom": 24,
+    "ten_chinh": "6.3. Thuốc chống vi rút",
+    "ten_nhom": "6.3. Thuốc chống vi rút"
+  },
+  {
+    "id": 25,
+    "id_nhom": 25,
+    "ma_nhom": 25,
+    "ten_chinh": "6.3. Thuốc chống vi rút",
+    "ten_nhom": "6.3. Thuốc chống vi rút"
+  },
+  {
+    "id": 26,
+    "id_nhom": 26,
+    "ma_nhom": 26,
+    "ten_chinh": "6.3. Thuốc chống vi rút",
+    "ten_nhom": "6.3. Thuốc chống vi rút"
+  },
+  {
+    "id": 27,
+    "id_nhom": 27,
+    "ma_nhom": 27,
+    "ten_chinh": "6.4. Thuốc chống nấm",
+    "ten_nhom": "6.4. Thuốc chống nấm"
+  },
+  {
+    "id": 28,
+    "id_nhom": 28,
+    "ma_nhom": 28,
+    "ten_chinh": "6.5. Thuốc điều trị bệnh do amip",
+    "ten_nhom": "6.5. Thuốc điều trị bệnh do amip"
+  },
+  {
+    "id": 29,
+    "id_nhom": 29,
+    "ma_nhom": 29,
+    "ten_chinh": "6.6. Thuốc điều trị bệnh lao",
+    "ten_nhom": "6.6. Thuốc điều trị bệnh lao"
+  },
+  {
+    "id": 30,
+    "id_nhom": 30,
+    "ma_nhom": 30,
+    "ten_chinh": "6.7. Thuốc điều trị sốt rét",
+    "ten_nhom": "6.7. Thuốc điều trị sốt rét"
+  },
+  {
+    "id": 31,
+    "id_nhom": 31,
+    "ma_nhom": 31,
+    "ten_chinh": "7. THUỐC ĐIỀU TRỊ ĐAU NỬA ĐẦU",
+    "ten_nhom": "7. THUỐC ĐIỀU TRỊ ĐAU NỬA ĐẦU"
+  },
+  {
+    "id": 32,
+    "id_nhom": 32,
+    "ma_nhom": 32,
+    "ten_chinh": "8.1. Hóa chất",
+    "ten_nhom": "8.1. Hóa chất"
+  },
+  {
+    "id": 33,
+    "id_nhom": 33,
+    "ma_nhom": 33,
+    "ten_chinh": "8.2. Thuốc điều trị đích",
+    "ten_nhom": "8.2. Thuốc điều trị đích"
+  },
+  {
+    "id": 34,
+    "id_nhom": 34,
+    "ma_nhom": 34,
+    "ten_chinh": "8.3. Thuốc điều trị nội tiết",
+    "ten_nhom": "8.3. Thuốc điều trị nội tiết"
+  },
+  {
+    "id": 35,
+    "id_nhom": 35,
+    "ma_nhom": 35,
+    "ten_chinh": "8.4. Thuốc điều hòa miễn dịch",
+    "ten_nhom": "8.4. Thuốc điều hòa miễn dịch"
+  },
+  {
+    "id": 36,
+    "id_nhom": 36,
+    "ma_nhom": 36,
+    "ten_chinh": "8.5. Thuốc điều trị ung thư khác",
+    "ten_nhom": "8.5. Thuốc điều trị ung thư khác"
+  },
+  {
+    "id": 37,
+    "id_nhom": 37,
+    "ma_nhom": 37,
+    "ten_chinh": "9. THUỐC ĐIỀU TRỊ BỆNH ĐƯỜNG TIẾT NIỆU",
+    "ten_nhom": "9. THUỐC ĐIỀU TRỊ BỆNH ĐƯỜNG TIẾT NIỆU"
+  },
+  {
+    "id": 38,
+    "id_nhom": 38,
+    "ma_nhom": 38,
+    "ten_chinh": "10. THUỐC CHỐNG PARKINSON",
+    "ten_nhom": "10. THUỐC CHỐNG PARKINSON"
+  },
+  {
+    "id": 39,
+    "id_nhom": 39,
+    "ma_nhom": 39,
+    "ten_chinh": "11.1. Thuốc chống thiếu máu",
+    "ten_nhom": "11.1. Thuốc chống thiếu máu"
+  },
+  {
+    "id": 40,
+    "id_nhom": 40,
+    "ma_nhom": 40,
+    "ten_chinh": "11.2. Thuốc tác dụng lên quá trình đông máu",
+    "ten_nhom": "11.2. Thuốc tác dụng lên quá trình đông máu"
+  },
+  {
+    "id": 41,
+    "id_nhom": 41,
+    "ma_nhom": 41,
+    "ten_chinh": "11.3. Máu và chế phẩm máu",
+    "ten_nhom": "11.3. Máu và chế phẩm máu"
+  },
+  {
+    "id": 42,
+    "id_nhom": 42,
+    "ma_nhom": 42,
+    "ten_chinh": "11.4. Dung dịch cao phân tử",
+    "ten_nhom": "11.4. Dung dịch cao phân tử"
+  },
+  {
+    "id": 43,
+    "id_nhom": 43,
+    "ma_nhom": 43,
+    "ten_chinh": "11.5. Thuốc tác dụng lên máu khác",
+    "ten_nhom": "11.5. Thuốc tác dụng lên máu khác"
+  },
+  {
+    "id": 44,
+    "id_nhom": 44,
+    "ma_nhom": 44,
+    "ten_chinh": "12.1. Thuốc chống đau thắt ngực",
+    "ten_nhom": "12.1. Thuốc chống đau thắt ngực"
+  },
+  {
+    "id": 45,
+    "id_nhom": 45,
+    "ma_nhom": 45,
+    "ten_chinh": "12.2. Thuốc chống loạn nhịp",
+    "ten_nhom": "12.2. Thuốc chống loạn nhịp"
+  },
+  {
+    "id": 46,
+    "id_nhom": 46,
+    "ma_nhom": 46,
+    "ten_chinh": "12.3. Thuốc điều trị tăng huyết áp",
+    "ten_nhom": "12.3. Thuốc điều trị tăng huyết áp"
+  },
+  {
+    "id": 47,
+    "id_nhom": 47,
+    "ma_nhom": 47,
+    "ten_chinh": "12.4. Thuốc điều trị hạ huyết áp",
+    "ten_nhom": "12.4. Thuốc điều trị hạ huyết áp"
+  },
+  {
+    "id": 48,
+    "id_nhom": 48,
+    "ma_nhom": 48,
+    "ten_chinh": "12.5. Thuốc điều trị suy tim",
+    "ten_nhom": "12.5. Thuốc điều trị suy tim"
+  },
+  {
+    "id": 49,
+    "id_nhom": 49,
+    "ma_nhom": 49,
+    "ten_chinh": "12.6. Thuốc chống huyết khối",
+    "ten_nhom": "12.6. Thuốc chống huyết khối"
+  },
+  {
+    "id": 50,
+    "id_nhom": 50,
+    "ma_nhom": 50,
+    "ten_chinh": "12.7. Thuốc hạ lipid máu",
+    "ten_nhom": "12.7. Thuốc hạ lipid máu"
+  },
+  {
+    "id": 51,
+    "id_nhom": 51,
+    "ma_nhom": 51,
+    "ten_chinh": "12.8. Thuốc TMHA khác",
+    "ten_nhom": "12.8. Thuốc TMHA khác"
+  },
+  {
+    "id": 52,
+    "id_nhom": 52,
+    "ma_nhom": 52,
+    "ten_chinh": "13. THUỐC ĐIỀU TRỊ BỆNH DA LIỄU",
+    "ten_nhom": "13. THUỐC ĐIỀU TRỊ BỆNH DA LIỄU"
+  },
+  {
+    "id": 53,
+    "id_nhom": 53,
+    "ma_nhom": 53,
+    "ten_chinh": "14.1. Chuyên khoa mắt",
+    "ten_nhom": "14.1. Chuyên khoa mắt"
+  },
+  {
+    "id": 54,
+    "id_nhom": 54,
+    "ma_nhom": 54,
+    "ten_chinh": "14.2. Thuốc cản quang",
+    "ten_nhom": "14.2. Thuốc cản quang"
+  },
+  {
+    "id": 55,
+    "id_nhom": 55,
+    "ma_nhom": 55,
+    "ten_chinh": "14.3. Thuốc dùng trong chẩn đoán kháckhác",
+    "ten_nhom": "14.3. Thuốc dùng trong chẩn đoán kháckhác"
+  },
+  {
+    "id": 56,
+    "id_nhom": 56,
+    "ma_nhom": 56,
+    "ten_chinh": "15. THUỐC TẨY TRÙNG VÀ SÁT KHUẨN",
+    "ten_nhom": "15. THUỐC TẨY TRÙNG VÀ SÁT KHUẨN"
+  },
+  {
+    "id": 57,
+    "id_nhom": 57,
+    "ma_nhom": 57,
+    "ten_chinh": "16. THUỐC LỢI TIỂU",
+    "ten_nhom": "16. THUỐC LỢI TIỂU"
+  },
+  {
+    "id": 58,
+    "id_nhom": 58,
+    "ma_nhom": 58,
+    "ten_chinh": "17.1. Thuốc kháng acid và các thuốc chống loét khác tác dụng trên đường tiêu hóa",
+    "ten_nhom": "17.1. Thuốc kháng acid và các thuốc chống loét khác tác dụng trên đường tiêu hóa"
+  },
+  {
+    "id": 59,
+    "id_nhom": 59,
+    "ma_nhom": 59,
+    "ten_chinh": "17.2. Thuốc chống nôn",
+    "ten_nhom": "17.2. Thuốc chống nôn"
+  },
+  {
+    "id": 60,
+    "id_nhom": 60,
+    "ma_nhom": 60,
+    "ten_chinh": "17.3. Thuốc chống co thắt",
+    "ten_nhom": "17.3. Thuốc chống co thắt"
+  },
+  {
+    "id": 61,
+    "id_nhom": 61,
+    "ma_nhom": 61,
+    "ten_chinh": "17.4. Thuốc tẩy, nhuận tràng",
+    "ten_nhom": "17.4. Thuốc tẩy, nhuận tràng"
+  },
+  {
+    "id": 62,
+    "id_nhom": 62,
+    "ma_nhom": 62,
+    "ten_chinh": "17.5. Thuốc điều trị tiêu chảy",
+    "ten_nhom": "17.5. Thuốc điều trị tiêu chảy"
+  },
+  {
+    "id": 63,
+    "id_nhom": 63,
+    "ma_nhom": 63,
+    "ten_chinh": "17.6. Thuốc điều trị trĩ",
+    "ten_nhom": "17.6. Thuốc điều trị trĩ"
+  },
+  {
+    "id": 64,
+    "id_nhom": 64,
+    "ma_nhom": 64,
+    "ten_chinh": "17.7. Thuốc Tiêu hóa-gan mật khác",
+    "ten_nhom": "17.7. Thuốc Tiêu hóa-gan mật khác"
+  },
+  {
+    "id": 65,
+    "id_nhom": 65,
+    "ma_nhom": 65,
+    "ten_chinh": "18.1. Hocmon thượng thận và những chất tổng hợp thay thế",
+    "ten_nhom": "18.1. Hocmon thượng thận và những chất tổng hợp thay thế"
+  },
+  {
+    "id": 66,
+    "id_nhom": 66,
+    "ma_nhom": 66,
+    "ten_chinh": "18.2. Các chế phẩm androgen, estrogen và progesteron",
+    "ten_nhom": "18.2. Các chế phẩm androgen, estrogen và progesteron"
+  },
+  {
+    "id": 67,
+    "id_nhom": 67,
+    "ma_nhom": 67,
+    "ten_chinh": "18.3. Insulin và nhóm thuốc hạ đường huyết",
+    "ten_nhom": "18.3. Insulin và nhóm thuốc hạ đường huyết"
+  },
+  {
+    "id": 68,
+    "id_nhom": 68,
+    "ma_nhom": 68,
+    "ten_chinh": "18.4. Hocmon tuyến giáp, cận giáp và thuốc kháng giáp trạng tổng hợp",
+    "ten_nhom": "18.4. Hocmon tuyến giáp, cận giáp và thuốc kháng giáp trạng tổng hợp"
+  },
+  {
+    "id": 69,
+    "id_nhom": 69,
+    "ma_nhom": 69,
+    "ten_chinh": "18.5. Thuốc điều trị bệnh đái tháo nhạt",
+    "ten_nhom": "18.5. Thuốc điều trị bệnh đái tháo nhạt"
+  },
+  {
+    "id": 70,
+    "id_nhom": 70,
+    "ma_nhom": 70,
+    "ten_chinh": "18.6. Thuốc nội tiết khác",
+    "ten_nhom": "18.6. Thuốc nội tiết khác"
+  },
+  {
+    "id": 71,
+    "id_nhom": 71,
+    "ma_nhom": 71,
+    "ten_chinh": "19. HUYẾT THANH VÀ GLOBULIN MIỄN DỊCH",
+    "ten_nhom": "19. HUYẾT THANH VÀ GLOBULIN MIỄN DỊCH"
+  },
+  {
+    "id": 72,
+    "id_nhom": 72,
+    "ma_nhom": 72,
+    "ten_chinh": "20. THUỐC LÀM MỀM CƠ VÀ ỨC CHẾ CHOLINESTERASE",
+    "ten_nhom": "20. THUỐC LÀM MỀM CƠ VÀ ỨC CHẾ CHOLINESTERASE"
+  },
+  {
+    "id": 73,
+    "id_nhom": 73,
+    "ma_nhom": 73,
+    "ten_chinh": "21.1. Thuốc điều trị bệnh mắt",
+    "ten_nhom": "21.1. Thuốc điều trị bệnh mắt"
+  },
+  {
+    "id": 74,
+    "id_nhom": 74,
+    "ma_nhom": 74,
+    "ten_chinh": "21.2. Thuốc tai- mũi- họng",
+    "ten_nhom": "21.2. Thuốc tai- mũi- họng"
+  },
+  {
+    "id": 75,
+    "id_nhom": 75,
+    "ma_nhom": 75,
+    "ten_chinh": "22.1. Thuốc thúc đẻ, cầm máu sau đẻ",
+    "ten_nhom": "22.1. Thuốc thúc đẻ, cầm máu sau đẻ"
+  },
+  {
+    "id": 76,
+    "id_nhom": 76,
+    "ma_nhom": 76,
+    "ten_chinh": "22.2. Thuốc chống đẻ non",
+    "ten_nhom": "22.2. Thuốc chống đẻ non"
+  },
+  {
+    "id": 77,
+    "id_nhom": 77,
+    "ma_nhom": 77,
+    "ten_chinh": "23. DUNG DỊCH LỌC MÀNG BỤNG, LỌC MÁU",
+    "ten_nhom": "23. DUNG DỊCH LỌC MÀNG BỤNG, LỌC MÁU"
+  },
+  {
+    "id": 78,
+    "id_nhom": 78,
+    "ma_nhom": 78,
+    "ten_chinh": "24. THUỐC AN THẦN VÀ THUỐC TÁC ĐỘNG LÊN HỆ THẦN KINH",
+    "ten_nhom": "24. THUỐC AN THẦN VÀ THUỐC TÁC ĐỘNG LÊN HỆ THẦN KINH"
+  },
+  {
+    "id": 79,
+    "id_nhom": 79,
+    "ma_nhom": 79,
+    "ten_chinh": "24.1. Thuốc an thần",
+    "ten_nhom": "24.1. Thuốc an thần"
+  },
+  {
+    "id": 80,
+    "id_nhom": 80,
+    "ma_nhom": 80,
+    "ten_chinh": "24.2. Thuốc gây ngủ",
+    "ten_nhom": "24.2. Thuốc gây ngủ"
+  },
+  {
+    "id": 81,
+    "id_nhom": 81,
+    "ma_nhom": 81,
+    "ten_chinh": "24.3. Thuốc chống rối loạn tâm thần",
+    "ten_nhom": "24.3. Thuốc chống rối loạn tâm thần"
+  },
+  {
+    "id": 82,
+    "id_nhom": 82,
+    "ma_nhom": 82,
+    "ten_chinh": "24.4. Thuốc chống trầm cảm",
+    "ten_nhom": "24.4. Thuốc chống trầm cảm"
+  },
+  {
+    "id": 83,
+    "id_nhom": 83,
+    "ma_nhom": 83,
+    "ten_chinh": "24.5 Thuốc tác động lên hệ thần kinh",
+    "ten_nhom": "24.5 Thuốc tác động lên hệ thần kinh"
+  },
+  {
+    "id": 84,
+    "id_nhom": 84,
+    "ma_nhom": 84,
+    "ten_chinh": "25.1. Thuốc chữa hen và bệnh phổi tắc nghẽn mãn tính",
+    "ten_nhom": "25.1. Thuốc chữa hen và bệnh phổi tắc nghẽn mãn tính"
+  },
+  {
+    "id": 85,
+    "id_nhom": 85,
+    "ma_nhom": 85,
+    "ten_chinh": "25.2. Thuốc chữa ho",
+    "ten_nhom": "25.2. Thuốc chữa ho"
+  },
+  {
+    "id": 86,
+    "id_nhom": 86,
+    "ma_nhom": 86,
+    "ten_chinh": "25.3. Thuốc Hô hấp khác",
+    "ten_nhom": "25.3. Thuốc Hô hấp khác"
+  },
+  {
+    "id": 87,
+    "id_nhom": 87,
+    "ma_nhom": 87,
+    "ten_chinh": "26.1. Thuốc uống",
+    "ten_nhom": "26.1. Thuốc uống"
+  },
+  {
+    "id": 88,
+    "id_nhom": 88,
+    "ma_nhom": 88,
+    "ten_chinh": "26.2. Thuốc tiêm truyền",
+    "ten_nhom": "26.2. Thuốc tiêm truyền"
+  },
+  {
+    "id": 89,
+    "id_nhom": 89,
+    "ma_nhom": 89,
+    "ten_chinh": "26.3.Nước cất",
+    "ten_nhom": "26.3.Nước cất"
+  },
+  {
+    "id": 90,
+    "id_nhom": 90,
+    "ma_nhom": 90,
+    "ten_chinh": "27. KHOÁNG CHẤT VÀ VITAMIN ",
+    "ten_nhom": "27. KHOÁNG CHẤT VÀ VITAMIN "
+  },
+  {
+    "id": 91,
+    "id_nhom": 91,
+    "ma_nhom": 91,
+    "ten_chinh": "28.THÀNH PHẨM Y HỌC CỔ TRUYỀN",
+    "ten_nhom": "28.THÀNH PHẨM Y HỌC CỔ TRUYỀN"
+  },
+  {
+    "id": 92,
+    "id_nhom": 92,
+    "ma_nhom": 92,
+    "ten_chinh": "28.1.THÀNH PHẨM Y HỌC CỔ TRUYỀN- Giải cảm cúm",
+    "ten_nhom": "28.1.THÀNH PHẨM Y HỌC CỔ TRUYỀN- Giải cảm cúm"
+  },
+  {
+    "id": 93,
+    "id_nhom": 93,
+    "ma_nhom": 93,
+    "ten_chinh": "28.2. THÀNH PHẨM Y HỌC CỔ TRUYỀN - GAN MẬT",
+    "ten_nhom": "28.2. THÀNH PHẨM Y HỌC CỔ TRUYỀN - GAN MẬT"
+  },
+  {
+    "id": 94,
+    "id_nhom": 94,
+    "ma_nhom": 94,
+    "ten_chinh": "28.3.THÀNH PHẨM Y HỌC CỔ TRUYỀN - Xương khớp",
+    "ten_nhom": "28.3.THÀNH PHẨM Y HỌC CỔ TRUYỀN - Xương khớp"
+  },
+  {
+    "id": 95,
+    "id_nhom": 95,
+    "ma_nhom": 95,
+    "ten_chinh": "28.4.THÀNH PHẨM Y HỌC CỔ TRUYỀN - Tác dụng đường tiêu hóa-Gan mật",
+    "ten_nhom": "28.4.THÀNH PHẨM Y HỌC CỔ TRUYỀN - Tác dụng đường tiêu hóa-Gan mật"
+  },
+  {
+    "id": 96,
+    "id_nhom": 96,
+    "ma_nhom": 96,
+    "ten_chinh": "28.5.THÀNH PHẨM Y HỌC CỔ TRUYỀN- Tác dụng trên thần kinh",
+    "ten_nhom": "28.5.THÀNH PHẨM Y HỌC CỔ TRUYỀN- Tác dụng trên thần kinh"
+  },
+  {
+    "id": 97,
+    "id_nhom": 97,
+    "ma_nhom": 97,
+    "ten_chinh": "28.6. THÀNH PHẨM Y HỌC CỔ TRUYỀN -Thuốc chữa ho à bệnh đường hô hấp",
+    "ten_nhom": "28.6. THÀNH PHẨM Y HỌC CỔ TRUYỀN -Thuốc chữa ho à bệnh đường hô hấp"
+  },
+  {
+    "id": 98,
+    "id_nhom": 98,
+    "ma_nhom": 98,
+    "ten_chinh": "28.7.THÀNH PHẨM Y HỌC CỔ TRUYỀN - Thuốc chữa bệnh về Nam giới",
+    "ten_nhom": "28.7.THÀNH PHẨM Y HỌC CỔ TRUYỀN - Thuốc chữa bệnh về Nam giới"
+  },
+  {
+    "id": 99,
+    "id_nhom": 99,
+    "ma_nhom": 99,
+    "ten_chinh": "28.8.THÀNH PHẨM Y HỌC CỔ TRUYỀN- Thuốc chữa bệnh về Nữ",
+    "ten_nhom": "28.8.THÀNH PHẨM Y HỌC CỔ TRUYỀN- Thuốc chữa bệnh về Nữ"
+  },
+  {
+    "id": 100,
+    "id_nhom": 100,
+    "ma_nhom": 100,
+    "ten_chinh": "28.9.THÀNH PHẨM Y HỌC CỔ TRUYỀN - Ngũ quan (Mắt-TMH-…)",
+    "ten_nhom": "28.9.THÀNH PHẨM Y HỌC CỔ TRUYỀN - Ngũ quan (Mắt-TMH-…)"
+  },
+  {
+    "id": 101,
+    "id_nhom": 101,
+    "ma_nhom": 101,
+    "ten_chinh": "28.10.THÀNH PHẨM Y HỌC CỔ TRUYỀN Dùng ngoài",
+    "ten_nhom": "28.10.THÀNH PHẨM Y HỌC CỔ TRUYỀN Dùng ngoài"
+  },
+  {
+    "id": 102,
+    "id_nhom": 102,
+    "ma_nhom": 102,
+    "ten_chinh": "29. Vị thuốc YHCT",
+    "ten_nhom": "29. Vị thuốc YHCT"
+  },
+  {
+    "id": 103,
+    "id_nhom": 103,
+    "ma_nhom": 103,
+    "ten_chinh": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO",
+    "ten_nhom": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO"
+  },
+  {
+    "id": 104,
+    "id_nhom": 104,
+    "ma_nhom": 104,
+    "ten_chinh": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO",
+    "ten_nhom": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO"
+  },
+  {
+    "id": 105,
+    "id_nhom": 105,
+    "ma_nhom": 105,
+    "ten_chinh": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO",
+    "ten_nhom": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO"
+  },
+  {
+    "id": 106,
+    "id_nhom": 106,
+    "ma_nhom": 106,
+    "ten_chinh": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO",
+    "ten_nhom": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO"
+  },
+  {
+    "id": 107,
+    "id_nhom": 107,
+    "ma_nhom": 107,
+    "ten_chinh": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO",
+    "ten_nhom": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO"
+  },
+  {
+    "id": 108,
+    "id_nhom": 108,
+    "ma_nhom": 108,
+    "ten_chinh": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO",
+    "ten_nhom": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO"
+  },
+  {
+    "id": 109,
+    "id_nhom": 109,
+    "ma_nhom": 109,
+    "ten_chinh": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO",
+    "ten_nhom": "30. VẬT TƯ TRANG THIẾT BỊ Y TẾ TIÊU HAO"
+  },
+  {
+    "id": 110,
+    "id_nhom": 110,
+    "ma_nhom": 110,
+    "ten_chinh": "31.THỰC PHẨM CHỨC NĂNG",
+    "ten_nhom": "31.THỰC PHẨM CHỨC NĂNG"
+  },
+  {
+    "id": 111,
+    "id_nhom": 111,
+    "ma_nhom": 111,
+    "ten_chinh": "31.2 Thực phẩm chức năng-hỗ trợ điều trị xương khớp",
+    "ten_nhom": "31.2 Thực phẩm chức năng-hỗ trợ điều trị xương khớp"
+  },
+  {
+    "id": 112,
+    "id_nhom": 112,
+    "ma_nhom": 112,
+    "ten_chinh": "31.12 Thực phẩm chức năng- nhóm thuốc Tim mạch Huyết áp",
+    "ten_nhom": "31.12 Thực phẩm chức năng- nhóm thuốc Tim mạch Huyết áp"
+  },
+  {
+    "id": 113,
+    "id_nhom": 113,
+    "ma_nhom": 113,
+    "ten_chinh": "31.17 Thực phẩm chức năng-hỗ trợ điều trị Bệnh Tiêu hóa-gan mật",
+    "ten_nhom": "31.17 Thực phẩm chức năng-hỗ trợ điều trị Bệnh Tiêu hóa-gan mật"
+  },
+  {
+    "id": 114,
+    "id_nhom": 114,
+    "ma_nhom": 114,
+    "ten_chinh": "31.18 Thực phẩm chức năng- nhóm Nội tiết tố - Sản phụ khoa-Nam khoa",
+    "ten_nhom": "31.18 Thực phẩm chức năng- nhóm Nội tiết tố - Sản phụ khoa-Nam khoa"
+  },
+  {
+    "id": 115,
+    "id_nhom": 115,
+    "ma_nhom": 115,
+    "ten_chinh": "31.25 Thực phẩm chức năng-hỗ trợ điều trị bệnh hô hấp-ho TMH",
+    "ten_nhom": "31.25 Thực phẩm chức năng-hỗ trợ điều trị bệnh hô hấp-ho TMH"
+  },
+  {
+    "id": 116,
+    "id_nhom": 116,
+    "ma_nhom": 116,
+    "ten_chinh": "31.27 Thực phẩm chức năng- bổ não,bỗ máu, nâng đỡ cơ thể, Vitamin khoáng chất",
+    "ten_nhom": "31.27 Thực phẩm chức năng- bổ não,bỗ máu, nâng đỡ cơ thể, Vitamin khoáng chất"
+  },
+  {
+    "id": 117,
+    "id_nhom": 117,
+    "ma_nhom": 117,
+    "ten_chinh": "32. Dược Mỹ phẩm",
+    "ten_nhom": "32. Dược Mỹ phẩm"
+  }
+]

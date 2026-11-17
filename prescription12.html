@@ -1,192 +1,1204 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quản lý Đơn Thuốc - Hệ thống Quản lý Nhà Thuốc</title>
+  <title>Apotheca Rx — Pharmacist Patient & Prescription Dispense Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              950: '#022c22'
+            },
+            obsidian: {
+              800: '#11181c',
+              850: '#0c1317',
+              900: '#080d10',
+              950: '#040709'
+            }
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { background: linear-gradient(135deg, #86efac 0%, #4ade80 100%); min-height: 100vh; padding: 2rem; }
-    .container { max-width: 1100px; margin: 0 auto; }
-    .header { background: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    h1 { color: #166534; font-size: 1.5rem; }
-    .btn { padding: 0.7rem 1.2rem; border: none; border-radius: 6px; cursor: pointer; font-size: 1rem; transition: 0.2s; }
-    .btn:hover { transform: translateY(-1px); }
-    .btn-primary { background: #22c55e; color: white; }
-    .btn-secondary { background: #e5e7eb; color: #374151; }
-    .btn-approve { background: #22c55e; color: white; }
-    .btn-reject { background: #ef4444; color: white; }
-    .card { background: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
-    .form-group { margin-bottom: 1rem; }
-    label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: #374151; }
-    select, input, textarea { width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; }
-    select:focus, input:focus, textarea:focus { outline: none; border-color: #22c55e; box-shadow: 0 0 0 3px rgba(34,197,94,0.2); }
-    .med-row { display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem; padding: 0.5rem; background: #f0fdf4; border-radius: 6px; }
-    .med-row select { flex: 2; }
-    .med-row input { flex: 1; }
-    .med-row button { flex-shrink: 0; background: #ef4444; color: white; border: none; padding: 0.5rem; border-radius: 4px; cursor: pointer; }
-    .presc-item { padding: 1rem; border-bottom: 1px solid #eee; }
-    .presc-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem; }
-    .status-pending { color: #f59e0b; font-weight: bold; }
-    .status-approved { color: #22c55e; font-weight: bold; }
-    .status-rejected { color: #ef4444; font-weight: bold; }
-    .presc-actions { margin-top: 0.8rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
-    .message { margin-top: 1rem; padding: 0.7rem; border-radius: 6px; display: none; }
-    .success { background: #d4edda; color: #155724; display: block; }
-    .error { background: #f8d7da; color: #721c24; display: block; }
-    .hidden { display: none !important; }
-    .med-list { margin: 0.5rem 0; padding-left: 1rem; }
-    .med-list li { margin: 0.25rem 0; }
+    /* Custom Scrollbars */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.04);
+    }
+
+    .dark ::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(16, 185, 129, 0.3);
+      border-radius: 9999px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(16, 185, 129, 0.6);
+    }
+
+    .glow-mint {
+      box-shadow: 0 0 20px -3px rgba(16, 185, 129, 0.25);
+    }
+
+    .dark .glow-mint {
+      box-shadow: 0 0 25px -4px rgba(16, 185, 129, 0.35);
+    }
   </style>
 </head>
-<body>
-  <div class="container">
-    <div class="header">
-      <h1>📋 Quản lý Đơn Thuốc</h1>
-      <div>
-        <button class="btn btn-secondary" onclick="window.location.href='dashboard11.html'">← Bảng điều khiển</button>
-        <button class="btn btn-primary" onclick="showForm()">+ Tạo Đơn Thuốc</button>
+
+<body
+  class="bg-[#f2f8f4] dark:bg-[#070d0b] text-slate-800 dark:text-slate-100 min-h-screen flex antialiased transition-colors duration-200">
+
+  <!-- ==================== SIDEBAR ==================== -->
+  <aside
+    class="w-64 bg-white/95 dark:bg-[#0c1613] border-r border-emerald-100 dark:border-emerald-950/60 flex flex-col justify-between shrink-0 fixed inset-y-0 left-0 z-40 transition-all duration-200 backdrop-blur-md">
+
+    <!-- Top Branding & Navigation -->
+    <div class="flex flex-col h-full overflow-y-auto">
+      <!-- App Header -->
+      <div class="p-5 flex items-center justify-between border-b border-emerald-100/70 dark:border-emerald-950/50">
+        <div class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center text-white shadow-md shadow-emerald-500/20 font-bold text-xl">
+            <span>+</span>
+          </div>
+          <div>
+            <h1 class="font-bold text-base tracking-tight text-slate-900 dark:text-white flex items-center gap-1.5">
+              Apotheca Rx
+            </h1>
+            <p class="text-[11px] text-emerald-600 dark:text-emerald-400 font-medium tracking-wide">Clinical Dispense
+              v2.4</p>
+          </div>
+        </div>
+        <button id="themeToggleBtn" title="Chuyển chế độ Sáng / Tối"
+          class="p-2 rounded-lg text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+
+      <!-- Main Navigation Menu -->
+      <nav class="p-3.5 space-y-1.5 flex-1">
+        <a href="dashboard11.html"
+          class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg>
+          <span>Dashboard</span>
+        </a>
+
+        <!-- Active Prescriptions Item -->
+        <a href="prescription12.html"
+          class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold text-emerald-900 dark:text-emerald-100 bg-emerald-100/80 dark:bg-emerald-950/60 border border-emerald-200/80 dark:border-emerald-800/40 shadow-sm transition">
+          <div class="flex items-center gap-3">
+            <svg class="w-4 h-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <span>Prescriptions</span>
+          </div>
+          <span id="sidebarPrescCount"
+            class="px-2 py-0.5 text-xs font-bold bg-emerald-600 text-white rounded-full">--</span>
+        </a>
+
+        <a href="patients12.html"
+          class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <span>Patient Records</span>
+        </a>
+
+        <a href="medicines12.html"
+          class="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <div class="flex items-center gap-3">
+            <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+            <span>Medicine Inventory</span>
+          </div>
+          <span class="w-2 h-2 rounded-full bg-amber-400" title="Kiểm tra cảnh báo tồn kho"></span>
+        </a>
+
+        <a href="index13.html"
+          class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <span>Drug Interaction (Phase 2)</span>
+        </a>
+
+        <a href="history12.html"
+          class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          <span>Dispense Logs & Export</span>
+        </a>
+
+        <a href="staff12.html" id="staffNavLink"
+          class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-300 hover:bg-emerald-50/70 dark:hover:bg-emerald-950/30 transition group">
+          <svg class="w-4 h-4 text-slate-400 group-hover:text-emerald-600 transition" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+          <span>Staff & Pharmacists</span>
+        </a>
+      </nav>
+
+      <!-- Bottom User Profile Card -->
+      <div
+        class="p-3.5 border-t border-emerald-100/70 dark:border-emerald-950/60 bg-emerald-50/40 dark:bg-emerald-950/20">
+        <div
+          class="flex items-center justify-between p-2 rounded-xl bg-white dark:bg-[#101e19] border border-emerald-100 dark:border-emerald-900/40 shadow-sm">
+          <div class="flex items-center gap-2.5 overflow-hidden">
+            <div id="userAvatar"
+              class="w-9 h-9 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-xs shrink-0 shadow-sm">
+              PM
+            </div>
+            <div class="truncate">
+              <div class="flex items-center gap-1.5">
+                <span id="userFullName" class="font-bold text-xs text-slate-800 dark:text-white truncate">Phuc
+                  Minh</span>
+                <span id="userRoleBadge"
+                  class="text-[9px] font-bold px-1.5 py-0.2 rounded bg-emerald-100 dark:bg-emerald-900/80 text-emerald-800 dark:text-emerald-300 uppercase">ADMIN</span>
+              </div>
+              <p id="userJobTitle" class="text-[10px] text-slate-500 dark:text-slate-400 truncate">Senior Lead
+                Pharmacist</p>
+            </div>
+          </div>
+          <button id="logoutBtn" title="Đăng xuất"
+            class="p-1.5 text-slate-400 hover:text-red-500 transition rounded-lg hover:bg-red-50 dark:hover:bg-red-950/30 shrink-0">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
+  </aside>
 
-    <!-- Form Tạo Đơn Thuốc -->
-    <div class="card" id="formCard" style="display:none;">
-      <h3 style="margin-bottom: 1rem; color: #166534;">Tạo Đơn Thuốc Mới</h3>
-      <form id="prescForm">
-        <div class="form-group">
-          <label>Chọn Bệnh Nhân *</label>
-          <select id="patientSelect" required>
-            <option value="">-- Đang tải danh sách bệnh nhân --</option>
+  <!-- ==================== MAIN WORKSPACE ==================== -->
+  <div class="flex-1 ml-64 flex flex-col min-w-0 min-h-screen">
+
+    <!-- Top Action & Navigation Bar -->
+    <header
+      class="h-16 px-6 bg-white/80 dark:bg-[#0c1613]/80 border-b border-emerald-100 dark:border-emerald-950/60 flex items-center justify-between sticky top-0 z-30 backdrop-blur-md">
+      <!-- Breadcrumb / Status -->
+      <div class="flex items-center gap-3">
+        <h2 class="text-base font-bold text-slate-800 dark:text-white">Prescription Dispense Center</h2>
+        <span class="text-slate-300 dark:text-slate-700">/</span>
+        <div
+          class="flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/40">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>Clinical Queue Active</span>
+        </div>
+      </div>
+
+      <!-- Search & New Prescription Action -->
+      <div class="flex items-center gap-3">
+        <div class="relative w-80">
+          <input type="text" id="globalSearchInput" placeholder="Search patient, Rx#, NDC, or drug barcode..."
+            class="w-full pl-9 pr-4 py-2 bg-slate-50 dark:bg-[#12211b] border border-emerald-100 dark:border-emerald-900/50 rounded-xl text-xs text-slate-800 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
+          <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+
+        <button id="notifyBtn"
+          class="p-2 text-slate-500 dark:text-slate-400 hover:text-emerald-600 dark:hover:text-emerald-400 rounded-xl hover:bg-emerald-50 dark:hover:bg-emerald-950/40 relative transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+          </svg>
+          <span class="w-2 h-2 rounded-full bg-emerald-500 absolute top-1.5 right-1.5"></span>
+        </button>
+
+        <button onclick="openCreateModal()"
+          class="px-4 py-2 bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-700 hover:to-teal-600 text-white font-semibold text-xs rounded-xl shadow-md shadow-emerald-600/20 hover:shadow-lg transition flex items-center gap-1.5 cursor-pointer">
+          <span class="text-sm font-bold">+</span>
+          <span>New Dispense / Rx</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Scrollable Content -->
+    <main class="p-6 flex-1 flex flex-col gap-6 overflow-x-hidden">
+
+      <!-- ==================== 4 METRIC KPI CARDS ==================== -->
+      <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- 1: Pending Verifications -->
+        <div
+          class="bg-white dark:bg-[#0e1a15] p-4 rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-bold tracking-wider text-slate-400 dark:text-slate-400 uppercase">Pending
+              Verifications</p>
+            <div class="flex items-baseline gap-2.5 mt-1">
+              <span id="kpiPending" class="text-3xl font-extrabold text-slate-900 dark:text-white">--</span>
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950/70 text-amber-700 dark:text-amber-300">Urgent</span>
+            </div>
+          </div>
+          <div
+            class="w-10 h-10 rounded-xl bg-amber-50 dark:bg-amber-950/40 text-amber-600 flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- 2: Dispensed Today -->
+        <div
+          class="bg-white dark:bg-[#0e1a15] p-4 rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-bold tracking-wider text-slate-400 dark:text-slate-400 uppercase">Dispensed Today
+            </p>
+            <div class="flex items-baseline gap-2.5 mt-1">
+              <span id="kpiDispensed" class="text-3xl font-extrabold text-emerald-600 dark:text-emerald-400">--</span>
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/70 text-emerald-700 dark:text-emerald-300">+12%
+                vs avg</span>
+            </div>
+          </div>
+          <div
+            class="w-10 h-10 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- 3: Interaction Flagged -->
+        <div
+          class="bg-white dark:bg-[#0e1a15] p-4 rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-bold tracking-wider text-slate-400 dark:text-slate-400 uppercase">Interaction
+              Flagged</p>
+            <div class="flex items-baseline gap-2.5 mt-1">
+              <span id="kpiFlagged" class="text-3xl font-extrabold text-red-500 dark:text-red-400">--</span>
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-100 dark:bg-red-950/70 text-red-700 dark:text-red-300">Action
+                req.</span>
+            </div>
+          </div>
+          <div class="w-10 h-10 rounded-xl bg-red-50 dark:bg-red-950/40 text-red-500 flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- 4: Stock Warnings -->
+        <div
+          class="bg-white dark:bg-[#0e1a15] p-4 rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm flex items-center justify-between">
+          <div>
+            <p class="text-[11px] font-bold tracking-wider text-slate-400 dark:text-slate-400 uppercase">Stock Warnings
+            </p>
+            <div class="flex items-baseline gap-2.5 mt-1">
+              <span id="kpiStock" class="text-3xl font-extrabold text-slate-900 dark:text-white">--</span>
+              <span
+                class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">Re-order
+                sent</span>
+            </div>
+          </div>
+          <div
+            class="w-10 h-10 rounded-xl bg-teal-50 dark:bg-teal-950/40 text-teal-600 flex items-center justify-center">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== FILTER BAR ==================== -->
+      <section class="flex flex-wrap items-center justify-between gap-3">
+        <!-- Filter Tabs -->
+        <div
+          class="flex items-center gap-1.5 p-1 bg-white/80 dark:bg-[#0c1613] rounded-xl border border-emerald-100 dark:border-emerald-950/60 text-xs">
+          <button onclick="setFilter('all')" id="tabAll"
+            class="filter-tab active px-3.5 py-1.5 rounded-lg font-bold bg-emerald-600 text-white shadow-sm transition">
+            All Prescriptions (<span id="countTabAll">0</span>)
+          </button>
+          <button onclick="setFilter('pending')" id="tabPending"
+            class="filter-tab px-3.5 py-1.5 rounded-lg font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition">
+            Pending Review (<span id="countTabPending">0</span>)
+          </button>
+          <button onclick="setFilter('approved')" id="tabApproved"
+            class="filter-tab px-3.5 py-1.5 rounded-lg font-medium text-slate-600 dark:text-slate-400 hover:text-emerald-600 transition">
+            Ready for Pickup (<span id="countTabApproved">0</span>)
+          </button>
+          <button onclick="setFilter('flagged')" id="tabFlagged"
+            class="filter-tab px-3.5 py-1.5 rounded-lg font-medium text-slate-600 dark:text-slate-400 hover:text-red-500 transition">
+            Interaction Warning
+          </button>
+        </div>
+
+        <!-- Filter Dropdown & Export Button -->
+        <div class="flex items-center gap-2.5">
+          <select id="doctorFilter" onchange="applyFilters()"
+            class="text-xs bg-white dark:bg-[#0e1a15] border border-emerald-100 dark:border-emerald-900/60 text-slate-700 dark:text-slate-300 py-2 px-3 rounded-xl focus:outline-none focus:ring-1 focus:ring-emerald-500">
+            <option value="">Filter by Prescriber / Doctor</option>
+          </select>
+          <button onclick="exportBatchCsv()"
+            class="text-xs font-semibold px-3.5 py-2 rounded-xl bg-white dark:bg-[#0e1a15] hover:bg-emerald-50 dark:hover:bg-emerald-950/40 border border-emerald-100 dark:border-emerald-900/60 text-slate-700 dark:text-slate-300 flex items-center gap-1.5 shadow-sm transition">
+            <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            <span>Batch Export</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ==================== WORKSPACE SPLIT (TABLE + SAFETY PANEL) ==================== -->
+      <section class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+
+        <!-- LEFT COLUMN: PRESCRIPTIONS LIST TABLE (8 COLS) -->
+        <div
+          class="lg:col-span-8 bg-white dark:bg-[#0c1613] rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm overflow-hidden flex flex-col">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-xs">
+              <thead
+                class="bg-emerald-50/60 dark:bg-[#08100d] border-b border-emerald-100 dark:border-emerald-950/80 text-[11px] uppercase tracking-wider text-slate-400 font-bold">
+                <tr>
+                  <th class="p-3.5 w-10 text-center">
+                    <input type="checkbox" id="selectAllCheckbox"
+                      class="rounded text-emerald-600 focus:ring-emerald-500 dark:bg-slate-800 border-slate-300 dark:border-slate-700">
+                  </th>
+                  <th class="p-3.5 font-bold">Patient / Rx#</th>
+                  <th class="p-3.5 font-bold">Prescribed Medication</th>
+                  <th class="p-3.5 font-bold">Dosage / Schedule</th>
+                  <th class="p-3.5 font-bold">Physician</th>
+                  <th class="p-3.5 font-bold text-center">Status</th>
+                </tr>
+              </thead>
+              <tbody id="prescriptionTableBody" class="divide-y divide-emerald-50 dark:divide-emerald-950/40">
+                <tr>
+                  <td colspan="6" class="p-8 text-center text-slate-400">
+                    <div class="inline-block animate-spin mr-2">⏳</div> Đang tải dữ liệu hồ sơ thuốc...
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Table Pagination Footer -->
+          <div
+            class="p-3.5 bg-emerald-50/30 dark:bg-[#08100d] border-t border-emerald-100/70 dark:border-emerald-950/60 flex items-center justify-between text-xs text-slate-500">
+            <span id="paginationInfo">Showing 0 of 0 prescriptions</span>
+            <div id="paginationButtons" class="flex items-center gap-1">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: RX CLINICAL SAFETY CHECK DRAWER (4 COLS) -->
+        <div
+          class="lg:col-span-4 bg-white dark:bg-[#0c1613] rounded-2xl border border-emerald-100/80 dark:border-emerald-950/60 shadow-sm p-5 flex flex-col gap-4 sticky top-20">
+
+          <!-- Panel Header -->
+          <div class="flex items-center justify-between border-b border-emerald-100/70 dark:border-emerald-950/60 pb-3">
+            <h3
+              class="font-extrabold text-xs tracking-wider uppercase text-slate-800 dark:text-white flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping"></span>
+              <span>RX Clinical Safety Check</span>
+            </h3>
+            <span id="detailRxBadge"
+              class="text-[10px] font-mono font-bold text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded">Rx
+              #--</span>
+          </div>
+
+          <div id="safetyCheckContent" class="space-y-4">
+            <!-- Patient Profile Summary -->
+            <div class="flex items-start justify-between">
+              <div>
+                <h4 id="detailPatientName" class="font-bold text-base text-slate-900 dark:text-white leading-tight">Chưa
+                  chọn đơn thuốc</h4>
+                <p id="detailPatientMeta" class="text-xs text-slate-400 mt-0.5">Chọn một hàng trong bảng để kiểm tra
+                  chéo</p>
+                <div class="flex flex-wrap gap-1.5 mt-2">
+                  <span id="detailAllergyTag"
+                    class="text-[10px] font-bold px-2 py-0.5 rounded bg-red-100 dark:bg-red-950/60 text-red-700 dark:text-red-300">
+                    ⚠️ Dị ứng: Không có
+                  </span>
+                  <span id="detailMedicalTag"
+                    class="text-[10px] font-medium px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                    Bệnh sử: Bình thường
+                  </span>
+                </div>
+              </div>
+              <div id="detailInitials"
+                class="w-10 h-10 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 font-bold flex items-center justify-center text-xs shrink-0 border border-emerald-200 dark:border-emerald-800">
+                --
+              </div>
+            </div>
+
+            <!-- Clinical Warning Alert Card -->
+            <div id="safetyAlertBox"
+              class="p-3.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 text-xs">
+              <div class="flex items-center gap-1.5 text-emerald-700 dark:text-emerald-400 font-bold">
+                <span>✅</span>
+                <span>An Toàn Lâm Sàng</span>
+              </div>
+              <p class="text-emerald-800/90 dark:text-emerald-300/90 mt-1 leading-relaxed text-[11px]">
+                Không phát hiện xung đột chéo giữa tiền sử dị ứng bệnh nhân và hoạt chất kê trong đơn.
+              </p>
+            </div>
+
+            <!-- Doctor Consult Action Buttons -->
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <button onclick="consultDoctor()"
+                class="py-2 px-3 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/60 font-medium transition text-center truncate">
+                📞 Liên Hệ Bác Sĩ
+              </button>
+              <button onclick="suggestAlternative()"
+                class="py-2 px-3 rounded-lg bg-red-600 hover:bg-red-700 text-white font-medium transition text-center truncate">
+                Đổi Hoạt Chất Khác
+              </button>
+            </div>
+
+            <!-- Order Verification -->
+            <div class="border-t border-emerald-100/70 dark:border-emerald-950/60 pt-3 text-xs space-y-2">
+              <p class="font-bold text-[11px] uppercase tracking-wider text-slate-400">Order Verification</p>
+              <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-900">
+                <span class="text-slate-500">Mã Thuốc / NDC:</span>
+                <span id="detailNDC"
+                  class="font-mono font-medium text-slate-800 dark:text-slate-200">00781-2613-05</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-900">
+                <span class="text-slate-500">Brand Equivalent:</span>
+                <span id="detailBrand" class="font-medium text-slate-800 dark:text-slate-200">Chuẩn dược dụng</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-100 dark:border-slate-900">
+                <span class="text-slate-500">Tồn kho hiện thời:</span>
+                <span id="detailStock" class="font-bold text-emerald-600 dark:text-emerald-400">Đầy đủ</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span class="text-slate-500">Vị trí kệ / Dispense Bin:</span>
+                <span id="detailShelf" class="font-mono text-slate-700 dark:text-slate-300">Kệ B-14 (Kho Dược)</span>
+              </div>
+            </div>
+
+            <!-- Patient Treatment History -->
+            <div class="border-t border-emerald-100/70 dark:border-emerald-950/60 pt-3 text-xs">
+              <p class="font-bold text-[11px] uppercase tracking-wider text-slate-400 mb-2">Patient History</p>
+              <div id="detailHistoryList" class="space-y-1.5 text-slate-600 dark:text-slate-400 text-[11px]">
+                <div class="flex justify-between">
+                  <span>Metformin 500mg</span>
+                  <span class="text-slate-400">Refilled 14d ago</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Omeprazole 20mg</span>
+                  <span class="text-slate-400">Refilled 28d ago</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Vitamin D3 1000 IU</span>
+                  <span class="text-slate-400">Refilled 60d ago</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons at bottom of Right Panel -->
+            <div class="pt-3 border-t border-emerald-100/70 dark:border-emerald-950/60 flex flex-col gap-2">
+              <div class="grid grid-cols-2 gap-2">
+                <button id="btnHoldAction" onclick="handleRejectCurrent()"
+                  class="py-2.5 px-3 rounded-xl bg-slate-100 hover:bg-red-50 text-slate-700 hover:text-red-600 border border-slate-200 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-300 dark:hover:text-red-400 text-xs font-bold transition cursor-pointer">
+                  Flag & Put on Hold
+                </button>
+                <button id="btnDispenseAction" onclick="handleApproveCurrent()"
+                  class="py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-md shadow-emerald-600/30 transition cursor-pointer">
+                  Override & Dispense
+                </button>
+              </div>
+              <p id="pharmacistStamp" class="text-[10px] text-center text-slate-400">
+                Logged under pharmacist ID: Phuc Minh (#ADMIN-01)
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </div>
+
+  <!-- ==================== MODAL: NEW PRESCRIPTION DISPENSE ==================== -->
+  <div id="createModal" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div
+      class="bg-white dark:bg-[#0c1613] border border-emerald-100 dark:border-emerald-900/60 rounded-3xl max-w-xl w-full p-6 shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between border-b border-emerald-100 dark:border-emerald-950/60 pb-3">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold">+</div>
+          <h3 class="font-bold text-base text-slate-900 dark:text-white">Tạo Đơn Thuốc Mới / New Dispense</h3>
+        </div>
+        <button onclick="closeCreateModal()"
+          class="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 text-xl font-bold">✕</button>
+      </div>
+
+      <form id="newPrescriptionForm" class="space-y-4 text-xs">
+        <div>
+          <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">Bệnh Nhân *</label>
+          <select id="modalPatientSelect" required
+            class="w-full p-2.5 bg-slate-50 dark:bg-[#12211b] border border-slate-200 dark:border-slate-800 rounded-xl text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            <option value="">-- Chọn bệnh nhân --</option>
           </select>
         </div>
 
-        <div class="form-group">
-          <label>Thuốc & Số lượng *</label>
-          <div id="medsContainer"></div>
-          <button type="button" class="btn btn-secondary" onclick="addMedRow()" style="margin-top:0.5rem;">+ Thêm Thuốc</button>
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <label class="font-bold text-slate-700 dark:text-slate-300">Thuốc Kê & Liều Lượng *</label>
+            <button type="button" onclick="addModalMedicineRow()"
+              class="text-emerald-600 dark:text-emerald-400 font-bold hover:underline">+ Thêm Thuốc</button>
+          </div>
+          <div id="modalMedsContainer" class="space-y-2"></div>
         </div>
 
-        <div class="form-group">
-          <label>Ghi chú / Hướng dẫn dùng thuốc</label>
-          <textarea id="prescNotes" rows="3" placeholder="Ví dụ: Uống sau ăn, 2 lần mỗi ngày..."></textarea>
+        <div>
+          <label class="block font-bold text-slate-700 dark:text-slate-300 mb-1">Chỉ định / Hướng dẫn liều dùng</label>
+          <textarea id="modalPrescNotes" rows="2" placeholder="Ví dụ: 1 viên sau ăn, ngày 2 lần sáng và chiều..."
+            class="w-full p-2.5 bg-slate-50 dark:bg-[#12211b] border border-slate-200 dark:border-slate-800 rounded-xl text-xs text-slate-800 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary">Gửi Chờ Duyệt</button>
-        <button type="button" class="btn btn-secondary" onclick="hideForm()">Hủy</button>
-        <div id="formMsg" class="message"></div>
+        <div class="flex justify-end gap-2 pt-2 border-t border-emerald-100 dark:border-emerald-950/60">
+          <button type="button" onclick="closeCreateModal()"
+            class="px-4 py-2 rounded-xl text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 font-medium">Hủy</button>
+          <button type="submit"
+            class="px-5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold shadow-md shadow-emerald-600/30">Gửi
+            Duyệt & Cấp Thuốc</button>
+        </div>
       </form>
-    </div>
-
-    <!-- Danh Sách Đơn Thuốc -->
-    <div class="card">
-      <h3 style="margin-bottom: 1rem;">Danh Sách Đơn Thuốc</h3>
-      <div id="prescList">
-        <p style="color:#666; text-align:center; padding:1rem;">Đang tải...</p>
-      </div>
     </div>
   </div>
 
+  <!-- ==================== JAVASCRIPT ==================== -->
   <script>
     const API_URL = 'http://localhost:5000/api';
-    const user = JSON.parse(localStorage.getItem('user'));
+    const currentUser = JSON.parse(localStorage.getItem('user'));
+    const token = localStorage.getItem('token');
 
-    if (!user) {
-      alert('⚠️ Vui lòng đăng nhập!');
+    // Authentication Guard
+    if (!currentUser) {
+      alert('⚠️ Vui lòng đăng nhập vào hệ thống!');
       window.location.href = 'projectmod1.html';
     }
 
+    // Populate Sidebar User Information
+    const userFullNameEl = document.getElementById('userFullName');
+    const userRoleBadgeEl = document.getElementById('userRoleBadge');
+    const userAvatarEl = document.getElementById('userAvatar');
+    const pharmacistStampEl = document.getElementById('pharmacistStamp');
+
+    if (currentUser) {
+      if (userFullNameEl) userFullNameEl.textContent = currentUser.fullName || 'Pharmacist';
+      if (userRoleBadgeEl) userRoleBadgeEl.textContent = (currentUser.role || 'PHARMACIST').toUpperCase();
+      if (userAvatarEl) {
+        const initials = (currentUser.fullName || 'PM')
+          .split(' ')
+          .filter(Boolean)
+          .map(n => n[0])
+          .slice(-2)
+          .join('')
+          .toUpperCase();
+        userAvatarEl.textContent = initials || 'Rx';
+      }
+      if (pharmacistStampEl) {
+        pharmacistStampEl.textContent = `Logged under pharmacist ID: ${currentUser.fullName} (#${(currentUser.role || 'staff').toUpperCase()}-01)`;
+      }
+    }
+
+    // Logout handling
+    document.getElementById('logoutBtn').addEventListener('click', () => {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+      window.location.href = 'projectmod1.html';
+    });
+
+    // Theme Toggle Handler
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeIcon = document.getElementById('themeIcon');
+    const savedTheme = localStorage.getItem('apotheca_theme') || 'light';
+
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+        themeIcon.textContent = '☀️';
+      } else {
+        document.documentElement.classList.remove('dark');
+        themeIcon.textContent = '🌙';
+      }
+      localStorage.setItem('apotheca_theme', theme);
+    }
+    applyTheme(savedTheme);
+
+    themeToggleBtn.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      applyTheme(isDark ? 'light' : 'dark');
+    });
+
+    // Global State
+    let allPrescriptions = [];
     let allPatients = [];
     let allMedicines = [];
+    let activeFilter = 'all';
+    let currentSelectedPrescription = null;
 
-    // Load all data on page start
-    async function loadAllData() {
+    // Load All Data from Server
+    async function loadInitialData() {
       try {
-        // Load patients
-        const patRes = await fetch(`${API_URL}/patients/search?limit=100`);
+        const [prescRes, patRes, medRes] = await Promise.all([
+          fetch(`${API_URL}/prescriptions`),
+          fetch(`${API_URL}/patients/search?limit=100`),
+          fetch(`${API_URL}/medicines/search?limit=100`)
+        ]);
+
+        if (prescRes.ok) allPrescriptions = await prescRes.json();
         if (patRes.ok) {
           const patData = await patRes.json();
           allPatients = patData.patients || [];
         }
-
-        // Load medicines
-        const medRes = await fetch(`${API_URL}/medicines/search?limit=100`);
         if (medRes.ok) {
           const medData = await medRes.json();
           allMedicines = medData.medicines || [];
         }
 
-        fillPatientOptions();
-        loadPrescriptions();
+        updateMetrics();
+        populateDoctorFilter();
+        renderPrescriptionsTable();
+        populateModalDropdowns();
+
+        // Auto-select first prescription if available
+        if (allPrescriptions.length > 0) {
+          selectPrescription(allPrescriptions[0]);
+        }
       } catch (err) {
-        console.error('Load error:', err);
-        loadPrescriptions();
+        console.error('Error fetching clinical data:', err);
+        Swal.fire({
+          icon: 'error',
+          title: 'Lỗi nạp dữ liệu',
+          text: 'Không thể kết nối đến server. Vui lòng đảm bảo server đang chạy trên cổng 5000.',
+          confirmButtonColor: '#059669'
+        });
       }
     }
 
-    function fillPatientOptions() {
-      const select = document.getElementById('patientSelect');
-      select.innerHTML = `<option value="">-- Chọn bệnh nhân --</option>`;
-      allPatients.forEach(p => {
-        select.innerHTML += `<option value="${p._id}">${p.fullName} — ${p.phone || 'Không SĐT'}</option>`;
+    // Update KPI Metric Cards
+    function updateMetrics() {
+      const pendingCount = allPrescriptions.filter(p => p.status === 'pending').length;
+      const approvedCount = allPrescriptions.filter(p => p.status === 'approved').length;
+
+      // Calculate flagged (allergies conflict or rejected)
+      const flaggedCount = allPrescriptions.filter(p => {
+        if (p.status === 'rejected') return true;
+        const pat = p.patient;
+        if (!pat || !pat.allergies || pat.allergies === 'Không có') return false;
+        const alg = pat.allergies.toLowerCase();
+        return p.medicines?.some(m => {
+          const medName = (m.medicine?.name || '').toLowerCase();
+          return alg.includes('penicillin') && (medName.includes('amox') || medName.includes('penicil')) ||
+            alg.includes('aspirin') && medName.includes('aspirin') ||
+            alg.includes(medName);
+        });
+      }).length;
+
+      // Calculate low stock warnings
+      const lowStockCount = allMedicines.filter(m => m.stock <= (m.lowStockAlert || 5)).length;
+
+      document.getElementById('kpiPending').textContent = pendingCount;
+      document.getElementById('kpiDispensed').textContent = approvedCount;
+      document.getElementById('kpiFlagged').textContent = flaggedCount;
+      document.getElementById('kpiStock').textContent = lowStockCount;
+
+      // Sidebar badge
+      document.getElementById('sidebarPrescCount').textContent = allPrescriptions.length;
+      document.getElementById('countTabAll').textContent = allPrescriptions.length;
+      document.getElementById('countTabPending').textContent = pendingCount;
+      document.getElementById('countTabApproved').textContent = approvedCount;
+    }
+
+    // Populate Doctor Filter Dropdown
+    function populateDoctorFilter() {
+      const select = document.getElementById('doctorFilter');
+      const doctors = new Set();
+      allPrescriptions.forEach(p => {
+        if (p.createdBy?.fullName) doctors.add(p.createdBy.fullName);
+      });
+      select.innerHTML = '<option value="">Filter by Prescriber / Doctor</option>';
+      doctors.forEach(doc => {
+        select.innerHTML += `<option value="${doc}">Dr. ${doc}</option>`;
       });
     }
 
-    function showForm() {
-      document.getElementById('formCard').style.display = 'block';
-      document.getElementById('prescForm').reset();
-      document.getElementById('medsContainer').innerHTML = '';
-      document.getElementById('formMsg').className = 'message';
-      addMedRow();
+    // Set Active Tab Filter
+    function setFilter(filterType) {
+      activeFilter = filterType;
+      document.querySelectorAll('.filter-tab').forEach(tab => {
+        tab.classList.remove('bg-emerald-600', 'text-white', 'font-bold', 'shadow-sm');
+        tab.classList.add('font-medium', 'text-slate-600', 'dark:text-slate-400');
+      });
+      const activeTabMap = {
+        all: 'tabAll',
+        pending: 'tabPending',
+        approved: 'tabApproved',
+        flagged: 'tabFlagged'
+      };
+      const activeBtn = document.getElementById(activeTabMap[filterType]);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-emerald-600', 'text-white', 'font-bold', 'shadow-sm');
+        activeBtn.classList.remove('text-slate-600', 'dark:text-slate-400');
+      }
+      applyFilters();
     }
 
-    function hideForm() {
-      document.getElementById('formCard').style.display = 'none';
-      document.getElementById('prescForm').reset();
-      document.getElementById('medsContainer').innerHTML = '';
-      document.getElementById('formMsg').className = 'message';
+    // Apply Filter & Search Queries
+    function applyFilters() {
+      const searchKey = document.getElementById('globalSearchInput').value.toLowerCase().trim();
+      const doctorKey = document.getElementById('doctorFilter').value;
+
+      const filtered = allPrescriptions.filter(p => {
+        // Tab Filter
+        if (activeFilter === 'pending' && p.status !== 'pending') return false;
+        if (activeFilter === 'approved' && p.status !== 'approved') return false;
+        if (activeFilter === 'flagged') {
+          const isRejected = p.status === 'rejected';
+          const hasConflict = checkPrescriptionAllergyConflict(p);
+          if (!isRejected && !hasConflict) return false;
+        }
+
+        // Doctor Filter
+        if (doctorKey && p.createdBy?.fullName !== doctorKey) return false;
+
+        // Search Filter
+        if (searchKey) {
+          const patientName = (p.patient?.fullName || '').toLowerCase();
+          const phone = (p.patient?.phone || '').toLowerCase();
+          const notes = (p.notes || '').toLowerCase();
+          const meds = p.medicines?.map(m => m.medicine?.name || '').join(' ').toLowerCase();
+          const rxId = (`rx-${p._id?.slice(-6)}`).toLowerCase();
+
+          return patientName.includes(searchKey) ||
+            phone.includes(searchKey) ||
+            notes.includes(searchKey) ||
+            meds.includes(searchKey) ||
+            rxId.includes(searchKey);
+        }
+
+        return true;
+      });
+
+      renderPrescriptionsTable(filtered);
     }
 
-    function addMedRow() {
-      const container = document.getElementById('medsContainer');
-      const row = document.createElement('div');
-      row.className = 'med-row';
-      row.innerHTML = `
-        <select class="med-select" required>
+    document.getElementById('globalSearchInput').addEventListener('input', applyFilters);
+
+    // Render Prescriptions Table
+    function renderPrescriptionsTable(list = allPrescriptions) {
+      const tbody = document.getElementById('prescriptionTableBody');
+      const paginationInfo = document.getElementById('paginationInfo');
+
+      if (!list || list.length === 0) {
+        tbody.innerHTML = `
+          <tr>
+            <td colspan="6" class="p-8 text-center text-slate-400 dark:text-slate-500">
+              Không tìm thấy đơn thuốc nào phù hợp với bộ lọc.
+            </td>
+          </tr>
+        `;
+        paginationInfo.textContent = `Showing 0 of ${allPrescriptions.length} prescriptions`;
+        return;
+      }
+
+      paginationInfo.textContent = `Showing 1 to ${list.length} of ${allPrescriptions.length} prescriptions`;
+
+      tbody.innerHTML = list.map((p, idx) => {
+        const isSelected = currentSelectedPrescription?._id === p._id;
+        const patient = p.patient || {};
+        const pName = patient.fullName || 'Khách vãng lai';
+        const pAge = patient.age ? `${patient.age} y/o` : 'N/A';
+        const rxNumber = `Rx-${p._id?.slice(-6).toUpperCase() || '000000'}`;
+        const patientInitials = pName.split(' ').map(n => n[0]).slice(-2).join('').toUpperCase();
+
+        // Medication description
+        const firstMed = p.medicines?.[0];
+        const medName = firstMed?.medicine?.name || 'Thuốc tổng hợp';
+        const medQty = firstMed?.quantity || 1;
+        const extraMedsCount = (p.medicines?.length || 1) - 1;
+
+        // Dosage / Schedule
+        const dosageSchedule = p.notes || (firstMed?.dosageNote || '1 tab bid with meals');
+
+        // Prescriber
+        const prescriber = p.createdBy?.fullName ? `Dr. ${p.createdBy.fullName}` : 'Dr. Sara Jenkins';
+
+        // Check if there is an interaction alert
+        const hasAllergyConflict = checkPrescriptionAllergyConflict(p);
+
+        // Status badge format
+        let statusBadge = '';
+        if (hasAllergyConflict) {
+          statusBadge = `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-red-100 dark:bg-red-950/80 text-red-600 dark:text-red-400 border border-red-200 dark:border-red-900"><span class="w-1.5 h-1.5 rounded-full bg-red-500"></span> Intera Alert</span>`;
+        } else if (p.status === 'approved') {
+          statusBadge = `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Ready</span>`;
+        } else if (p.status === 'rejected') {
+          statusBadge = `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200 dark:border-slate-700">Hold / Canceled</span>`;
+        } else {
+          statusBadge = `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 dark:bg-amber-950/80 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Pending Review</span>`;
+        }
+
+        return `
+          <tr onclick="selectPrescriptionById('${p._id}')" class="cursor-pointer transition hover:bg-emerald-50/50 dark:hover:bg-emerald-950/20 ${isSelected ? 'bg-emerald-50 dark:bg-emerald-950/40 border-l-4 border-l-emerald-600 font-medium' : ''}">
+            <td class="p-3.5 text-center" onclick="event.stopPropagation()">
+              <input type="checkbox" ${isSelected ? 'checked' : ''} onchange="selectPrescriptionById('${p._id}')" class="rounded text-emerald-600 focus:ring-emerald-500 dark:bg-slate-800 border-slate-300 dark:border-slate-700">
+            </td>
+            <td class="p-3.5">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold flex items-center justify-center text-xs shrink-0">
+                  ${patientInitials}
+                </div>
+                <div>
+                  <div class="font-bold text-slate-900 dark:text-white flex items-center gap-1">
+                    <span>${pName}</span>
+                    <span class="text-[10px] font-normal text-slate-400">(${pAge})</span>
+                  </div>
+                  <div class="text-[10px] font-mono text-emerald-700 dark:text-emerald-400">${rxNumber}</div>
+                </div>
+              </div>
+            </td>
+            <td class="p-3.5">
+              <div class="font-bold text-slate-800 dark:text-slate-200">${medName}</div>
+              <div class="text-[10px] text-slate-400">
+                ${medQty} đơn vị ${extraMedsCount > 0 ? `+ ${extraMedsCount} thuốc khác` : ''}
+              </div>
+            </td>
+            <td class="p-3.5 text-slate-600 dark:text-slate-400">
+              <span class="line-clamp-1">${dosageSchedule}</span>
+            </td>
+            <td class="p-3.5 text-slate-700 dark:text-slate-300">
+              <span>${prescriber}</span>
+            </td>
+            <td class="p-3.5 text-center">
+              ${statusBadge}
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    // Check Allergy Conflicts
+    function checkPrescriptionAllergyConflict(prescription) {
+      const patient = prescription.patient;
+      if (!patient || !patient.allergies || patient.allergies === 'Không có') return false;
+      const alg = patient.allergies.toLowerCase();
+      return prescription.medicines?.some(m => {
+        const medName = (m.medicine?.name || '').toLowerCase();
+        return (alg.includes('penicillin') && (medName.includes('amox') || medName.includes('penicil'))) ||
+          (alg.includes('aspirin') && medName.includes('aspirin')) ||
+          alg.includes(medName);
+      });
+    }
+
+    // Select Prescription by ID
+    function selectPrescriptionById(id) {
+      const p = allPrescriptions.find(item => item._id === id);
+      if (p) selectPrescription(p);
+    }
+
+    // Select and Update Right Safety Panel
+    function selectPrescription(prescription) {
+      currentSelectedPrescription = prescription;
+      renderPrescriptionsTable();
+
+      const patient = prescription.patient || {};
+      const pName = patient.fullName || 'Khách vãng lai';
+      const pAge = patient.age ? `${patient.age} y/o` : 'Không rõ tuổi';
+      const rxNumber = `Rx #${prescription._id?.slice(-6).toUpperCase() || '000000'}`;
+
+      document.getElementById('detailRxBadge').textContent = rxNumber;
+      document.getElementById('detailPatientName').textContent = pName;
+      document.getElementById('detailPatientMeta').textContent = `SĐT: ${patient.phone || 'N/A'} • ${pAge}`;
+
+      const initials = pName.split(' ').map(n => n[0]).slice(-2).join('').toUpperCase();
+      document.getElementById('detailInitials').textContent = initials || 'Rx';
+
+      const allergies = patient.allergies || 'Không có';
+      const medicalHistory = patient.medicalHistory || 'Bình thường';
+      document.getElementById('detailAllergyTag').textContent = `⚠️ Dị ứng: ${allergies}`;
+      document.getElementById('detailMedicalTag').textContent = `Bệnh sử: ${medicalHistory}`;
+
+      // Allergy conflict detection
+      const alertBox = document.getElementById('safetyAlertBox');
+      const hasConflict = checkPrescriptionAllergyConflict(prescription);
+      const firstMed = prescription.medicines?.[0];
+      const medName = firstMed?.medicine?.name || 'Thuốc';
+
+      if (hasConflict) {
+        alertBox.className = 'p-3.5 rounded-xl bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-900/60 text-xs';
+        alertBox.innerHTML = `
+          <div class="flex items-center gap-1.5 text-red-700 dark:text-red-400 font-bold">
+            <span>🚨</span>
+            <span>Cảnh Báo Xung Đột Dị Ứng (Cross-Reactivity Conflict)</span>
+          </div>
+          <p class="text-red-800 dark:text-red-300 mt-1 leading-relaxed text-[11px]">
+            Đơn thuốc chứa <strong>${medName}</strong>, trong khi hồ sơ bệnh nhân ghi nhận tiền sử dị ứng với <strong>"${allergies}"</strong>. Cần xác nhận của Bác sĩ điều trị trước khi cấp phát.
+          </p>
+        `;
+      } else {
+        alertBox.className = 'p-3.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 text-xs';
+        alertBox.innerHTML = `
+          <div class="flex items-center gap-1.5 text-emerald-700 dark:text-emerald-400 font-bold">
+            <span>✅</span>
+            <span>An Toàn Lâm Sàng Đạt Tiêu Chuẩn</span>
+          </div>
+          <p class="text-emerald-800 dark:text-emerald-300 mt-1 leading-relaxed text-[11px]">
+            Không phát hiện xung đột chéo giữa tiền sử dị ứng bệnh nhân và danh mục thuốc trong đơn.
+          </p>
+        `;
+      }
+
+      // Order Verification
+      const stock = firstMed?.medicine?.stock ?? 120;
+      document.getElementById('detailStock').textContent = `In Stock (${stock} ${firstMed?.medicine?.unit || 'hộp'})`;
+      document.getElementById('detailBrand').textContent = firstMed?.medicine?.category || 'Thuốc kê đơn tiêu chuẩn';
+
+      // Patient History list
+      const historyContainer = document.getElementById('detailHistoryList');
+      if (prescription.medicines && prescription.medicines.length > 0) {
+        historyContainer.innerHTML = prescription.medicines.map(m => `
+          <div class="flex justify-between py-0.5 border-b border-slate-100 dark:border-slate-800">
+            <span class="font-medium text-slate-800 dark:text-slate-200">${m.medicine?.name || 'Thuốc'}</span>
+            <span class="text-emerald-600 dark:text-emerald-400 font-bold">Số lượng: ${m.quantity}</span>
+          </div>
+        `).join('');
+      } else {
+        historyContainer.innerHTML = `<span class="text-slate-400">Không có thêm thông tin phụ</span>`;
+      }
+
+      // Action Button States
+      const btnDispense = document.getElementById('btnDispenseAction');
+      const btnHold = document.getElementById('btnHoldAction');
+      if (prescription.status === 'approved') {
+        btnDispense.textContent = '✅ Đã Cấp Phát';
+        btnDispense.disabled = true;
+        btnDispense.classList.add('opacity-50', 'cursor-not-allowed');
+      } else {
+        btnDispense.textContent = 'Override & Dispense';
+        btnDispense.disabled = false;
+        btnDispense.classList.remove('opacity-50', 'cursor-not-allowed');
+      }
+    }
+
+    // Right Panel Approve Action
+    async function handleApproveCurrent() {
+      if (!currentSelectedPrescription) return;
+      const id = currentSelectedPrescription._id;
+
+      const result = await Swal.fire({
+        title: 'Xác nhận cấp phát đơn thuốc?',
+        text: 'Hệ thống sẽ duyệt đơn và tự động trừ tồn kho dược phẩm tương ứng.',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#059669',
+        cancelButtonColor: '#64748b',
+        confirmButtonText: 'Đồng ý cấp phát',
+        cancelButtonText: 'Hủy'
+      });
+
+      if (!result.isConfirmed) return;
+
+      try {
+        const res = await fetch(`${API_URL}/prescriptions/${id}/approve`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ approvedBy: currentUser.id })
+        });
+        const data = await res.json();
+        if (res.ok) {
+          Swal.fire({
+            toast: true,
+            icon: 'success',
+            title: '✅ Đã duyệt đơn & Cập nhật kho thành công!',
+            position: 'top-end',
+            timer: 2000,
+            showConfirmButton: false
+          });
+          loadInitialData();
+        } else {
+          Swal.fire('Lỗi', data.message || 'Không thể duyệt đơn', 'error');
+        }
+      } catch (err) {
+        Swal.fire('Lỗi kết nối', 'Không thể kết nối đến máy chủ.', 'error');
+      }
+    }
+
+    // Right Panel Hold / Reject Action
+    async function handleRejectCurrent() {
+      if (!currentSelectedPrescription) return;
+      const id = currentSelectedPrescription._id;
+
+      const result = await Swal.fire({
+        title: 'Tạm giữ / Từ chối cấp thuốc?',
+        text: 'Đơn thuốc sẽ được đánh dấu Tạm hoãn (Hold/Rejected) để chờ kiểm tra lâm sàng.',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#dc2626',
+        cancelButtonColor: '#64748b',
+        confirmButtonText: 'Xác nhận giữ đơn',
+        cancelButtonText: 'Bỏ qua'
+      });
+
+      if (!result.isConfirmed) return;
+
+      try {
+        const res = await fetch(`${API_URL}/prescriptions/${id}/reject`, {
+          method: 'PATCH',
+          headers: { 'Content-Type': 'application/json' }
+        });
+        const data = await res.json();
+        if (res.ok) {
+          Swal.fire({
+            toast: true,
+            icon: 'info',
+            title: 'Đơn thuốc đã chuyển sang trạng thái tạm giữ.',
+            position: 'top-end',
+            timer: 2000,
+            showConfirmButton: false
+          });
+          loadInitialData();
+        } else {
+          Swal.fire('Lỗi', data.message, 'error');
+        }
+      } catch (err) {
+        Swal.fire('Lỗi', 'Không thể kết nối máy chủ', 'error');
+      }
+    }
+
+    // Consult Doctor Quick Action
+    function consultDoctor() {
+      const doc = currentSelectedPrescription?.createdBy?.fullName || 'Bác sĩ điều trị';
+      Swal.fire({
+        title: `Liên hệ ${doc}`,
+        html: `<p class="text-sm text-slate-600">Đang khởi tạo đường truyền gọi nội bộ / tin nhắn khẩn cấp đến khoa điều trị...</p>`,
+        icon: 'info',
+        confirmButtonColor: '#059669'
+      });
+    }
+
+    // Suggest Alternative Quick Action
+    function suggestAlternative() {
+      Swal.fire({
+        title: 'Gợi Ý Hoạt Chất Thay Thế',
+        html: `
+          <div class="text-left text-xs space-y-2">
+            <p><strong>Hoạt chất hiện tại:</strong> Amoxicillin / Penicillin Group</p>
+            <p><strong>Khuyến nghị thay thế an toàn:</strong> Cefuroxime 500mg, Azithromycin 500mg hoặc Clarithromycin.</p>
+          </div>
+        `,
+        icon: 'success',
+        confirmButtonColor: '#059669'
+      });
+    }
+
+    // Batch Export CSV
+    function exportBatchCsv() {
+      window.open(`${API_URL}/export/prescriptions/csv`, '_blank');
+    }
+
+    // Modal Create Prescription
+    function openCreateModal() {
+      document.getElementById('createModal').classList.remove('hidden');
+      document.getElementById('createModal').classList.add('flex');
+      const container = document.getElementById('modalMedsContainer');
+      container.innerHTML = '';
+      addModalMedicineRow();
+    }
+
+    function closeCreateModal() {
+      document.getElementById('createModal').classList.add('hidden');
+      document.getElementById('createModal').classList.remove('flex');
+    }
+
+    function populateModalDropdowns() {
+      const patSelect = document.getElementById('modalPatientSelect');
+      patSelect.innerHTML = '<option value="">-- Chọn bệnh nhân --</option>';
+      allPatients.forEach(p => {
+        patSelect.innerHTML += `<option value="${p._id}">${p.fullName} (SĐT: ${p.phone || 'N/A'})</option>`;
+      });
+    }
+
+    function addModalMedicineRow() {
+      const container = document.getElementById('modalMedsContainer');
+      const div = document.createElement('div');
+      div.className = 'flex items-center gap-2 p-2 rounded-xl bg-slate-50 dark:bg-[#12211b] border border-slate-200 dark:border-slate-800';
+      div.innerHTML = `
+        <select class="med-pick-select flex-1 p-2 bg-white dark:bg-[#0c1613] border border-slate-200 dark:border-slate-800 rounded-lg text-xs" required>
           <option value="">-- Chọn thuốc --</option>
-          ${allMedicines.map(m => `<option value="${m._id}">${m.name} — Còn ${m.stock} ${m.unit}</option>`).join('')}
+          ${allMedicines.map(m => `<option value="${m._id}">${m.name} (Còn ${m.stock} ${m.unit})</option>`).join('')}
         </select>
-        <input type="number" class="med-qty" min="1" value="1" placeholder="Số lượng">
-        <button type="button" onclick="this.parentElement.remove()">✕</button>
+        <input type="number" min="1" value="1" class="med-pick-qty w-20 p-2 bg-white dark:bg-[#0c1613] border border-slate-200 dark:border-slate-800 rounded-lg text-xs" required placeholder="SL">
+        <button type="button" onclick="this.parentElement.remove()" class="p-2 text-red-500 hover:bg-red-50 rounded-lg">✕</button>
       `;
-      container.appendChild(row);
+      container.appendChild(div);
     }
 
-    // Submit new prescription
-    document.getElementById('prescForm').addEventListener('submit', async (e) => {
+    document.getElementById('newPrescriptionForm').addEventListener('submit', async (e) => {
       e.preventDefault();
-      const msgEl = document.getElementById('formMsg');
-      
-      const patientId = document.getElementById('patientSelect').value;
-      const rows = document.querySelectorAll('#medsContainer .med-row');
+      const patientId = document.getElementById('modalPatientSelect').value;
+      const notes = document.getElementById('modalPrescNotes').value;
+      const rows = document.querySelectorAll('#modalMedsContainer > div');
       const medicines = [];
-      
-      rows.forEach(row => {
-        const medId = row.querySelector('.med-select').value;
-        const qty = parseInt(row.querySelector('.med-qty').value);
+
+      rows.forEach(r => {
+        const medId = r.querySelector('.med-pick-select').value;
+        const qty = parseInt(r.querySelector('.med-pick-qty').value);
         if (medId && qty > 0) {
           medicines.push({ medicine: medId, quantity: qty });
         }
       });
 
-      if (!patientId) {
-        msgEl.className = 'message error';
-        msgEl.textContent = '❌ Vui lòng chọn bệnh nhân!';
-        return;
-      }
-      if (medicines.length === 0) {
-        msgEl.className = 'message error';
-        msgEl.textContent = '❌ Vui lòng chọn ít nhất 1 thuốc!';
+      if (!patientId || medicines.length === 0) {
+        Swal.fire('Lỗi', 'Vui lòng chọn bệnh nhân và ít nhất 1 loại thuốc!', 'warning');
         return;
       }
 
@@ -197,137 +1209,32 @@
           body: JSON.stringify({
             patientId,
             medicines,
-            notes: document.getElementById('prescNotes').value,
-            createdBy: user.id
+            notes,
+            createdBy: currentUser.id
           })
         });
 
         const data = await res.json();
-        msgEl.className = `message ${res.ok ? 'success' : 'error'}`;
-        msgEl.textContent = data.message;
-
         if (res.ok) {
-          setTimeout(() => { hideForm(); loadPrescriptions(); }, 1500);
+          closeCreateModal();
+          Swal.fire({
+            icon: 'success',
+            title: 'Tạo đơn thuốc thành công!',
+            text: 'Đơn đã được thêm vào hàng đợi cấp phát.',
+            confirmButtonColor: '#059669'
+          });
+          loadInitialData();
+        } else {
+          Swal.fire('Lỗi', data.message || 'Không thể tạo đơn thuốc', 'error');
         }
       } catch (err) {
-        msgEl.className = 'message error';
-        msgEl.textContent = '❌ Lỗi kết nối server';
+        Swal.fire('Lỗi kết nối', 'Không thể gửi dữ liệu đến server.', 'error');
       }
     });
 
-    // Load & display prescriptions
-    async function loadPrescriptions() {
-      try {
-        const res = await fetch(`${API_URL}/prescriptions`);
-        if (!res.ok) throw new Error('Failed to load');
-        const prescriptions = await res.json();
-        const listEl = document.getElementById('prescList');
-        
-        if (!prescriptions.length) {
-          listEl.innerHTML = '<p style="color:#666; text-align:center; padding:1rem;">Chưa có đơn thuốc nào</p>';
-          return;
-        }
-
-        listEl.innerHTML = prescriptions.map(p => {
-          const statusClass = p.status === 'approved' ? 'status-approved' : 
-                              p.status === 'rejected' ? 'status-rejected' : 'status-pending';
-          const statusText = p.status === 'approved' ? '✅ Đã duyệt' : 
-                             p.status === 'rejected' ? '❌ Đã từ chối' : '⏳ Chờ duyệt';
-          
-          const canApprove = p.status === 'pending' && 
-            (user.role === 'admin' || user.role === 'pharmacist');
-
-          return `
-            <div class="presc-item">
-              <div class="presc-header">
-                <div>
-                  <strong>Bệnh nhân:</strong> ${p.patient?.fullName || 'Không xác định'} 
-                  | <strong>Tạo bởi:</strong> ${p.createdBy?.fullName || '---'}
-                  ${p.approvedBy ? ` | <strong>Duyệt bởi:</strong> ${p.approvedBy.fullName}` : ''}
-                </div>
-                <div style="display:flex; align-items:center; gap:0.5rem;">
-                  <span class="${statusClass}">${statusText}</span>
-                  <button
-                    onclick="deletePresc('${p._id}')"
-                    style="background:#fee2e2; color:#dc2626; border:none; border-radius:6px; padding:0.3rem 0.7rem; cursor:pointer; font-size:0.85rem;"
-                    title="Xóa đơn thuốc này"
-                  >🗑 Xóa</button>
-                </div>
-              </div>
-              ${p.notes ? `<p style="margin:0.5rem 0; color:#666;"><strong>Ghi chú:</strong> ${p.notes}</p>` : ''}
-              <ul class="med-list">
-                ${p.medicines.map(m => {
-                  const medName = m.medicine?.name || 'Thuốc không tồn tại';
-                  return `<li>💊 ${medName} — ${m.quantity} đơn vị</li>`;
-                }).join('')}
-              </ul>
-              ${canApprove ? `
-                <div class="presc-actions">
-                  <button class="btn btn-approve" onclick="approvePresc('${p._id}')">✅ Duyệt</button>
-                  <button class="btn btn-reject" onclick="rejectPresc('${p._id}')">❌ Từ chối</button>
-                </div>
-              ` : ''}
-            </div>
-          `;
-        }).join('');
-      } catch (err) {
-        console.error('Load error:', err);
-        document.getElementById('prescList').innerHTML = 
-          '<p style="color:red; text-align:center;">Lỗi tải danh sách đơn thuốc</p>';
-      }
-    }
-
-    // Approve prescription → auto update stock
-    window.approvePresc = async function(id) {
-      if (!confirm('✅ Xác nhận duyệt đơn thuốc? Tồn kho sẽ được tự động cập nhật!')) return;
-      
-      try {
-        const res = await fetch(`${API_URL}/prescriptions/${id}/approve`, {
-          method: 'PATCH',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ approvedBy: user.id })
-        });
-        const data = await res.json();
-        alert(data.message);
-        loadPrescriptions();
-      } catch (err) {
-        alert('❌ Lỗi kết nối server');
-      }
-    };
-
-    // Reject prescription
-    window.rejectPresc = async function(id) {
-      if (!confirm('❌ Xác nhận từ chối đơn thuốc?')) return;
-      
-      try {
-        const res = await fetch(`${API_URL}/prescriptions/${id}/reject`, {
-          method: 'PATCH',
-          headers: { 'Content-Type': 'application/json' }
-        });
-        const data = await res.json();
-        alert(data.message);
-        loadPrescriptions();
-      } catch (err) {
-        alert('❌ Lỗi kết nối server');
-      }
-    };
-
-    // Delete prescription
-    window.deletePresc = async function(id) {
-      if (!confirm('🗑 Bạn có chắc muốn xóa đơn thuốc này không?\nHành động này không thể hoàn tác!')) return;
-      try {
-        const res = await fetch(`${API_URL}/prescriptions/${id}`, { method: 'DELETE' });
-        let data;
-        try { data = await res.json(); } catch { data = { message: `❌ Server lỗi (${res.status})` }; }
-        alert(data.message);
-        if (res.ok) loadPrescriptions();
-      } catch (err) {
-        alert('❌ Không thể kết nối server. Hãy chắc server đang chạy trên cổng 5000.');
-      }
-    };
-
-    // Start everything
-    loadAllData();
+    // Initial Load
+    loadInitialData();
   </script>
 </body>
+
 </html>

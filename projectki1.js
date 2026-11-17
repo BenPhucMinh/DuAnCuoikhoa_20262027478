@@ -2,11 +2,24 @@ const API_URL = 'http://localhost:5000/api';
 
 // Switch between Login / Register tabs
 function showTab(tabName) {
-  document.querySelectorAll('.tab button').forEach(btn => btn.classList.remove('active'));
+  const loginBtn = document.getElementById('tabLogin');
+  const regBtn = document.getElementById('tabRegister');
+
+  document.querySelectorAll('.tab button').forEach(btn => {
+    btn.classList.remove('active', 'bg-green-600', 'text-white', 'font-bold');
+    btn.classList.add('bg-gray-200', 'text-gray-600');
+  });
   document.querySelectorAll('.form').forEach(form => form.classList.remove('active'));
   
-  event.target.classList.add('active');
-  document.getElementById(tabName + 'Form').classList.add('active');
+  const activeBtn = tabName === 'login' ? loginBtn : regBtn;
+  if (activeBtn) {
+    activeBtn.classList.add('active', 'bg-green-600', 'text-white', 'font-bold');
+    activeBtn.classList.remove('bg-gray-200', 'text-gray-600');
+  }
+  const targetForm = document.getElementById(tabName + 'Form');
+  if (targetForm) {
+    targetForm.classList.add('active');
+  }
 }
 
 // Register new account
